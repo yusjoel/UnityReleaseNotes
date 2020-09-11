@@ -1,0 +1,198 @@
+<html>
+<head>
+  <title>What's new in Unity 4.6 - Unity</title>
+</head>
+<body>
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 4.6</h1>
+        <p>With Unity 4.6 all Unity developers get access to polished and optimized UI tools to do far more, far faster with much less coding.</p>
+
+<p>Don’t forget that, as we announced <a href="http://blogs.unity3d.com/2014/11/20/apple-ios-64-bit-support-in-unity/">here</a>, we plan to ship a beta preview of our iOS ARM64-bit feature based on Unity 4.6.x in January 2015.</p>
+
+<p>Plus, for detailed information about the integration of bug fixes from the 4.5.5 patch releases see <a href="http://blogs.unity3d.com/2014/11/24/sustained-engineering-plan-for-unity-4-5-and-4-6/">here</a>.</p>
+
+<p>Read on for the full list of new features and updates in Unity 4.6!</p>
+        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="https://store.unity.com/">Get started</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h3>Features</h3>
+
+<ul>
+<li>New UI System: Design UIs for your game or application using Unity's powerful new component based UI framework and visual tools. 
+
+<ul>
+<li>Create UIs in screen space with or without perspective and with support for pixel perfect alignment, or in world space for simple creation of in-world interactions.</li>
+<li>The layout system combines anchoring to sides, corners, or custom points in the parent container with the ability to stretch to a percentage or full extent of the parent width or height. Simple Scene View handles allows intuitive visual control and tweaking of the positional behavior. </li>
+<li>Build up designs and customized controls composed of image, text, masking, and effects. All graphical components have full support for custom materials and lighting.</li>
+<li>Built-in controls for buttons, sliders, scroll views, input fields and more have been designed for full cross platform deployment, supporting touch controls (where the Unity touch API is supported) and mouse as well as directional navigation such as arrow keys or gamepad controls.</li>
+<li>The UI system integrates with Unity’s animation smoothly, meaning that you can use state machines and other animation features to control your UI elements and panels. </li>
+<li>The UI system is designed to be extensible so that it can meet the needs of your projects. Combine existing UI elements together to create new controls, extend existing controls, or write new controls from scratch.</li>
+<li>Easily set up callbacks for your UI controls in the Inspector using the new persistent delegate system. A lot of functionality can be hooked up to your UI with no programming needed!</li>
+</ul></li>
+<li>New Rect Tool: In previous versions, rect handles were used only in 2D mode and only for SpriteRenderers. With the introduction of the new UI system that is a hybrid of 2D and 3D, more explicit control is needed to be able to efficiently position elements. The new Rect tool in the main Unity toolbar can be used for sprites, UI elements, and any other object as well. The rect handles have also received an overhaul to be more consistent with the other tools, and to be more useful for a wide variety of uses.
+
+<ul>
+<li>Rect handles now support Pivot/Center mode as set in the toolbar as well Local/Global mode as set in the toolbar. </li>
+<li>Rect handle squashing (holding Control/Command while dragging a side) now supports preserving volume rather than area when holding down Shift. </li>
+<li>Rect handles for objects that appear small in the Scene View now show a disc handle that can be used to move the object in the plane of the rect. When zooming further in, the disc will fade out as the normal rect handles fade in. </li>
+</ul></li>
+<li>Extensible Event Messaging System: Use and extend the new Event System framework. The system is used for the new UI to send and receive events, but it can be extended to support custom input devices and custom event logic.
+
+<ul>
+<li>Inbuilt support for touch and standalone.</li>
+<li>Supports 2d, 3d, and UI components.</li>
+<li>Extensible; add custom input handling and custom events.</li>
+</ul></li>
+<li>Persistent Delegates (Unity Events): A new way to set callbacks via the UI and have them be built into a player. This helps non-programmers quickly add functionality to your application within the editor.</li>
+<li>New Android Build Targets: Support has been added for x86 as a build target. Fat binary support (x86+ARMv7) is supported as well and is the new default.</li>
+</ul>
+
+<h3>Improvements</h3>
+
+<h4 class="pt0">Core Improvements</h4>
+
+<ul>
+<li>Added smart-allocating GetComponents&gt; method which fetches components of type T and grows the list as needed. Non-generic version that supports interfaces has also been added.</li>
+<li>Added StopCoroutine(Coroutine) function.</li>
+<li>Added callback 'OnTransformParentChanged' to MonoBehaviour. This is called whenever a transform, or one of it's parent transforms has been reparented.</li>
+<li>Added Transform.SetParent method that optionally allows setting the parent transform without changing the local position, rotation or scale. For RectTransform it also doesn't change the sizeDelta.</li>
+<li>Implemented and exposed Transform.TransformVector and Transform.InverseTransformVector so it's no longer necessary to use localToWorldMatrix and WorldToLocalMatrix just to transform vectors with scaling included. </li>
+<li>Added Vector2.SmoothDamp to be consistent with Vector3.SmoothDamp, Mathf.SmoothDamp, and others.</li>
+<li>New API TouchScreenKeyboard.isSupported to check if platform supports on screen keyboard.</li>
+<li>Added new WillFlushUndoRecord callback to Undo class.</li>
+<li>Added Input.touchSupported API: it tells whether the device on which application is currently running supports touch input.</li>
+</ul>
+
+<h4>Editor Improvements</h4>
+
+<ul>
+<li>Reorganized GameObject creation menus with categories such as 3D Object, 2D Object, Light, etc. as well as improved functionality.
+
+<ul>
+<li>"Create Empty" now also appears in the hierarchy Create dropdown.</li>
+<li>The context menu for Game Objects in the hierarchy can now be used to create new Game Objects as children.</li>
+</ul></li>
+<li>More details on the error message when failing to add a Component due to already having another component that is incompatible. </li>
+<li>If during play mode a hierarchy window takes too long to fetch new data a warning icon will appear to advise users frame rate could be affected based upon the chosen hierarchy sorting.</li>
+<li>Editor: Made Scene View camera near and far clip planes use constant multipliers of size rather than four fixed ranges with fixed values that cause popping when transitioning over the thresholds of those ranges. The new ranges are about the same for close and medium zoom but has significantly larger near clip planes when zoomed far out, which reduces z-fighting.</li>
+<li>Made main Game View used by CameraEditor visualizations and the Canvas be the last focused Game View rather than just the first Game View found.</li>
+<li>Made sure the screen manager uses the correct game view size in the editor, which is only known on the managed side.</li>
+<li>Increased Texture anisotropic level limit to 16 in the Texture Inspector.</li>
+<li>Exposed "Generate Mip Maps" option in the Texture Inspector when in Sprite mode.</li>
+<li>Renamed TextureImporter spritePixelsToUnits to spritePixelsPerUnit and made old property obsolete. The old name was misleading.</li>
+<li>Curves can now be renamed in the animation window.</li>
+<li>Made SerializedProperty.displayName public.</li>
+<li>Enum options generated from SerializedProperty are now nicified just like for all other enum fields in the Inspector.</li>
+<li>Added SerializedProperty.enumDisplayNames that return the names for enum values as they're shown in the Inspector.</li>
+</ul>
+
+<h4>Mecanim Improvements</h4>
+
+<ul>
+<li>Animation of PPtr types are now supported in the animation window (textures, sprites, materials etc).</li>
+<li>SendTransformChanged is now only sent to transforms that are animated. Siblings with no animation will not receive SendTransformChanged.</li>
+</ul>
+
+<h4>2D Improvements</h4>
+
+<ul>
+<li>Default SpritePacker policies will automatically pack mipmapped sprites (padding power - 2).</li>
+<li>Aniso level for sprites with mip-maps now defaults to 16.</li>
+<li>SpritePacker will flood the atlas instead of adding 1 pixel borders to sprites.</li>
+<li>A new pixelsPerUnit property has been exposed on the Sprite class.</li>
+</ul>
+
+<h4>Android Improvements</h4>
+
+<ul>
+<li>Support for profiling Intel GPU using the Unity Editor.</li>
+<li>Added support for BGRA textures.</li>
+</ul>
+
+<h3>Changes</h3>
+
+<h4 class="pt0">Editor Changes</h4>
+
+<ul>
+<li>T is now assigned as default shortcut key for Rect tool. The Sprite Editor trim shortcut key defaults to Shift-T to avoid conflict with the Rect tool. </li>
+<li>Rect handles now do non-uniform scaling by default for consistency with a large range of other applications. Hold down shift to scale uniformly. </li>
+<li>The preference default for script language in the Add Component dropdown has been changed from Javascript to C#, since that's the new default for documentation and examples.</li>
+<li>Renamed spritePixelsToUnits to spritePixelsPerUnit in TextureImporterSettings.</li>
+</ul>
+
+<h4>Graphics Changes</h4>
+
+<ul>
+<li>Stencil buffer is now available in Unity Free.</li>
+</ul>
+
+<h4>2D Changes</h4>
+
+<ul>
+<li>Sprite Packer is now enabled by default.</li>
+<li>New Sprites now have mip-maps enabled by default.</li>
+</ul>
+
+<h3>Fixes</h3>
+
+<h4 class="pt0">Editor Fixes</h4>
+
+<ul>
+<li>Fixed occasional argument out of range exceptions when using Scene View tools.</li>
+<li>Picking of locked scene view layers is now prevented.</li>
+<li>ObjectSelector is now ensured to default to the Asset tab when selecting PhysicsMaterial2D objects.</li>
+</ul>
+
+<h4>Graphics Fixes</h4>
+
+<ul>
+<li>Fixed an issue where render texture was not being created due unsupported anti aliasing value on devices like Surface RT.</li>
+<li>Compressed sprites are no longer deformed on devices that support NPOT textures.</li>
+</ul>
+
+<h4>Animation Fixes</h4>
+
+<ul>
+<li>Fixed issue where changing the animated property to be Rect Transform Scale and trying to transition between 0 and 1 failed.</li>
+<li>Fixed crash when creating an AnimationClip on a humanoid rig.</li>
+<li>Fixes crash when previewing transitions on an Animator with UnscaledTime update mode.</li>
+</ul>
+
+<h4>2D Fixes</h4>
+
+<ul>
+<li>Unity no longer crashes if a mesh is dragged onto a SpriteRenderer.</li>
+<li>Fixed issue where 2D colliders break when used as prefab children.</li>
+</ul>
+
+<h4>Mobile Fixes</h4>
+
+<ul>
+<li>Windows Phone 8: Fixed a race condition in TouchScreenKeyboard which would cause ".active" to return false just after the keyboard was opened.</li>
+<li>Windows Phone 8.1: Fixed an issue which caused InputField and GUI.TextArea to always receive capital letters from the on screen keyboard.</li>
+<li>Android: Disabled shadows for Intel PowerVR devices to avoid graphics artifacts.</li>
+</ul>
+      </div>
+      <div class="g12 pt0">
+        <p class="c-mg">
+          <span class="b">Changeset:</span>
+                  </p>
+      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-4.5.5"></a></span>
+  <div class="tip">Unity 4.5.5</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-4.6.1"></a></span>
+  <div class="tip">Unity 4.6.1</div>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

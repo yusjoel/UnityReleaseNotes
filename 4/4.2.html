@@ -1,0 +1,512 @@
+<html>
+<head>
+  <title>What's new in Unity 4.2 - Unity</title>
+</head>
+<body>
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 4.2</h1>
+        <p>There’s an outstanding lineup of new features in Unity 4.2 including:</p>
+
+<ul>
+<li>Windows Store Apps, Windows Phone 8 and Blackberry 10 deployment</li>
+<li>Tons of great new graphics features</li>
+<li>OpenGL ES 3.0 API support</li>
+<li>iOS crash reporter</li>
+<li>Build and run cancellation</li>
+<li>Perforce integration</li>
+</ul>
+
+<p>Read the release notes for the full list of new features and updates.</p>
+        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="https://store.unity.com/">Get started</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h3>New Platforms and Licensing</h3>
+
+<ul>
+<li>Windows Store Apps ("WSA", for both x86 and ARM) and Windows Phone 8 support. Pro version of WSA/WP8 is free for Unity Pro owners!</li>
+<li>BlackBerry 10 support.</li>
+<li>Now free: all "Basic" mobile licenses.</li>
+<li>Now free: realtime shadows (one directional light only; hard shadows only).</li>
+<li>Now free: text-based serialization of materials, prefabs, scenes etc. for easier version control.</li>
+<li>Now free: NavMesh baking (OffMeshLinks still require Pro).</li>
+</ul>
+
+<h3>Graphics Features</h3>
+
+<ul>
+<li>Anti-aliased RenderTextures. Implemented on D3D9, D3D11, OpenGL, OpenGL ES 2.0 (iOS and some Android devices via GL_IMG_multisampled_render_to_texture), OpenGL ES 3.0.</li>
+<li>Image Effects, a batch of new goodies and improvements (update Image Effects package!)
+
+<ul>
+<li>Ambient Obscurance: Added "Screen Space Ambient Obscurance" effect, like old SSAO but better quality, faster and scales better to large resolutions.</li>
+<li>Bloom: Added mobile oriented "Bloom (Optimized)" effect; not as fancy as Bloom one but faster.</li>
+<li>Blur: Added mobile oriented "Blur (Optimized)" effect.</li>
+<li>Tilt Shift: Replaced old effect with "Tilt Shift (Lens Blur)" one; better quality and HDR support.</li>
+<li>Camera Motion Blur: Added "Reconstruction Disc" mode, quality tweaks to existing modes.</li>
+<li>Vignetting: Optimized performance and improved UI.</li>
+<li>Edge detection: Removed old simple "Edge Detection (Color)" effect, added it as a new mode into Edge Detection effect.</li>
+<li>Reorganized image effects menu structure to be more logical.</li>
+</ul></li>
+<li>Stencil buffer access (requires Unity Pro). Shaders can define stencil buffer operations that they perform, for optimizations or special effects.</li>
+<li>Shadows: Implemented static &amp; dynamic batching for shadow casters &amp; shadow collector pass. Note: many shadow casters can be batched even if they use different materials! They will be batched as long as the actual shadow caster shader &amp; material properties affecting it are the same.</li>
+<li>Shuriken: Collision event callback scripting interface. Efficient callbacks on GameObjects and ParticleSystems are issued when Shuriken particle collisions occur. Per particle callback data include collision positions, incident velocities, surface normals and Collider references allowing developers to, say, cause + damage to GameObjects and apply forces to RigidBodies.v</li>
+<li>GPU Skinning! (requires Unity Pro)
+
+<ul>
+<li>Completely automatic, no custom shaders needed.</li>
+<li>Works on DirectX 11 (via stream-out), OpenGL ES 3.0 (via transform feedback) and Xbox 360 (via memexport). Other platforms will continue to use CPU skinning.</li>
+</ul></li>
+<li>OpenGL ES 3.0 support for Android:
+
+<ul>
+<li>ES3 has nicer shadow filtering, ETC2 texture compression, GPU skinning via transform feedback, HDR rendering, multiple render targets, derivative instructions in shaders etc.</li>
+<li>A new option in Player Settings, next to ES1.x and 2.0 devices.</li>
+<li>Requires a GPU that can do ES3, for example Qualcomm Adreno 3xx or ARM Mali T6xx.</li>
+<li>Note that the official Android version does not support ES3 yet. So to test it you should install ES3 drivers directly from GPU makers (e.g. Qualcomm).</li>
+</ul></li>
+<li>Deferred Lighting is now enabled on Android and iOS.
+
+<ul>
+<li>Requires depth texture support and at least a 512MB RAM device.</li>
+<li>Note, it might still be too slow for big games scenes on anything but latest devices, so use with care.</li>
+</ul></li>
+<li>Added possibility to create Texture2D directly from native texture; Texture2D.CreateExternalTexture. This is mostly useful when your native code plugin creates textures itself.</li>
+</ul>
+
+<h3>Editor Features</h3>
+
+<ul>
+<li>Integrated version control support for Perforce.
+
+<ul>
+<li>Do common Perforce operations right inside Unity editor.</li>
+<li>We've made the integrated version control system extensible; support for more VCS will be coming later. Or you can write your own VCS plugin, see our plugin page on github.</li>
+</ul></li>
+<li>Platform switching, player building and asset importing can be cancelled now! How cool is that?</li>
+<li>Custom GameView resolutions &amp; aspect ratios. Custom settings are saved per project for easy sharing through version control (ProjectSettings/GameViewSizes.asset).</li>
+<li>Preset Libraries: You can now save the following types as presets:
+
+<ul>
+<li>Curves in the Curve Editor and Particle System Curve Editor.</li>
+<li>Gradients in the Gradient Editor.</li>
+<li>Colors in the Color Picker.</li>
+<li>Create new libraries either as personal libraries (saved in preferences) or shared libraries (saved in the project folder).</li>
+</ul></li>
+<li>Added a Quad primitive ;)</li>
+<li>Memory Profiler: Now shows the objects that have references to another loaded object. This can help pinpoint why a given object is in memory.</li>
+<li>Shader importer can have default textures specified. When you initially set a shader on a material or reset a material the textures will be set to these default textures.</li>
+<li>Texture importer now has "Alpha is Transparency" setting, which does color dilation to fix edge artifacts on semitransparent textures. It is enabled by default for GUI textures.</li>
+</ul>
+
+<h3>Mobile Features</h3>
+
+<ul>
+<li>Android: Added support for Android Library Projects (no compilation support, so the libraries have to be pre-compiled).</li>
+<li>Android: AndroidJavaProxy - Support for implementing Java interfaces in C#.</li>
+<li>Android: Editor can now update the Android SDK if it does not match the required dependencies.</li>
+<li>iOS: Added CrashReporter API for crash detection and extraction (requires Unity Pro).</li>
+<li>iOS: Now you can setup iOS PlayerSettings, texture import overrides and build iOS AssetBundles from Windows Editor. Building an actual iOS player still requires Mac OS X &amp; Xcode.</li>
+<li>iOS: WebCamTexture can be set non-readable (prior to playback), which allows it to output from camera directly to texture, avoiding extra memory copies.</li>
+<li>Editor: When in mobile graphics emulation mode, editor will show a warning when RenderTexture usage is not optimal for tile-based or multi-GPU systems. Use RenderTexture.MarkRestoreExpected() to suppress the warning if needed.</li>
+</ul>
+
+<h3>Other Features</h3>
+
+<ul>
+<li>Audio: Added Bypass Listener and Bypass Reverb Zones properties that enable turning off listener effects independently from the effects on the audio source. Thus, Bypass Effects only turns off the effects on the AudioSource, and the 3 flags can be combined freely.</li>
+<li>Audio: Added Disable Audio property in Audio project settings to deactivate the audio system in standalone builds. Note that this also affects the audio of MovieTextures. In the editor the audio system is still on and will support previewing audio clips, but AudioSource.Play calls and playOnAwake will not be handled in order to simulate behavior of the standalone build.</li>
+<li>Audio: Added "Prepare iOS For Recording" property in Player Settings (iOS &gt; Other Settings in the inspector). Turning it on will avoid the stalls that otherwise happen when starting or stopping the Microphone object.</li>
+<li>Editor: Editor extensions can now get a callback when Unity is about to open an asset. Use this callback to open an asset inside Unity before its opened in an external tool. Decorate a static method with the attribute UnityEditor.Callbacks.OnOpenAsset.</li>
+<li>Linux: Added basic webcam support for video4linux2-supported devices.</li>
+<li>Linux: Implement headless player; this will not require Xlib (requires Unity Pro).</li>
+<li>Mac OS X: 64 bit standalone player support (x86_64 and Universal).</li>
+<li>Mecanim: Avatar Creation API, for avatar creation from scripts at runtime or in the editor.</li>
+<li>Mecanim: Synchronized Layers option to override state durations.</li>
+<li>Mecanim: You can now set the default layer weight in the editor for your animator controller layer.</li>
+</ul>
+
+<h3>Changes</h3>
+
+<ul>
+<li>Asset bundles built in prior versions of Unity are no longer compatible with Unity 4.2 (this has been necessary because of changes to how built-in resources are handled).</li>
+<li>AssetDatabase.ImportPackage and AssetDatabase.ExportPackage can now be called repeatedly from within the same iteration of the game update loop (previously, successive calls would overwrite the buffered state of the previous one).</li>
+<li>Audio: 7.1 content can now be loaded in the editor (previously only 5.1 was allowed).</li>
+<li>Editor: Add MeshRenderer component dependency for TextMesh component.</li>
+<li>Editor: NavMeshLayers editing is now located as a tab in the Navigation Window.</li>
+<li>Editor: Terrain menu functionality moved to Terrain Inspector. Now you create a terrain by GameObject &gt; Create Other &gt; Terrain. Terrain settings previously in the menu are under Settings tab in terrain inspector.</li>
+<li>Font colors are now applied as vertex colors, instead of by setting the color on the material. This makes it work better with  markup tags in rich text strings. The color property in the font importer has been removed, and instead there are now color properties on the GUIText and TextMesh components to  let you set the color of text objects per instance instead of per font.</li>
+<li>Graphics: Disabled multisampling on NVIDIA cards on OS X earlier than 10.9 in Mac Web Player, due to driver issues.</li>
+<li>Graphics: Majority of built-in shaders are now only included into your game data if they are actually used. This saves about 200 kilobytes off your mobile game size if you're not using many built-in ones. If you need some built-in shaders to be available without explicit references to them (to make Shader.Find etc. work), set them up in Edit -&gt; Project Settings -&gt; Graphics (by default Diffuse shader is always included).</li>
+<li>Mac OS X Editor: The Editor on OS X will now allow symlinks in project folders to match Windows behavior. This can be used to share assets across projects, but is not recommended unless you know exactly what you are doing.</li>
+<li>Made several Unity API calls which had been undocumented for many years properly deprecated.</li>
+<li>NavMesh: "Reset" button in navmesh bake window is moved to window menu item.</li>
+<li>Resources.LoadAll() now permits a trailing slash when given a folder name.</li>
+<li>Web Player: the "Release Channels" context menu item will now only be visible when the Alt/Option key is pressed when opening the context menu.</li>
+</ul>
+
+<h3>Improvements</h3>
+
+<ul>
+<li>Android: Stylus support.</li>
+<li>Android: Support for xxhdpi resolution icons.</li>
+<li>Android: AndroidJNIHelper and AndroidJava classes will now throw exceptions on failed invocations.</li>
+<li>Android: Enhanced performance of AndroidJava and reduced the load on the dalvik GC.</li>
+<li>Android: If possible, use native sensors (accelerometer, compass, etc) instead of routing it through Java.</li>
+<li>Android: Improved error messages when build fails; added Retry option when device deployment fails; automatically create adb tunnel for profiler.</li>
+<li>Android: OBB is now exported in the root folder when exporting an android project.</li>
+<li>Android: Remove Eclipse project support in favor of Android project support.</li>
+<li>Asset Bundles: Compressed AssetBundles built with 4.2 or later will have reduced runtime memory usage when decompressing.</li>
+<li>Audio: Added a more informative error message when the audio device is changed during work in the editor or at runtime (i.e. when plugging in a screen that has built-in audio device such as HDMI screens).</li>
+<li>Building: Show a warning when assembly's internal and file names don't match. This can cause issues on platforms that do AOT.</li>
+<li>Editor: Added EditorGUIUtility.ShowObjectPicker to let editor extensions use it on demand.</li>
+<li>Editor: Added a Select Prefab item in the Hierarchy View context menu.</li>
+<li>Editor: Added EditorWindow.maximized bool. Use this to query if a window is maximized, set it to maximize/unmaximize a window. Is always false if the window is not docked.</li>
+<li>Editor: Gradient API now has alphaKeys and colorKeys properties.</li>
+<li>Editor: New #SCRIPTNAME_LOWER# token for use in script templates.</li>
+<li>Editor: Popups, buttons, color pickers, etc. in the inspector can now be opened by pressing Space.</li>
+<li>Editor: Show warning in inspector when you have non-power-of-two texture that cannot be compressed.</li>
+<li>Editor: Switching between DX9 and DX11 in player settings does not require editor restart now.</li>
+<li>Editor: Trying to open a project that is already open in another Unity instance will now simply display an error and then bring up the project selector (except in batch mode where it keeps triggering a fatal error and exits).</li>
+<li>Graphics: Optimized sorting of renderable objects for smaller CPU load.</li>
+<li>Graphics: Exposed Light.alreadyLightmapped to scripts.</li>
+<li>Graphics: reduced memory footprint of non-readable meshes.</li>
+<li>Graphics: Added WebCamTexture.videoVerticallyMirrored. Use Case: on iOS, when you use non-readable webcam texture, GL texture will be created on top of camera's target pixel buffer, which is vertically "flipped".</li>
+<li>iOS: Ability to disable "Replace" button when overwriting existing build.</li>
+<li>iOS: Added Objective-C VideoPlayer, to playback video to view or to a texture.</li>
+<li>iOS: Enforced keyboard to be shown on main thread (to play nicely with iOS6).</li>
+<li>iOS: Improved support for AppController subclassing and unity view integration with native UI.</li>
+<li>iOS: In case of unhandled exceptions iOS player now will generate crash report instead of exiting silently.</li>
+<li>iOS: Made Unity iOS apps PIE compatible.</li>
+<li>iOS: Added iPhone.vendorIdentifier and iPhone.advertisingIdentifier with iPhone.advertisingTrackingEnabled APIs for better manual control of what device ID to use.</li>
+<li>iOS: Xcode project cleaned up a bit.</li>
+<li>iOS: Native VideoPlayback can be now paused/resumed. You can seek and check if it is playing.</li>
+<li>iOS: Added UNITY_VERSION macro support for native code in trampoline. We also added a UNITY_4_2_0 macro to make it future-proof (we will add macros like that for future releases too). We now support these ways of checking the version:
+
+<ul>
+<li>you can use it like MSC_VER macro, i.e. if you want some code to be enabled only when using unity 4.4.1 or newer, do #if UNITY_VERSION &gt;= 441.</li>
+<li>you can do it in a way that resembles iOS SDK versioning, e.g. for version 4.4.1 and newer #ifdef UNITY_4_4_1.</li>
+<li>you can combine them, e.g. #if defined(UNITY_4_4_1) &amp;&amp; UNITY_VERSION &lt; UNITY_4_4_1</li>
+</ul></li>
+<li>Linux: Improved inter-application copy/paste.</li>
+<li>Linux: Add fullscreen scaling fallback for devices that don't support GL_EXT_framebuffer_blit.</li>
+<li>Mecanim: Allow scrolling when adding transition.</li>
+<li>Mecanim: Return warning message in console to user when we detect an invalid avatar while importing.</li>
+<li>Mobile: Optimized a bunch of rendering places to be more tiled-GPU friendly (as is common on mobile). This includes shadows, deferred lighting and most of image effects.</li>
+<li>Mobile: Added RenderTexture.DiscardContents with separate flags for color/depth discard.</li>
+<li>Mobile: Greatly improved performance of fixed function shaders on OpenGL ES 2.0. There's no reason to use ES 1.1 anymore.</li>
+<li>Mobile: Switched to one FBO object per RenderTexture; performance improvement with render texture switches.</li>
+<li>NavMesh: General crowd performance improvements.</li>
+<li>Profiler: Now roughly estimates how much application binary and loaded libraries take.</li>
+<li>Profiler: Open webstreams (for Asset Bundles etc.) report their used sizes.</li>
+<li>Profiler: Removed log spamming when manually connecting to IP.</li>
+<li>Scripting: Avoid pausing some threads during Mono garbage collection on Windows, OS X, and iOS. Helps prevent audio stutters during GC.</li>
+<li>Scripting: Added HideFlags.None enum value.</li>
+<li>Scripting: While compiling C# scripts, you can now use classes from System.Xml.Linq namespace.</li>
+<li>Shaders: Ability to output custom Z buffer value from shaders. Previously, a bug in Cg compiler prevented this on D3D9, we've worked around that. Note that some platforms (OpenGL ES 2.0, Flash) don't have ability to write custom values into Z buffer from pixel shaders.</li>
+<li>Shaders: Add ability to override how lightmaps are applied in surface shaders.</li>
+<li>Shadows: Better sorting of shadow casters for GPU efficiency.</li>
+<li>Shadows: Improved shadowmap filtering on OpenGL. It will use native GPU bilinear shadow filter when available, just like D3D9 and D3D11 does. No more "shadows are worse on Mac than on Windows"! Note: native shadowmap filtering disabled for Spot lights on Linux due to driver issues.</li>
+<li>Shuriken: Added script binding for ParticleSystem simulation space.</li>
+<li>Shuriken: Exposed particle axis of rotation to scripting API.</li>
+<li>Standalone: Added "fullscreen at native resolution" player setting.</li>
+<li>Standalone: Added player setting for single instance mode.</li>
+<li>Substance: Cloned ProceduralMaterials now inherit the original substance's animation rate.</li>
+<li>Substance: It is now possible to reliably assign ProceduralTextures from a SBSAR to the shader associated to a ProceduralMaterial from another SBSAR.</li>
+<li>Substance: ProceduralMaterial.ClearCache now takes effect immediately instead of being taken into account at next RebuildTextures call.</li>
+<li>Substance: ProceduralTextures created from a cloned ProceduralMaterial now have the same name and "RAW/Compressed" format as the original textures.</li>
+<li>Substance: Reimporting substances that have been modified in Play mode is now multithreaded.</li>
+<li>Substance: Editor scripts can now modify a ProceduralMaterial's size/format/behaviour using SubstanceImporter.Get/SetPlatformTextureSettings.</li>
+<li>Web Player: the "Release Channels" context menu now lists actual versions used for different channels.</li>
+</ul>
+
+<h3>Fixes</h3>
+
+<ul>
+<li>Android: Support for Android SDK rev22.</li>
+<li>Android: Added a workaround for ANR when using Apple magic mouse; fixed ANR caused by deadlock when using touch enabled controllers.</li>
+<li>Android: Added exception checks to avoid crashes in AndroidJNI.</li>
+<li>Android: Added JDK version detection.</li>
+<li>Android: Application no longer quits if joystick button 'A' is pressed before the first level has loaded.</li>
+<li>Android: Disabled shader cache on pre-Honeycomb devices due to buggy drivers; also disabled it on all Immersion GPUs due to driver bugs.</li>
+<li>Android: Editor; when switching between building a project and an actual apk, project is no longer replaced by the apk.</li>
+<li>Android: Fixed a problem with streaming assets in exported android project.</li>
+<li>Android: Fixed an issue where it was impossible to delete a project on windows due to adb keeping a lock in the project directory.</li>
+<li>Android: Fixed crash on GL context recreate.</li>
+<li>Android: Fixed crash when trying to read a non-existent string field through JNI.</li>
+<li>Android: Fixed IndexOutOfRangeException on faulty package name.</li>
+<li>Android: Fixed occasional crash on Nexus4 in shader compilation.</li>
+<li>Android: Fixed problem with crashing video player on 1st gen Kindle Fire.</li>
+<li>Android: Fixed propagation of key input events to OnGUI().</li>
+<li>Android: Fixed touch and stylus input on devices having a single surface emitting both at the same time.</li>
+<li>Android: Re-initialization of UnityPlayer is now possible.</li>
+<li>Android: Removed black screen rendered while loading first level using Unity free.</li>
+<li>Android: Reworked LocationService and Compass, to only compensate the magnetic declination when location is updated.</li>
+<li>Animation: Added error when assigning too few bind poses so mesh skin indexes would index out of bounds.</li>
+<li>Animation: Fix null reference exception in Clip tab of Model Importer.</li>
+<li>Audio: Fixed memory leak when attempting realtime streamed playback of tracker files (XM/MOD/IT/S3M). Realtime streamed playback is not supported for these files, but streams may still be used for loading the files fully before playing them.</li>
+<li>Audio: Fixed some down-mixing issues when compressing multi-channel material for Android/iOS.</li>
+<li>Audio: Fixed upside-down rendering of channels in previews.</li>
+<li>Audio: Use of OnAudioFilterRead should no longer causes random crashes.</li>
+<li>Audio: Fixed a memory leak when importing a large number of audio files at once.</li>
+<li>Building: When list of included assets is printed to editor console, built-in resources have proper names now, instead of empty strings.</li>
+<li>Caching: AssetBundles with a CRC not matching the request will be removed from the asset bundle cache.</li>
+<li>CacheServer: Improved robustness of LRU size calculation when replacing files in the cache server.</li>
+<li>Core: Fixed a crash where AsyncOperation.allowSceneActivation = false would cause an infinite loop when exiting playmode.</li>
+<li>Core: Fixed crash when exiting playmode and allowSceneActivation being disabled.</li>
+<li>Core: Fixed deadlock that could occur when asset bundles failed to load.</li>
+<li>Core: Assets referenced by GUISkin are now corectly retained.</li>
+<li>DX11: Fixed dynamic Meshes being inefficient on DirectX 11, mostly observable on WSA/WP8.</li>
+<li>DX11: Fix crash when setting ComputeBuffer stride to zero.</li>
+<li>DX11: Fixed Asset Store window not working on some machines when in DirectX 11 mode.</li>
+<li>DX11: Fixed crash with stacked cameras, HDR and some image effect combinations.</li>
+<li>DX11: Fixed some normal maps being decoded wrong (if the normal length has exceeded 1.0).</li>
+<li>DX11: Make Raw compute buffer types actually work.</li>
+<li>DX11: RenderTextures properly respect depthBits now; fixes really confusing behavior when a depth buffer was always created for a RenderTexture even if no depth buffer was requested.</li>
+<li>DX11: Fixed some fixed function shaders (AlphaTest or projected textures), and some Fog combinations not working properly on Intel GPUs.</li>
+</ul>
+
+<h5>&nbsp;</h5>
+
+<ul>
+<li>Editor: Improved importing of semitransparent PSD texture files. They are premultiplied with white color; this will be accounted for in Unity now.</li>
+<li>Editor: Active toolbar button rendered with correct style without a delay.</li>
+<li>Editor: Animation preview rendering problems fixed.</li>
+<li>Editor: AnimationWindow: Notify user if animating invalid game object hierarchy: When animating a object hiearchy user needs to ensure that names of object siblings are unique.</li>
+<li>Editor: Calling Focus() on an invisible EditorWindow no longer crashes.</li>
+<li>Editor: Camera frustum gizmo in Scene View now renders correctly when using normalized viewport rect.</li>
+<li>Editor: Dark skin loads correctly after upgrading/activating a Pro license.</li>
+<li>Editor: Displayed number of Asset Store previews in Project browser is consistent when zooming/resizing view.</li>
+<li>Editor: Do not force RGBA format for normal maps when building for OpenGL ES targets.</li>
+<li>Editor: Fix [HideInInspector] not working for shader properties.</li>
+<li>Editor: Fix Aux Windows causing assert when closed on OS X.</li>
+<li>Editor: Fix bad texture previews / mesh previews in linear lighting mode.</li>
+<li>Editor: Fix broken occlusion culling overlay window.</li>
+<li>Editor: Fix build target not updating correctly when switching between standalone platforms.</li>
+<li>Editor: Fix color picker zoomed preview being upside down on OS X.</li>
+<li>Editor: Fix copying of text in SelectableLabel in windows.</li>
+<li>Editor: Fix crash if terrain alpha map textures get out of sync with the alpha map resolution setting.</li>
+<li>Editor: Fix crash when loading assemblies with invalid references.</li>
+<li>Editor: Fix crash while attempting to deserialize abstractly typed fields.</li>
+<li>Editor: Fix flicker of progress bar when reserializing all assets to switch between text and binary serialization.</li>
+<li>Editor: Fix inaccuracy caused by window margins in HandleUtility.WorldToGUIPoint() and HandleUtility.GUIPointToWorldRay().</li>
+<li>Editor: Fix incorrect GameView rendering rect when having multiple GameViews.</li>
+<li>Editor: Fix index out of bounds exception in BuildPlayerWindow when opening a project which was previously opened by another Unity Editor which had more platforms in the list.</li>
+<li>Editor: Fix MonoBehaviour.OnApplicationFocus() on Windows platform.</li>
+<li>Editor: Fix null ref when setting text mesh font with no renderer component.</li>
+<li>Editor: Fix that animation window could not expand Transform components.</li>
+<li>Editor: Fix that project browser multi-selection was lost when shift-selecting beyond start and end.</li>
+<li>Editor: Fix that shift-delete deleted assets while renaming.</li>
+<li>Editor: Fix the focus switch problem when the user press 'alt-tab' or 'ctrl-tab'.</li>
+<li>Editor: Fixed "Export Package..." failing on OSX in some cases.</li>
+<li>Editor: Fixed crash in lightmapping window when multi-selecting renderers.</li>
+<li>Editor: Fixed crash when multi-selecting MonoBehaviours with missing scripts.</li>
+<li>Editor: Fixed crash when opening scene with a reference to a prefab that has become empty.</li>
+<li>Editor: Fixed empty Application.LoadLevelName after loading scene from an assetbundle.</li>
+<li>Editor: Fixed forcing texture to be power of two size if PVRTC compression is selected.</li>
+<li>Editor: Fixed lightmaps getting wrong compression format on platform change (between mobile and other platforms).</li>
+<li>Editor: Fixed out of memory issue when building player with lots of resources files in it. Material texture references are now loaded on first use in the editor. In the player they are always preloaded.</li>
+<li>Editor: Fixed Substance texture preview in some cases producing invalid mipmap bias settings.</li>
+<li>Editor: Fixed that some keyboard keys could not be used for MenuItem shortcuts (e.g "," and "." can now be used).</li>
+<li>Editor: Fixed wireframe scene view rendering not working on some shader model 3.0 shaders on Windows.</li>
+<li>Editor: For Add Component window search function, always pick the first search result whenever the search changes.</li>
+<li>Editor: Log error if user is calling GUI.Windows nested in window functions.</li>
+<li>Editor: Make animated speed of transitions in AddComponent menu not be framerate dependent.</li>
+<li>Editor: Make welcome dialog point to new URL for video tutorials.</li>
+<li>Editor: Object Selector shows built-in shaders now.</li>
+<li>Editor: Opening the Add Component window will now work when adding a MenuItem to the Components menu with priority less than 20.</li>
+<li>Editor: Pasting a Particle System as a new component will now properly copy the Renderer values.</li>
+<li>Editor: PropertyDrawers now also work for private members in base classes.</li>
+<li>Editor: Scene view gizmo picking fixed.</li>
+<li>Editor: Texture preview Labels will not be offset and clipped in some cases.</li>
+<li>Editor: Throw mono exception (instead of crash), when unwrapping mesh without triangles assigned.</li>
+<li>Editor: Fixed target texture size override not storing it's value correclty in the texture importer for the web player target.</li>
+<li>Editor: Having a mesh asset preprocessor or doing Reset on mesh import settings no longer turns "Swap UVs" option on.</li>
+<li>Fonts: Fixed embedding font data for styled fonts.</li>
+<li>Fonts: Duplicating a dynamic font using Instantiate will result in garbage font rendering. User is now notified that duplicating a dynamic font is not allowed.</li>
+<li>Graphics: Fix GrabPass when running fullscreen at non-native resolution on Mac and Linux.</li>
+<li>Graphics: Fix linear lighting when running fullscreen at non-native resolution on Mac and Linux.</li>
+<li>Graphics: Fixed "Use Lightmaps" in the Forward Rendering path, available via Lightmap Display scene view overlay.</li>
+<li>Graphics: Fixed Camera.CopyFrom not copying some properties (rendering path, custom projection, layer cull distances etc.).</li>
+<li>Graphics: Fixed development standalone players sometimes crashing on Windows when doing Alt-Tab.</li>
+<li>Graphics: Fixed dynamic batching not working on meshes that use "Mesh Compression" import setting (regression in 4.0).</li>
+<li>Graphics: Fixed incorrect scissoring of point/spot lights when a custom projection matrix is used.</li>
+<li>Graphics: Fixed light "Draw Halo" checkbox not working unless there's some Halo component somewhere.</li>
+<li>Graphics: Fixed point &amp; spot lights not affecting lightmapped objects in dual-lightmap forward rendering mode.</li>
+<li>Graphics: Fixed RenderTextures being invalidated in Windows Standalone player when moving the window.</li>
+<li>Graphics: Made the Rendering area in the profiler show proper stats on multithreaded Win-non-dx11, Mac, iOS and Flash.</li>
+<li>Graphics: Using BlendOp in a shader doesn't cause the text in the Editor to appear garbled anymore.</li>
+<li>Graphics: Fixed crash on Windows standalone player exit exit when using OpenGL.</li>
+<li>Graphics: Fixed legacy MeshParticleEmitter crash when the mesh has no vertices.</li>
+<li>iOS: Do not render the default cursor as no iOS devices support cursors.</li>
+<li>iOS: Fixed CFBundleShortVersionString setting in Info.plist.</li>
+<li>iOS: Fixed crash on startup on iPhone 3GS (some versions of iOS5), where empty array of screens is returned.</li>
+<li>iOS: Fixed deprecated API usage for Keyboard.</li>
+<li>iOS: Fixed gyroscope restart problem.</li>
+<li>iOS: Fixed memory leak in GL.InvalidateState.</li>
+<li>iOS: Fixed multiline Keyboard not having "done" button.</li>
+<li>iOS: Fixed Ping stripping issue.</li>
+<li>iOS: Fixed static batching performance regression.</li>
+<li>iOS: Fixed various issues with video playback: view stretch after canceling video, second movie in a row cannot be played, status bar is not shown after returning from video, etc.</li>
+<li>iOS: Fixed Xcode launching issue when script code supplies relative path.</li>
+<li>iOS: Fixed iOS player hangup issue on single core devices.</li>
+<li>iOS: Improved Guid API compatibility with managed code stripping.</li>
+<li>iOS: Made structs/enums in trampoline be C-style typedefs, for better interop with ObjectiveC plugins.</li>
+<li>iOS: Playing two movies in a row will not cause a second movie to disappear.</li>
+<li>iOS: Project will not be replaced if doing a silent build and can't append to existing build. Instead, a save dialog will be shown.</li>
+<li>iOS: Unity Remote now always will report multitouch supported.</li>
+<li>Lightmapping: Fixed crash when a TextMesh has been marked for lightmapping.</li>
+<li>Lightmapping: Lightmap atlasing now always tightly packs object UVs based on their bounding rectangles.</li>
+<li>Lightmapping: Made baking of terrains much quicker when Color Space is set to Linear.</li>
+<li>Linux: Copy StreamingAssets when building player.</li>
+<li>Linux: Enable native rendering plugin callbacks.</li>
+<li>Linux: Fix Application.CancelQuit() and Application.OpenURL().</li>
+<li>Linux: Fix crash when attempting to read a non-readable mesh.</li>
+<li>Linux: Fix double-click.</li>
+<li>Linux: Fix miscellaneous rendering issues on low-end intel graphics cards.</li>
+<li>Linux: Fix plugin detection when the plugin resides in a subfolder (DllImport("foo/bar")).</li>
+<li>Linux: Fix pointer offsets when dynamically resizing player windows.</li>
+<li>Linux: Fixed keyboard shortcuts for text fields.</li>
+<li>Linux: Improve ctrl/alt/shift keypress detection; improved keyboard modifier handling while typing/mousing.</li>
+<li>Linux: Make handling of scroll wheel axis more consistent with other platforms.</li>
+<li>Mecanim: Fixed crash with interuptible transitions.</li>
+<li>Mecanim: AnimationClip.length was not returning the right value for clip created from script.</li>
+<li>Mecanim: Blending between two clip with negative scaling was wrongly returning a positive scale.</li>
+<li>Mecanim: Check consistency for older avatar asset. Older avatar file pre 4.0 were not valid anymore and could crash in some cases.</li>
+<li>Mecanim: Fix Avatar body mask UI accuracy. Selection around the neck and upper torso was not accurate.</li>
+<li>Mecanim: Fix Avatar with scale on root not reaching IK goal.</li>
+<li>Mecanim: Fix Blend Tree type selector in inspector.</li>
+<li>Mecanim: Fix broken blend tree visualization when using Freeform Directional blending with no motion in the center.</li>
+<li>Mecanim: Fix clip's additionnal curve binding to controller's parameter when type doesn't match.</li>
+<li>Mecanim: Fix crash if you set a small speed value for a state and then preview any transition going from or to this state.</li>
+<li>Mecanim: Fix culling bug, at runtime if you add a new renderer it was not added to the animator's list of renderer to compute if it should update the Animator.</li>
+<li>Mecanim: Fix error message UnityEngine.Transform.get_position when creating an Avatar whose mesh is not skinned.</li>
+<li>Mecanim: Fix IK hand moving on Y axis on iOS.</li>
+<li>Mecanim: Fix iOS precision error for IK and root motion.</li>
+<li>Mecanim: Fix MatchTarget function for small characters. The matching was done in the wrong transform space.</li>
+<li>Mecanim: Fix memory leak in state machine; fix memory leak with recorder.</li>
+<li>Mecanim: Fix multi selection of node in animator window now correctly delete all selected node rather than just the last one.</li>
+<li>Mecanim: Fix multi-edition of Animator, avatar and apply root motion field can now be multi-edited too.</li>
+<li>Mecanim: Fix NullRefException when selecting a prefab with Animator Controller set to null.</li>
+<li>Mecanim: Fix Reset button for Animator.</li>
+<li>Mecanim: Fix StateMachine copy-paste.</li>
+<li>Mecanim: Fixed crash in transition preview with 1 frame animation.</li>
+<li>Mecanim: Fixed crash when building standalone with synchronized layer referencing a layer that was after the synchronized layer in the layer's list.</li>
+<li>Mecanim: Fixed crash when previewing empty AnimatorController.</li>
+<li>Mecanim: Fixed crash when previewing transition with state with no animation.</li>
+<li>Mecanim: Fixed preview state mirror in transition preview.</li>
+<li>Mecanim: Fixed transition reordering with different StateMachines.</li>
+<li>Mecanim: Fixes crash when deleting or reordering some transitions; and with 0 duration transitions.</li>
+<li>Mecanim: Fixes transition previewer being slow.</li>
+<li>Mecanim: In some case Avatar mapping was not saved correctly when manually set by a user. Transform not attached to a renderer or without any child attached to a renderer were discarded.</li>
+<li>Mecanim: OnAnimatorIK and OnAnimatorMove () won't be call anymore on disabled scripts.</li>
+<li>Mecanim: Right-clicking on a state in the Animator window now properly shows the context menu.</li>
+<li>Mecanim: When creating a transition from or to a blend tree with no motion, the transition duration was set to Infinity which could produce some crash or hang unity when trying to preview this transition.</li>
+<li>Mecanim: Fixed transitions with transforms having negative scales.</li>
+<li>Mobile: Fixed occasional crash in Substance system when loading Asset Bundles.</li>
+<li>Mobile: Fixed RenderTexture.DiscardContents to correctly use glDiscardFramebufferEXT.</li>
+<li>Mobile: Fixed unaligned memory accesses in BitStream.</li>
+<li>Native Client: Fixed a bug in color multiplication math which could cause wrong colors to be displayed.</li>
+<li>Native Client: Fixed a crash loading PNG files.</li>
+<li>Native Client: Fixed asset garbage collection not to incorrectly collect assets which were still being referenced.</li>
+<li>Native Client: Fixed some rendering issues with particles when the mouse is clicked.</li>
+<li>Native Client: Mono is now built from our own sources and is no longer subject to the LGPL.</li>
+<li>Native Client: Fix "Development Player" label always showing.</li>
+<li>Native Client: Fix color of Terrain details.</li>
+<li>Native Client: Fix File Access error message on start up.</li>
+<li>Native Client: Fix incorrect methods being used for http requests in WWW class (POST instead of GET).</li>
+<li>Native Client: Fixed a memory leak in the WWW class.</li>
+<li>Native Client: Fixed a potential crash when loading unity3d files (including the game main data itself).</li>
+<li>NavMesh: Fixed crash when loading scenes while NavMeshAgents are marked by "DontDestroyOnLoad".</li>
+<li>NavMesh: Fixed issue where agent move state was affected when calling CompleOffMeshLink while not occupying an OffMeshLink.</li>
+<li>NavMesh: Fixed issue where calling ResetPath while occupying an OffMeshLink would leave the OffMeshLink inaccessible.</li>
+<li>NavMesh: Fixed issue where NavMesh.SamplePosition could return sub-optimal position for large query radius.</li>
+<li>NavMesh: Fixed issue where outstanding agent path requests could get corrupted when adding new agents.</li>
+<li>NavMesh: Fixed issue where remainingDistance would return too optimistic value.</li>
+<li>NavMesh: Fixed regression where agent would accelerate too fast when doing moves shorter that agent diameter.</li>
+<li>Physics: Changing gravity will wake up sleeping Rigidbodies.</li>
+<li>Physics: Fixed a crash in raycasts against BoxColliders on 64 bit Windows.</li>
+<li>Physics: Fixed a crash related to destroying colliders while Time.timeScale is zero.</li>
+<li>Physics: Hinge Joints now have sane range limits.</li>
+<li>Scripting: Fixes to Mono GC to avoid 'GetThreadContext' error issue on Windows.</li>
+<li>Scripting: Fix constraints for Time.scale so that it cannot be negative.</li>
+<li>Scripting: "new Font()" will now produce a valid Font instance (useful when programmatically generating font assets).</li>
+<li>Scripting: Avoid crash if behaviors are destroyed from OnDisable.</li>
+<li>Scripting: Avoid crash when creating MaterialPropertyBlock in MonoBehaviour constructor.</li>
+<li>Scripting: Editor and Windows standalone should now be able to correctly use Mono.Posix assembly.</li>
+<li>Scripting: Fix Windows crash on OutOfMemory.</li>
+<li>Shaders: Fixed HLSL-to-GLSL shader translation when a shader modifies global variables; regression introduced in 4.1.</li>
+<li>Shaders: Fixed tex2Dgrad/texCUBElod/texCUBEgrad support for mobile shaders.</li>
+<li>Shaders: Fixed rare bug when a fixed function dot3 texture combiner could get wrong alpha channel state.</li>
+<li>Shaders: Fixed shader keywords not being copied for instantiated materials.</li>
+<li>Shaders: Fixed some surface shaders not being liked by DX11 shader compiler (errors about structs not being fully initialized).</li>
+<li>Shaders: Fixed surface shader code generation if you're trying to output Normal into Emission, and are not writing to normal otherwise.</li>
+<li>Shaders: Make sure that vertex shader output is always high precision on mobile; fixes some problems on Mali 6xx GPUs if you accidentally have half4 position.</li>
+<li>Shaders: Worked around Cg shader code generation bug that happened on saturate(texture2D(...)); Cg was generating invalid D3D9 shader code on this.</li>
+<li>Shuriken: Fix collision module such that trigger objects do not cause particle collisions.</li>
+<li>Shuriken: Fixed errors when manually emitting particles with a non-unit axis of rotation.</li>
+<li>Shuriken: Fixed horizontal and vertical billboard modes to be properly aligned with coordinate axes.</li>
+<li>Shuriken: Fixed issue with particle systems not shutting down properly.</li>
+<li>Shuriken: Fixed some gradient settings being lost when upgrading project from Unity 3.5.x to 4.x.</li>
+<li>Shuriken: Fixed issue with Emit() function when the particle system has a scaled parent object. The emitter shape would be scaled incorrectly.</li>
+<li>Substance: B2M instances should no longer lose their output texture references when entering/leaving Play mode.</li>
+<li>Substance: Better strategy for mapping ProceduralTextures to shaders slots and for remembering custom assignments.</li>
+<li>Substance: Fix crash due to a race condition on resource deallocation.</li>
+<li>Substance: It is now possible to properly clone all substance graphs in a SBSAR (previously the first cloned graph would be instantiated when cloning other graphs).</li>
+<li>Substance: Instance names are now properly sorted in the Inspector (B2M_10 would previously be listed before B2M_2).</li>
+<li>Substance: Unnecessary reimports of multigraph Substances are no longer performed when leaving Play mode.</li>
+<li>Substance: Deletion of the single remaining instance of a ProceduralMaterial in the Inspector is now prevented (this would previously result in an empty SubstanceImporter).</li>
+<li>Substance: Option groups for newly cloned/instantiated substances in the Inspector no longer show only the first option from each group.</li>
+<li>Substance: ProceduralMaterials attached to prefabs that were loaded in levels other than the first one and that were cloned but not modified themselves are no longer reimported after exiting Play mode.</li>
+<li>Substance: ProceduralTexture::GetPixels32 now works on cloned substances.</li>
+<li>Substance: SBSAR should now properly auto-refresh when the asset is modified on disk.</li>
+<li>Substance: Fixed potential deadlock when using ProceduralMaterial.</li>
+<li>Substance: Fixed memory leak.</li>
+<li>Substance: DoNothing substances in asset bundles are no longer generated when the assetbundle is loaded, but only when RebuildTextures/Immediately is called instead.</li>
+<li>Substance: Resetting a ProceduralMaterial from the Inspector no longer causes the 'Generate All Outputs' checkbox to be checked.</li>
+<li>UnityGUI: Fix crash when passing a null GUIContent to various methods.</li>
+<li>Web Player: Fixed regression playing back content using old grid fonts.</li>
+<li>Web Player: Fixed a bug in PlayerPrefs, which made Firefox crash on close.</li>
+<li>Web Player: Fixed some crashes during startup and when entering full-screen mode.</li>
+<li>Webcam: Fixed Fatal Error on scene loading when WebCamTexture was used in a scene; and fixed a crash on quitting Windows Standalone players with webcam textures.</li>
+<li>Webcam: When requesting user authorization to use microphone Unity was previously asking for permission to the web camera.</li>
+<li>Windows: Fixed crash when closing the display resolution dialog of the player.</li>
+<li>WWW: Fixed CRC calculation to give correct results.</li>
+</ul>
+
+<h3>Upgrade guide</h3>
+
+<ul>
+<li>See "Changes" section above!</li>
+<li>iOS: We renamed AppController.mm/h to UnityAppController.mm/h to highlight the fact that we now allow your own AppDelegate (derived from UnityAppController). If you have plugins including AppController.h you can simply include UnityAppController.h instead. If you have AppController.mm/h in Plugins/iOS folders you can merge and rename them. Anyway, we urge you to consider moving to new AppDelegate model: if you needed to do some view tweaking, now you can do it without ever touching Unity's trampoline, meaning no upgrade pains.</li>
+<li>Deprecation heads-up. In the next release (4.3), we plan to drop:
+
+<ul>
+<li>OpenGL ES 1.1 support on mobile (set Rendering Path to VertexLit in player settings and it should be very similar experience on OpenGL ES 2.0)</li>
+<li>Pre-DX9 GPU support on PC (Windows/Mac/Linux). This means, NVIDIA GPUs before GeForce FX (2003), AMD GPUs before Radeon 9500 (2002) and Intel GPUs before GMA 900 (2004). Shader Model 2.0 will be the new minimum requirement.</li>
+</ul></li>
+<li>MonoDevelop may fail to start correctly on Windows if an old version of Gtk# is installed on the system. Please uninstall this version, and install a newer one if still needed.</li>
+</ul>
+      </div>
+      <div class="g12 pt0">
+        <p class="c-mg">
+          <span class="b">Changeset:</span>
+                  </p>
+      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-4.1.5"></a></span>
+  <div class="tip">Unity 4.1.5</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-4.2.1"></a></span>
+  <div class="tip">Unity 4.2.1</div>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

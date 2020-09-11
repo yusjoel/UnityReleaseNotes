@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>What's new in Unity 3.5.7 - Unity</title>
+</head>
+<body>
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 3.5.7</h1>
+        <p>This release of Unity primarily contains fixes to Unity 3.5. For more information about recent features, see the <a href="/unity/whats-new/unity-3.5">Unity 3.5 Release Notes</a>.</p>
+
+<ul>
+<li>Shuriken Particle System</li>
+<li>Built-in Pathfinding</li>
+<li>Upgraded Occlusion Culling &amp; new LOD</li>
+<li>Google Chrome Native Client deployment</li>
+<li>Linear Space Lighting and HDR</li>
+</ul>
+        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="https://store.unity.com/">Get started</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h3>Changes</h3>
+
+<ul>
+<li>Android: Detect manifest permissions for Application.genuine / .genuineCheckAvailable.</li>
+<li>Android: Added JB MR1 to the list of API levels.</li>
+<li>Android: Added support ldpi/xhdpi icon images.</li>
+<li>Android: Added Android as a valid build target for custom PostprocessBuildPlayer script.</li>
+<li>Android: Forcing 16bit display buffer on pre-Gingerbread devices.</li>
+<li>Android: Stereo sound enforced to avoid garbled audio when mono is selected as speaker mode.</li>
+<li>iOS: Added iPad Mini and iPad 4th gen detection.</li>
+<li>Mobiles: Skinning is now multithreaded if the device has more then one core.</li>
+</ul>
+
+<h3>Fixes</h3>
+
+<ul>
+<li>Android: Fixed Resources.Load() of prefabs consuming too much memory.</li>
+<li>Android: Prevent NullPointerExceptions when using LVL on a device that is not signed in to Google Play.</li>
+<li>Android: Fixed a lot of key store related problems.</li>
+<li>Android: Fixed an optimization error which could cause javac to crash/fail when loading UnityPlayer class.</li>
+<li>Android: Kindle Fire incorrectly reported having a camera.</li>
+<li>Android: Fixed an issue where dictionary pop-ups would close the TouchScreenKeyboard.</li>
+<li>Android: Application pause now cancels the TouchScreenKeyboard.</li>
+<li>Android: Fixed auto-rotation problem in landscape/reversed landscape on Kindle Fire HD.</li>
+<li>Android: Fixed a problem where multiple screen touches would lead to incorrect touch phases (especially during low framerate situations).</li>
+<li>Android: The detection zone for screen touches resulting in increased tap count has been made resolution independent.</li>
+<li>Android: SystemInfo.deviceUniqueIdentifier didn't automatically add the right permissions in the manifest.</li>
+<li>Android: Fixed a problem with non-ASCII characters and keyboard input.</li>
+<li>Android: Fixed a performance problem affecting the ARMv6 lib.</li>
+<li>Android: Fixed rare crashes with dynamic batching in non-development player on PowerVR GPUs.</li>
+<li>Android: Fixed performance regression with selecting egl config with msaa enabled albeit no msaa was selected in quality settings.</li>
+<li>Android: Worked around bug in NVIDIA drivers resulting in texture samplers sometimes not being reported.</li>
+<li>Android: Worked around compositor issue with DisplayBuffer alpha on pre-GB and kindle devices.</li>
+<li>Android: Fixed performance regression when rendering dynamic geometry, like dynamic batching, GUI, particles, etc, on PowerVR / SGX hardware.</li>
+<li>Android/iOS: Incorrect mouse hover events stemming from screen touches has been fixed.</li>
+<li>iOS: fixed www status code handling.</li>
+<li>iOS: fixed gyro accuracy problems when running on iOS 6.0 devices.</li>
+<li>iOS: Better performance when setting RenderTexture that has different size from the current one.</li>
+<li>iOS: removed unnecessary iPhone 5 splashscreen from iPad-only builds.</li>
+<li>Mac OS X Editor: Fixed installing on Mac OS X 10.5.</li>
+<li>Mac OS X Editor: Fixed crash on selecting RenderTexture on Mac OS X 10.7.5 with Radeon graphics card.</li>
+<li>Editor: Fixed windows standalone icons alpha issues.</li>
+<li>Native Client: Fixed Build &amp; Run on Chrome 23.</li>
+<li>Fix export bitmap only working when the substance is tweaked right beforehand</li>
+<li>Web Player: Fixed fullscreen mode initialization in IE10 on Windows 8. Web Player now tries to detect whether it is running in a sandbox.</li>
+</ul>
+
+<h3>Improvements</h3>
+
+<ul>
+<li>Android: Improved build times for projects with lots of resources.</li>
+<li>Webplayer: Reduced memory activity on LZMA decompression by reusing the decompression buffer</li>
+</ul>
+      </div>
+      <div class="g12 pt0">
+        <p class="c-mg">
+          <span class="b">Changeset:</span>
+                  </p>
+      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-3.5.6"></a></span>
+  <div class="tip">Unity 3.5.6</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-4.0"></a></span>
+  <div class="tip">Unity 4.0</div>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title>What's new in Unity 4.1.2 - Unity</title>
+</head>
+<body>
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 4.1.2</h1>
+        <p>The Unity 4.1.2 release brings you Web Player features and fixes. Read the release notes below for details.</p>
+
+<p><em>Note that in Unity 4.1.1 an issue was causing Asset Store packages to fail. In 4.1.2, UnityEngine.dll and UnityEditor.dll are no longer signed/strong-named, and compiled assemblies can now reference the UnityEditor and UnityEngine namespaces again.</em></p>
+
+<p>The Unity 4.1.1 release notes have been combined with the Unity 4.1.2 notes below.</p>
+
+<p>For more information about the previous main release, see the <a href="/unity/whats-new/unity-4.1">Unity 4.1 Release Notes</a>.</p>
+        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="https://store.unity.com/">Get started</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h3>Features</h3>
+
+<ul>
+<li>Web Player: Secret information can now be injected into a running web player via Javascript, with access to that information controlled by cryptographic signatures. Security.GetChainOfTrustValue can be used to retrieve this secret information, provided that the Security object is called from an assembly whose cryptographic signature is valid and matches the signature passed in when the secret is injected. For further information, see the Manual.</li>
+</ul>
+
+<h3>Improvements</h3>
+
+<ul>
+<li>Android: Stylus support .</li>
+<li>UI: Windows can now be displayed modally using the GUI.ModalWindow call. Modal windows appear on top of all other Unity GUI elements and prevent interaction with all Unity GUI elements not within the modal window while open. Only one modal window can be open during a frame.</li>
+</ul>
+
+<h3>Fixes</h3>
+
+<ul>
+<li>Android: Fixed touch and stylus input on devices having a single surface emitting both at the same time.</li>
+<li>Android: Fixed performance regression with static batching.</li>
+<li>Android: Added a workaround for android issue 41755 - ANR when using apple magic mouse.</li>
+<li>Android: Fixed an issue where "Stream from disc" audio was really slow when used with the "Split Application Binary" option.</li>
+<li>Android: Fixed an issue where "Stream from disc" audio was broken when used with the "Split Application Binary" option.</li>
+<li>DX11: Fixed GPU profiler not working (regression in 4.1).</li>
+<li>Fix Crash in libmono.so due to GC_abort.</li>
+<li>Fix ArgumentException: Invalid platform target" when trying to switch platform.</li>
+<li>Graphics: Fixed Graphics.activeColorBuffer, activeDepthBuffer etc. crash when there's no active render target (regression in 4.1).</li>
+<li>GUI: Modal GUI windows are now always on top of all other Unity GUIs, regardless of GUI.depth value.</li>
+<li>GUI: When right-clicking on a window, context-menu events are once again being fired properly.</li>
+<li>Native Client: Fixed "Development Player" label showing on non-development players.</li>
+<li>Shuriken: Fixed an issue where particle rotations were broken.</li>
+<li>Social API: Fixed problem loading leaderboard scores in Mac OS X 10.8 GameCenter.</li>
+<li>UnityEngine.dll and UnityEditor.dll are no longer signed/strong-named. Compiled assemblies can once again reference the UnityEditor and UnityEngine namespaces.</li>
+<li>Web Player: Chain of Trust system now requires signed assemblies to be loaded with new Security.LoadAndVerifyAssembly method in order to be eligible to call Security.GetChainOfTrustValue. Values stored in the Chain of Trust are still only accessible to assemblies signed with the specified public key.</li>
+<li>Webplayer: Fixes a bug where using the WWW class in the web player would cause 50ms hiccups for each instance.</li>
+<li>Webplayer: Application.ExternalEval and Application.ExternalCall will now properly escape Javascript strings with embedded escape sequences.</li>
+</ul>
+      </div>
+      <div class="g12 pt0">
+        <p class="c-mg">
+          <span class="b">Changeset:</span>
+                  </p>
+      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-4.1"></a></span>
+  <div class="tip">Unity 4.1</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-4.1.3"></a></span>
+  <div class="tip">Unity 4.1.3</div>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

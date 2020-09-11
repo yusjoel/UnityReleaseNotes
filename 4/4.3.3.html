@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>What's new in Unity 4.3.3 - Unity</title>
+</head>
+<body>
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 4.3.3</h1>
+        <p>The Unity 4.3.3 release brings you some features, changes, improvements and fixes. Read the release notes below for details.</p>
+
+<p>For more information about the previous main release, see the <a href="/unity/whats-new/unity-4.3">Unity 4.3 Release Notes</a>.</p>
+        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="https://store.unity.com/">Get started</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h2>Feature</h2>
+
+<ul>
+<li>Windows Store Apps/Windows Phone: added implementation for some .NET classes, missing on these platforms, including XmlDocument, XmlTextReader, XmlTextWriter and some collection classes (detailed list in documentation section "Missing .NET Types" for either of two platforms)</li>
+<li>Windows Store Apps: Add UnityEngine.WSA.Launcher class, it can be used for opening external files or uri.</li>
+</ul>
+
+<h2>Change</h2>
+
+<ul>
+<li>iOS: WWW class implementation extracted to trampoline. Now it allows tweaking of self-signed certificate acceptance.</li>
+<li>Web Player: Add 360 game box support in the web plugin.</li>
+<li>Windows Store Apps/Windows 8.1: Independent Input Source and Low Latency Frame API are now disabled by default, you can enable them via Player Settings.</li>
+</ul>
+
+<h2>Improvement</h2>
+
+<ul>
+<li>Windows Store Apps/Windows 8.1: SwapChainPanel is now supported, you can set via appCallbacks.SetSwapChainPanel</li>
+<li>Windows Store Apps/WP8: When unloading unused assets, Unity will output asset names, which are still being used, but are not strongly referenced. That should help identifying problems, where some prefabs are being unloaded.</li>
+<li>Windows Store Apps: Add "Unprocessed plugins" option in PlayerSettings, so you can specify plugin names, which shouldn't be processed, simply specify plugin file name, for ex., MyPlugin.dll. This should help workaround problems where Unity fails to preprocess an assembly, but actually doesn't need to do it.</li>
+<li>Windows Store Apps: Added additional defines for scripts: UNITY_METRO_8_0 - when building against Windows SDK 8.0, UNITY_METRO_8_1 - when building against Windows SDK 8.1</li>
+<li>Windows Store Apps: If you have different plugins for Windows 8 and Windows 8.1, you can place them accordingly to Assets\Plugins\Metro\Win80, Assets\Plugins\Metro\Win81, Unity will pick appropriate directory depending on the selected SDK.</li>
+<li>WP8: Emulate DX11 level 9.3 graphics in editor to have features similar to actual device</li>
+</ul>
+
+<h2>Fixes</h2>
+
+<ul>
+<li>2D: Correctly initialise Sprite textureRect if all pixels are transparent.</li>
+<li>2D: Fixed broken sprite mesh generation in certain cases.</li>
+<li>2D: Fixed SpriteRenderer inspector memory leak.</li>
+<li>Allowing user to re-activate Unity when upgrading from Windows 8 to Windows 8.1</li>
+<li>Android: added fallback to 24/32bit display buffer when 16bit display buffer is selected but not supported by the device.</li>
+<li>Android: fixed a crash due to threads still being attached to dvm when exited.</li>
+<li>Android: Fixed an issue where loading native libraries from custom threads would fail</li>
+<li>Android: fixed an issue where the application would suddenly quit on some Snapdragon devices.</li>
+<li>Android: fixed an issue where touches where sometimes offset by the height of the status bar.</li>
+<li>Android: fixed Application.systemLanguage.</li>
+<li>Android: fixed issues when the input was processed in cases it shouldn't</li>
+<li>Android: fixed mali crash</li>
+<li>Android: fixed orientation attribute for proxy and java activities.</li>
+<li>Android: fixed splash screen fit/fill.</li>
+<li>Android: fixed the bug when cache cleaning didn't work properly</li>
+<li>Android: fixed the bug when creating an output directory with the name of target .apk lead to build failure</li>
+<li>Android: force remove any selection before closing the onscreen keyboard.</li>
+<li>Android: proxy activity will now activate the native activity.</li>
+<li>Animation Window: Scene selection sync with animation window no longer jumps around when clip changes</li>
+<li>Editor: Editor.log should no longer be locked by adb.exe on windows.</li>
+<li>Editor: Fix 'Keys' pane in Preferences showing light background in dark skin</li>
+<li>Editor: Fixed importing prefab with Cloth</li>
+<li>Editor: Generating Previews for Main Asset on the Asset Store Tools is working again for non PRO licenses</li>
+<li>Editor: Quitting the editor should no longer be blocked by adb.exe on windows.</li>
+<li>Graphics: Fixed crash when calling LineRenderer.Render() outside of a camera render.</li>
+<li>Graphics: Fixed crash when using a GrabPass shader with Graphics.DrawTexture().</li>
+<li>Graphics: Fixed textures in MaterialPropertyBlock sampling the wrong mipmap on some platforms.</li>
+<li>Input: Bumped the number of available joystick axis to twenty.</li>
+<li>iOS: Fixed crash when cancelling WWW download</li>
+<li>iOS: Fixed crash while dictating for IMGUI input field</li>
+<li>iOS: Fixed iPad Air &amp; iPad Mini Retina detection</li>
+<li>iOS: Fixed unknown device type detection</li>
+<li>Mac OS X Standalone: Fix accidental inclusion of unneeded files, resulting in wasted disk space for each player build.</li>
+<li>Mecanim:  Animator State progress bar were broken</li>
+<li>Mecanim: Fix backward compatibility issue with animation imported in 4.2 and then imported in 4.3, we did change the default behaviour between those two version on how transform animation are imported</li>
+<li>Mecanim: Fixed problem with Additive Layers. Only Lopped clip were working correctly</li>
+<li>Mecanim: Fixed problem with Additive Layers. Weird interpolation when total blend weight was smaller then 100% </li>
+<li>Mecanim: Fixed problem with editing Additional Curves when Preview window is closed </li>
+<li>Mecanim: Fixed Crash when importing a project with sync layer in Unity Basic</li>
+<li>Mecanim: Fixes BlendTree being reset when viewing their Graph in LiveLink.</li>
+<li>Mecanim: Fixes humanoid layers that has empty states.</li>
+<li>Mecanim: Various fix to API documentation: Play, Crossfade, SetTrigger and  AnimatorControllerOverride</li>
+<li>Meshes: Fixed crash with blend shapes that are morphing vertices not used in the mesh's geometry.</li>
+<li>mobile: Fixed fog patching, to make sure we play good with preprocessor</li>
+<li>NavMesh: fixed an issue where a disabled OffMeshLink would not re-enable on "Activated" check-box in editor</li>
+<li>NavMesh: fixed an issue where stopped NavMeshAgent would start moving on carved NavMesh</li>
+<li>NavMesh: fixed regression for crash when changing updatePosition on a NavMeshAgent not attached to a NavMesh.</li>
+<li>NavMesh: fixed regression where NavMeshAgents with slow speeds would sometimes get stuck when moving around corners</li>
+<li>Physics: Rigidbody2D rotation updates sometimes causing invalid local local rotations when placed in a deep hierarchy.</li>
+<li>Physics: Unity crashes when rotating a complex PolygonCollider2D component.</li>
+<li>Shaders: Fixed building shaders from Editor with -nographics option in batch mode.</li>
+<li>Shaders: Fixed GLSL shaders messing up Mac Editor windows for one frame once in a blue moon.</li>
+<li>Shaders: Fixed material.SetFloat, SetColor etc. performance issue in Editor (it was getting slower as more unique shader property names appeared).</li>
+<li>Shuriken: Fixed some particle systems incorrectly pre warming when being reactivated.</li>
+<li>Substances: Fixed Substance cache files being included in iCloud backups; could cause apps to be rejected on the App Store.</li>
+<li>UnityObject: Fixing Internet Explorer detection, when plugin missing.</li>
+<li>Windows Editor: Fixed a rare crash on toggling Direct3D 11 mode.</li>
+<li>Windows Phone: UnityScript support fixes</li>
+<li>Windows Player: Fixed memory use regression for static batches and non-read/writable meshes in 4.3.</li>
+<li>Windows Store Apps/WP8 : AnimcationClip.SetCurve will work correctly now.</li>
+<li>Windows Store Apps/WP8: Fall back to Clamp texture wrap setting for non-power of two size textures</li>
+<li>Windows Store Apps/WP8: fixed ReferenceReWriter crash when project is being built, an unavailable API is used somewhere in user scripts/plugins and a method with a same name but no parameters is available.</li>
+<li>Windows Store Apps/WP8: When compiling C#, JS or Boo files, Unity will not reference assemblies from other platform folders, for ex., assemblies from Assets\Plugins\iOS will not be used. This should fix the issue where Unity creates assemblies with references to other platforms.</li>
+<li>Windows Store Apps: Blind fix for a rare crash when profiler tries to connect and there's an error in the Network.</li>
+<li>Windows Store Apps: Check for DX debug support, fixes crash on Windows 8.1 using 8.0 debug player</li>
+<li>Windows Store Apps: Debug, Release configuration won't crash when trying to connect to profiler, when no network adapters are available or some other fatal network error.</li>
+<li>Windows Store Apps: Fix fixed function shaders not working under level 9.1 emulation in editor</li>
+<li>Windows Store Apps: Fix mouse delta when cursor is hidden (was incorrect on some devices)</li>
+<li>Windows Store Apps: Fix serialisation bug when you have fields wrapped with UNITY_EDITOR define.</li>
+<li>Windows Store Apps: Fix several crashes in live tiles API</li>
+<li>Windows Store Apps: Fixed a rare hang, when resizing window and calling InvokeOnAppThread with sync.</li>
+<li>Windows Store Apps: Mouse and touch positions should be reported correctly on devices like Surface Pro (Windows 8.0 &amp; Windows 8.1), with and without Independent Input Source enabled.</li>
+<li>Windows Store Apps: When changing window size, rendering won't get corrupted.</li>
+<li>WP8: Fixed player crash when ID_CAP_IDENTITY_DEVICE capability is disabled from application manifest.</li>
+<li>WP8: Rotate skybox and non-pixel correct GUIText to screen orientation</li>
+</ul>
+
+<h2>Known issues</h2>
+
+<p>BlendShapes : Blend shapes animation from FbxSdk later than 2011 will not be imported.</p>
+      </div>
+      <div class="g12 pt0">
+        <p class="c-mg">
+          <span class="b">Changeset:</span>
+                  </p>
+      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-4.3.2"></a></span>
+  <div class="tip">Unity 4.3.2</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-4.3.4"></a></span>
+  <div class="tip">Unity 4.3.4</div>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

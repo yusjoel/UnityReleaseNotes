@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>What's new in Unity 3.4.1 - Unity</title>
+</head>
+<body>
+  <div class="g9 nest flex-column">
+    <div class="w100 clear">
+      <div class="g12 markdown">
+        <h1>Unity 3.4.1</h1>
+        <p>This release of Unity primarily contains fixes to Unity 3.4. For more information about recent features, see the <a href="/unity/whats-new/unity-3.4">Unity 3.4 Release Notes</a>.</p>
+
+<ul>
+<li>IME input handling</li>
+<li>Example project improvements</li>
+<li>Editor, Runtime and MonoDevelop fixes</li>
+</ul>
+        <a href="/get-unity/update" class="blue-btn bbtn mb5">Update now</a>
+        <p class="clear">New to Unity? <a href="https://store.unity.com/">Get started</a></p>
+      </div>
+      <div class="g12 markdown">
+        <h2 class="bb pb15">Release notes</h2>
+        <h3>Features and improvements</h3>
+
+<ul>
+<li>IME input:
+
+<ul>
+<li>Exposed Input.imeCompositionMode, Input.compositionString and Input.compositionCursorPos to allow IME input handling in custom GUI code. This enables easy text entry for East Asian languages such as Chinese, Japanese, Korean, and other languages with complex characters.</li>
+<li>Windows: disable any IME input when not editing a text field (or Input.imeCompositionMode is set to IMECompositionMode.Off), to make game input work properly without the need to switch input settings.</li>
+</ul></li>
+<li>Following improvements were added to example project (AngryBots):
+
+<ul>
+<li>Proxy level and splash screen in order to reduce unresponsive load time on handheld and webplayer.</li>
+<li>Response to Android menu/back/quit buttons.</li>
+<li>Upper right corner pause button, opening up a menu with resume (unpause), full screen (on stand-alone and web player), mute, restart, and quit (on standalone and handhelds).</li>
+</ul></li>
+</ul>
+
+<h3>Important future changes</h3>
+
+<ul>
+<li>With Unity 3.5 we plan to stop web player and standalone support for Windows 2000, Mac OS 10.4 and earlier. Additionally, support for web player and standalone builds running on PowerPC Macs will cease with Unity 3.5.</li>
+</ul>
+
+<h3>Fixes</h3>
+
+<h4>Editor</h4>
+
+<ul>
+<li>Icons on newly created Prefabs no longer stay after the Prefab is deleted from the scene.</li>
+<li>Fixed crash on Windows related to AssetStore server side errors.</li>
+<li>Fixed right click menu for keys on curves in the AudioSource Component not working when a AudioLowPassFilter component was also attached.</li>
+<li>Fixed crash when changing .meta files and the .meta data file is disagreeing with the changes.</li>
+<li>Only display progress bar when it changes at least one percentage point, fixes crash due to out of memory and faster asset scan speed.</li>
+<li>Fixed texture importer rescan memory leak, which caused out of memory crashes.</li>
+<li>Clear log callback when unloading domains, fixes crash when hitting Play button.</li>
+<li>Fixed auto release leaks in progress bars on Mac OS X.</li>
+<li>Fixed potential crash in curve editing for audio sources.</li>
+<li>Fixed render texture creation error when searching in the project view.</li>
+</ul>
+
+<h4>Runtime</h4>
+
+<ul>
+<li>Fix intermittent crash-on-reload on Windows.</li>
+<li>Fixed crash on exit when "Exit on Suspend" was checked on iOS.</li>
+<li>Fixed crash on exit in forced OpenGL mode on Windows.</li>
+<li>Fixed webplayer graphical glitches existing in Safari on Mac OS X Lion for some AMD graphics cards.</li>
+<li>Fixed crash in skinning meshes with invalid bone indices or when mesh has just been updated.</li>
+<li>Fixed crash in SSE2 skinning code when reading out of bounds.</li>
+<li>Fixed regression against Unity 3.3 when using RenderTexture.GetTemporary with cubemaps.</li>
+</ul>
+
+<h4>Standard assets</h4>
+
+<ul>
+<li>Added missing Pro Water shaders.</li>
+</ul>
+
+<h4>Javascript</h4>
+
+<ul>
+<li>Implicit downcasts (for example, assignment from a variable of type Object to a variable of type String) will now be reported as warnings instead of errors in strict mode.</li>
+</ul>
+
+<h4>MonoDevelop</h4>
+
+<ul>
+<li>Fixed US International input method to allow input of ' and ".</li>
+<li>Better window resizing on Mac OS X Lion.</li>
+</ul>
+      </div>
+      <div class="g12 pt0">
+        <p class="c-mg">
+          <span class="b">Changeset:</span>
+                  </p>
+      </div>
+      <div class="g12">
+        <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/unity-3.4"></a></span>
+  <div class="tip">Unity 3.4</div>
+</div>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/unity-3.4.2"></a></span>
+  <div class="tip">Unity 3.4.2</div>
+</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
