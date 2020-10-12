@@ -1,5 +1,5 @@
 # UnityReleaseNotes
-Unity的发布日志, 暂时只有html版本, 可以通过https://yusjoel.github.io/UnityReleaseNotes/访问
+Unity的发布日志, 暂时只有html版本, 可以通过[索引页](https://yusjoel.github.io/UnityReleaseNotes/)访问
 
 ## 历史
 原始库来自UnityCommunity的[UnityReleaseNotes](https://github.com/UnityCommunity/UnityReleaseNotes), 因为长时间不更新, 所以自己fork了一个库, 但又发现fork的库无法使用搜索功能所以自己重新建了一个库
