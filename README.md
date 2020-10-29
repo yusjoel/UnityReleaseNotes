@@ -7,6 +7,8 @@ Unity的发布日志, 暂时只有html版本, 可以通过[索引页](https://yu
 ## 为什么要建这个库
 因为www.unity3d.com访问不了, 有需要的朋友可以通过这个库下载各个版本的Unity, 查看发布日志, 使用Github的搜索功能反而是一个附带功能了
 
+更新时间不定, 要下载新版本而没有找到的话, 可以移步[Unity I Tell You](https://unityitellyou.github.io/)
+
 ## 数据来源
 [What's new in Unity](https://unity3d.com/unity/whats-new/)
 
