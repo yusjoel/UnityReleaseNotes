@@ -184,8 +184,6 @@
 <li><p>Player: Fixed desktop players to no longer ignore fullscreen/windowed mode on first run.</p></li>
 <li><p>Profiler: Fixed an Assert and Deadlock getting triggered in ProfilerHistory::SetSelectedPropertyPath when called, e.g. via UnityEditorInternal.ProfilerDriver.selectedPropertyPath, while no frame data is loaded into the Profiler.
 (<a href="https://issuetracker.unity3d.com/issues/hold-on-window-appears-and-loads-infinitely-when-setting-profilerdriver-dot-selectedpropertypath-while-the-profiler-holds-no-frames">1278249</a>)</p></li>
-<li><p>Profiler: Fixed auto-connection routine, where we previously introduced an unsupoprted parameter "profiler-enable" instead of "profiler-enable-on-startup". This caused players to no longer be able to autoconnect to the editor instance that built them.
-(<a href="https://issuetracker.unity3d.com/issues/osx-win10-manual-sellection-of-the-build-in-profiler-is-required-after-building-with-autoconnect-profiler-to-start-profiling">1223025</a>)</p></li>
 <li><p>Profiler: Fixed the UI System Preview Window in the UI Profiler module to have its title set correctly.
 (<a href="https://issuetracker.unity3d.com/issues/profiler-ui-system-preview-window-title-is-not-user-friendly">1238881</a>)</p></li>
 <li><p>Profiler: Reduced Profiler Window overhead on main thread.
