@@ -219,8 +219,6 @@
 (1265379)</p></li>
 <li><p>Graphics: Fixed so aspect ratios are maintained and upscaled using letterboxing when rendering with Vulkan.
 (<a href="https://issuetracker.unity3d.com/issues/vulkan-wrong-aspect-ratio-in-fullscreen-of-standalone-build-when-selected-screen-resolution-is-not-native">1192023</a>)</p></li>
-<li><p>Graphics: In Stadia, SetResolution now changes the rendering resolution without recreating the swapchain.
-(1232719)</p></li>
 <li><p>Graphics: Metal: Fix shader compiler warnings that could appear on macOS 11 Big Sur/iOS 14</p></li>
 <li><p>Graphics: render targets are now created as MemorylessMSAA only if the supported number of MSAA samples is greater than 1
 (1268888)</p></li>
@@ -258,8 +256,6 @@
 (<a href="https://issuetracker.unity3d.com/issues/particle-system-mesh-uv-coordinates-change-when-meshs-geometry-layout-is-changed-on-import">1269545</a>)</p></li>
 <li><p>Profiler: Fix profiler not counting number of draw calls correctly when using CommandBuffer
 (<a href="https://issuetracker.unity3d.com/issues/drawmesh-and-similar-from-commandbuffer-does-not-add-gpu-timestamps-so-time-in-profiler-is-0">1115727</a>)</p></li>
-<li><p>Profiler: Fixed "System Used Memory" memory counter reporting 0 on iOS, XboxOne and PS4.
-(1263861)</p></li>
 <li><p>Profiler: Fixed an issue where PackedMemorySnapshot.nativeObjects.gcHandleIndex would always return -1 due to not reporting the correct managed object address during processing
 (<a href="https://issuetracker.unity3d.com/issues/2019-dot-4-packedmemorysnapshot-nativeobjects-dot-gchandleindex-contains-1-always">1269293</a>)</p></li>
 <li><p>Profiler: Fixed an issue with multi-dimensional arrays of reference types not having their metadata type being reported
