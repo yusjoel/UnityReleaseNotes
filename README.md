@@ -8,8 +8,11 @@ Unity的发布日志, 暂时只有html版本, 可以通过 [索引页](https://y
 * 访问不了 www.unity3d.com 的朋友, 可以通过这个库下载各个版本的Unity, 查看发布日志
 * 可以使用 Github 的搜索功能, 来查看某个问题在哪些版本有修正, 在某个方面后续版本有些什么优化等等
 
-## 更新时间
-更新时间不定, 要下载新版本而没有找到的话, 可以移步[Unity I Tell You](https://unityitellyou.github.io/)
+## 其他推荐
+* [Unity I Tell You](https://unityitellyou.github.io/)
+  * 提供直接下载
+* [Unity ReleaseNote](https://smartphone-games.net/UnityReleaseNote/)
+  * 可以按模块查看Release Note
 
 ## 数据来源
 [What's new in Unity](https://unity3d.com/unity/whats-new/)
