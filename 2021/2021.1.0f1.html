@@ -445,40 +445,32 @@ EditorUtility.OpenPropertyEditor  is now public.</p></li>
 <li><p>Editor: Obsoleted: Remove Slave from MPE API and documentation.</p></li>
 <li><p>Editor: Obsoleted: Renamed some SearchService API's classes to prevent name clashes.</p></li>
 <li><p>GI: Added: Added two new callbacks: LightProbes.needsRetetrahedralization which is called whenever the current registered probes and tetrahedralization are out of sync, and LightProbes.tetrahedralizationCompleted which fires after &#40;re-&#41;tetrahedralization is done.</p></li>
-<li><p>Graphics: Added: Added a history rejection criterion based on if the pixel was moving in world space.
-(1302392)</p></li>
-<li><p>Graphics: Added: Added a new function in GeometryTools.hlsl to calculate triangle edge and full triangle culling.</p></li>
-<li><p>Graphics: Added: Added an additional check in the "check scene for ray tracing".
-(1314963)</p></li>
 <li><p>Graphics: Added: Added an option to flag renderers as static shadow casters in order to facilitate the implementation of cached shadow map in SRP.</p></li>
-<li><p>Graphics: Added: Added color and intensity customization for Decals.</p></li>
 <li><p>Graphics: Added: Added methods to check if Material/MaterialPropertyBlock contains a property based on type &#40;e.g. MaterialPropertyBlock.HasFloat, Material.HasColor, etc.&#41;.</p></li>
 <li><p>Graphics: Added: Added new API Graphics.minOpenGLESVersion and built-in keyword SHADER_API_GLES30.</p></li>
-<li><p>Graphics: Added: Added new API in CachedShadowManager.</p></li>
 <li><p>Graphics: Added: Added new API SystemInfo.GetRenderTextureSupportedMSAASampleCount&#40;RenderTextureDescriptor desc&#41; to query the correct MSAA samples count of a RenderTexture.</p></li>
 <li><p>Graphics: Added: Added new SystemInfo.supportsStoreAndResolveAction API to check for StoreAndResolveAction store action support on a specific platform.</p></li>
-<li><p>Graphics: Added: Added pivot point manipulation for Decals &#40;inspector and edit mode&#41;.</p></li>
-<li><p>Graphics: Added: Added the default quality settings to the HDRP asset for RTAO, RTR and RTGI.
-(1304370)</p></li>
-<li><p>Graphics: Added: Added UV manipulation for Decals &#40;edit mode&#41;.</p></li>
-<li><p>Graphics: Added: API to allow OnDemand shadows to not render upon placement in the Cached Shadow Atlas.</p></li>
-</ul>
-
-<div class="inline-frame rel clear mb20">
-               <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-               <iframe src="https://www.youtube.com/embed/guMV9ZG4mQ8?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-             </div>
-
-<ul>
 <li><p>Graphics: Added: BatchRendererGroup: Added optional visibleIndicesY array. Data available in shader in Y channel. &#40;Hybrid Renderer V2&#41;.</p></li>
 <li><p>Graphics: Added: Exposed the API to set the renderDynamicObjects for Custom reflection probes.</p></li>
-<li><p>Graphics: Added: Exposed update upon light movement for directional light shadows in UI.</p></li>
 <li><p>Graphics: Added: Made GraphicsSettings.GetGraphicsSettings&#40;&#41; public.</p></li>
 <li><p>Graphics: Added: Support for the PlayStation 5 platform has been added.</p></li>
 <li><p>Graphics: Added: Support for the XboxSeries platform has been added.</p></li>
 <li><p>Graphics: Changed: Added callbacks to RenderPipelineManager that don't cause GC.
 (<a href="https://issuetracker.unity3d.com/issues/urp-scriptablerendercontext-dot-getcamera-array-dot-resize-creates-garbage-every-frame-when-more-than-one-camera-is-active">1259717</a>)</p></li>
 <li><p>Graphics: Changed: RenderRequestMode now has enum values for PBR materials data.</p></li>
+<li><p>HDRP: Added: Added a history rejection criterion based on if the pixel was moving in world space.
+(1302392)</p></li>
+<li><p>HDRP: Added: Added a new function in GeometryTools.hlsl to calculate triangle edge and full triangle culling.</p></li>
+<li><p>HDRP: Added: Added an additional check in the "check scene for ray tracing".
+(1314963)</p></li>
+<li><p>HDRP: Added: Added color and intensity customization for Decals.</p></li>
+<li><p>HDRP: Added: Added new API in CachedShadowManager.</p></li>
+<li><p>HDRP: Added: Added pivot point manipulation for Decals &#40;inspector and edit mode&#41;.</p></li>
+<li><p>HDRP: Added: Added the default quality settings to the HDRP asset for RTAO, RTR and RTGI.
+(1304370)</p></li>
+<li><p>HDRP: Added: Added UV manipulation for Decals &#40;edit mode&#41;.</p></li>
+<li><p>HDRP: Added: API to allow OnDemand shadows to not render upon placement in the Cached Shadow Atlas.</p></li>
+<li><p>HDRP: Added: Exposed update upon light movement for directional light shadows in UI.</p></li>
 <li><p>iOS: Added: Added <code>iOS.Device.iosAppOnMac</code> flag to check if app built for iOS is running on Mac equipped with Apple Silicon chip.</p></li>
 <li><p>iOS: Obsoleted: The public accessor for the legacy Game Center player ID is now unavailable, and will be removed completely in the next major release of Unity.</p></li>
 <li><p>Mobile: Added: Adaptive Performance: Updated the version defines for the device simulator to support it in 2021.1 without package.</p></li>
@@ -568,38 +560,38 @@ Added Unity.IO.LowLevel.Unsafe.ReadStatusExtension methods -Unity.IO.LowLevel.Un
 <li><p>Editor: Deleting an object reference array entry in the Inspector now removes that array element. Previously first deletion set the element reference to none, and the second deletion deleted the element.</p></li>
 <li><p>Editor: Deprecated Device Simulator package, feature moved to Core.</p></li>
 <li><p>Editor: Quick Search is now part of the Unity Editor and no package needs to be installed.</p></li>
-<li><p>Graphics: Avoids unnecessary RenderGraphBuilder.ReadTexture in the "Set Final Target" pass.</p></li>
-<li><p>Graphics: Changed Path Tracing's maximum intensity from clamped &#40;0 to 100&#41; to positive value.
-(1310514)</p></li>
 <li><p>Graphics: Changed so texture formats DXT1 and DXT5 in the UI labels are now named "DXT1&#124;BC1" and "DXT5&#124;BC3", indicating terminology used by modern graphics APIs.</p></li>
-<li><p>Graphics: Changed some light unit slider value ranges to better reflect the lighting scenario.</p></li>
 <li><p>Graphics: Changed switch shaders to now use separate samplers instead of combined texture-samplers objects.</p></li>
-<li><p>Graphics: Changed the clamping approach for RTR and RTGI &#40;in both perf and quality&#41; to improve visual quality.</p></li>
-<li><p>Graphics: Changed the convergence time of ssgi to 16 frames and the preset value.</p></li>
-<li><p>Graphics: Changed the name from the Depth Buffer Thickness to Depth Tolerance for SSGI.
-(1301352)</p></li>
-<li><p>Graphics: Changed the source value for the ray tracing frame index iterator from m_FrameCount to the camera frame count.
-(1301356)</p></li>
-<li><p>Graphics: Changed the warning message for ray traced area shadows.
-(1303410)</p></li>
 <li><p>Graphics: ComputeBuffer.IsValid now returns false when compute is not supported and ComputeBuffer.BeginWrite throws InvalidOperationException for invalid ComputeBuffers.
 (<a href="https://issuetracker.unity3d.com/issues/android-gles3-crash-on-samsung-galaxy-j5-after-launching-gfx-tests">1259525</a>)</p></li>
-<li><p>Graphics: Disabled specular occlusion for what we consider medium and larger scale ao &gt; 1.25 with a 25cm falloff interval.</p></li>
-<li><p>Graphics: Improved robustness of volumetric sampling in path tracing.
-(1295187)</p></li>
-<li><p>Graphics: Removed backplate from rendering of lighting cubemap as it did not really work conceptually and caused artefacts.</p></li>
 <li><p>Graphics: Removed postprocessing package from core packages list.</p></li>
-<li><p>Graphics: Removed the material pass probe volumes evaluation mode.</p></li>
 <li><p>Graphics: Texture2D.Compress now compressed R8 textures to BC4 and R8G8 textures to BC5, on mobile platforms ETC/EAC are used.</p></li>
-<li><p>Graphics: The RTAO's history is now discarded if the occlusion caster was moving.
-(1303418)</p></li>
-<li><p>Graphics: Tidy up of platform abstraction code for shader optimization.</p></li>
-<li><p>Graphics: Transparent materials created by the Model Importer are set to not cast shadows.</p></li>
-<li><p>Graphics: Unifying the history validation pass so that it is only done once for the whole frame and not per effect.</p></li>
 <li><p>Graphics: Updated postprocessing package to 3.1.0.</p></li>
-<li><p>Graphics: Updated the tooltip for the Decal Angle Fade property &#40;requires to enable Decal Layers in both HDRP asset and Frame settings&#41;.
-(1308048)</p></li>
 <li><p>Graphics: VT-internal warnings no longer show up in the editor window, but still get printed into the editor log file.</p></li>
+<li><p>HDRP: Avoids unnecessary RenderGraphBuilder.ReadTexture in the "Set Final Target" pass.</p></li>
+<li><p>HDRP: Changed Path Tracing's maximum intensity from clamped &#40;0 to 100&#41; to positive value.
+(1310514)</p></li>
+<li><p>HDRP: Changed some light unit slider value ranges to better reflect the lighting scenario.</p></li>
+<li><p>HDRP: Changed the clamping approach for RTR and RTGI &#40;in both perf and quality&#41; to improve visual quality.</p></li>
+<li><p>HDRP: Changed the convergence time of ssgi to 16 frames and the preset value.</p></li>
+<li><p>HDRP: Changed the name from the Depth Buffer Thickness to Depth Tolerance for SSGI.
+(1301352)</p></li>
+<li><p>HDRP: Changed the source value for the ray tracing frame index iterator from m_FrameCount to the camera frame count.
+(1301356)</p></li>
+<li><p>HDRP: Changed the warning message for ray traced area shadows.
+(1303410)</p></li>
+<li><p>HDRP: Disabled specular occlusion for what we consider medium and larger scale ao &gt; 1.25 with a 25cm falloff interval.</p></li>
+<li><p>HDRP: Improved robustness of volumetric sampling in path tracing.
+(1295187)</p></li>
+<li><p>HDRP: Removed backplate from rendering of lighting cubemap as it did not really work conceptually and caused artefacts.</p></li>
+<li><p>HDRP: Removed the material pass probe volumes evaluation mode.</p></li>
+<li><p>HDRP: The RTAO's history is now discarded if the occlusion caster was moving.
+(1303418)</p></li>
+<li><p>HDRP: Tidy up of platform abstraction code for shader optimization.</p></li>
+<li><p>HDRP: Transparent materials created by the Model Importer are set to not cast shadows.</p></li>
+<li><p>HDRP: Unifying the history validation pass so that it is only done once for the whole frame and not per effect.</p></li>
+<li><p>HDRP: Updated the tooltip for the Decal Angle Fade property &#40;requires to enable Decal Layers in both HDRP asset and Frame settings&#41;.
+(1308048)</p></li>
 <li><p>Mobile: Made session bugfixes for Adaptive Performance provider subsystem management.</p></li>
 <li><p>Package: Storyboard Global Mute moved from Cinemachine menu to Cinemachine preferences.</p></li>
 <li><p>Package: UI update - Moved Cinemachine menu to GameObject Create menu and Right Click context menu for Hierarchy.</p></li>
@@ -1160,196 +1152,83 @@ The behavior is reverted.
 <li><p>Graphics: Fixed a casting issue when assigning an int to a bool with HLSLcc.</p></li>
 <li><p>Graphics: Fixed a depth buffer size check when implicit backbuffer depth is used. Removed error message.
 (<a href="https://issuetracker.unity3d.com/issues/urp-an-error-is-spammed-in-a-build-when-using-2d-light-with-the-use-normal-map-option-enabled">1268201</a>)</p></li>
-<li><p>Graphics: Fixed a locale issue with the diffusion profile property values in ShaderGraph on PC where comma is the decimal separator.</p></li>
-<li><p>Graphics: Fixed a reload bug when using objects from the scene in the lookdev.
-(1300916)</p></li>
-<li><p>Graphics: Fixed ability to override AlphaToMask FrameSetting while camera in deferred lit shader mode.</p></li>
-<li><p>Graphics: Fixed after post process custom pass scale issue when dynamic resolution is enabled.
-(<a href="https://issuetracker.unity3d.com/issues/viewport-is-incorrect-in-a-custom-pass-running-in-afterpostprocess-when-using-dynamic-resolution">1299194</a>)</p></li>
 <li><p>Graphics: Fixed ALL/NONE to maintain the state on the Volume Component Editors.</p></li>
-<li><p>Graphics: Fixed alpha output in debug view and AOVs when using shadow matte.
-(<a href="https://issuetracker.unity3d.com/issues/unrecognized-identifier-error-is-thrown-when-hdrp-slash-unlit-shadow-matte-is-enabled-and-common-material-properties-is-set-to-alpha">1311830</a>)</p></li>
-<li><p>Graphics: Fixed an exception when opening the color picker in the material UI.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-unityengine-dot-exitguiexception-error-is-thrown-on-opening-color-palette-window-in-the-material-inspector">1307143</a>)</p></li>
-<li><p>Graphics: Fixed an issue in shadergraph when switch from a RenderingPass.
-(<a href="https://issuetracker.unity3d.com/issues/shader-graph-graph-settings-window-gets-blank-with-argumentexception-on-changing-the-material-value-to-lit-in-hdrp-settings">1307653</a>)</p></li>
-<li><p>Graphics: Fixed an issue in the planar reflection probe convolution.</p></li>
-<li><p>Graphics: Fixed an issue where first frame of SSAO could exhibit ghosting artefacts.</p></li>
 <li><p>Graphics: Fixed an issue where high numbers of materials would slow down unloading of Asset Bundles containing shaders.
 (<a href="https://issuetracker.unity3d.com/issues/unloading-an-assetbundle-that-contains-a-material-causes-a-call-to-findobjectsoftype">935529</a>)</p></li>
-<li><p>Graphics: Fixed an issue where selection in a debug panel would reset when cycling through enum items.</p></li>
-<li><p>Graphics: Fixed an issue with half res ssgi upscale.</p></li>
-<li><p>Graphics: Fixed an issue with light intensity prefab override application not visible in the inspector.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-apply-to-prefab-option-is-missing-when-pressing-on-the-light-component-intensity-propertys-label-on-a-prefab">1299563</a>)</p></li>
-<li><p>Graphics: Fixed an issue with material using distortion from ShaderGraph init after Material creation.
-(<a href="https://issuetracker.unity3d.com/issues/shader-has-different-effects-depending-on-whether-the-material-was-created-by-selecting-the-shader-or-applying-it-afterwards">1294026</a>)</p></li>
-<li><p>Graphics: Fixed an issue with the capture callback &#40;now includes post processing results&#41;.</p></li>
-<li><p>Graphics: Fixed an issue with the frame count management for the volumetric fog.
-(1299251)</p></li>
-<li><p>Graphics: Fixed an issue with the mipmap generation internal format after rendering format change.</p></li>
-<li><p>Graphics: Fixed an issue with transparent meshes writing their depths and recursive rendering.
-(1314409)</p></li>
-<li><p>Graphics: Fixed box light attenuation.</p></li>
 <li><p>Graphics: Fixed case 1086548 &#40;RenderToCubemap offsets shadows when the material on the mesh has GPU Instancing enabled&#41;, by adding support for STEREO_CUBEMAP_RENDER_ON for instanced rendering.
 (<a href="https://issuetracker.unity3d.com/issues/rendertocubemap-offsets-shadows-when-the-material-on-the-mesh-has-gpu-instancing-enabled">1086548</a>)</p></li>
 <li><p>Graphics: Fixed case 1266922.</p></li>
-<li><p>Graphics: Fixed Clearcoat on Stacklit or Lit breaks when URP is imported into the project.
-(1297806)</p></li>
 <li><p>Graphics: Fixed crash on VolumeComponentWithQualityEditor when the current Pipeline is not HDRP.</p></li>
 <li><p>Graphics: Fixed custom shaders with no explicit Pass defined to respect the "receive shadows" flag.
 (<a href="https://issuetracker.unity3d.com/issues/shader-does-not-collect-proper-shadow-information-when-using-shadow-attenuation-macro">1050091</a>)</p></li>
-<li><p>Graphics: Fixed decal draw order for ShaderGraph decal materials.</p></li>
-<li><p>Graphics: Fixed decal normal for double sided materials.
-(1312065)</p></li>
-<li><p>Graphics: Fixed decals in material debug display.</p></li>
 <li><p>Graphics: Fixed drop of VisualEffectAsset within a prefab.
 (<a href="https://issuetracker.unity3d.com/issues/prefab-cannot-add-a-vfx-graph-inside-a-prefab">1285794</a>)</p></li>
-<li><p>Graphics: Fixed Emissive color property from Autodesk Interactive materials not editable in Inspector.
-(<a href="https://issuetracker.unity3d.com/issues/materials-emissive-color-cannot-be-changed-when-the-material-is-using-hdrp-autodesk-interactive-shaders">1307234</a>)</p></li>
 <li><p>Graphics: Fixed erroneous assertion after calling Object.DestroyImmediate on a rendertarget that was just unbound.
 (<a href="https://issuetracker.unity3d.com/issues/gfxframebuffergles-an-active-rendertargetsetup-has-dangling-pointers-dot-is-thrown-when-entering-play-mode-in-opengl">1270401</a>)</p></li>
 <li><p>Graphics: Fixed erroneous precision when deducing the precision of a sampler from a texture and using inline state.
 (<a href="https://issuetracker.unity3d.com/issues/using-an-inline-sampler-causes-metal-shader-to-have-extra-half-float-casts">1271276</a>)</p></li>
-<li><p>Graphics: Fixed error in Depth Of Field near radius blur calculation.
-(1306228)</p></li>
-<li><p>Graphics: Fixed error in the RTHandle scale of Depth Of Field when TAA is enabled.</p></li>
-<li><p>Graphics: Fixed error when increasing the maximum planar reflection limit.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-editor-crashes-on-increasing-max-planer-reflection-on-screen-property-value-in-the-hdrp-settings">1306530</a>)</p></li>
-<li><p>Graphics: Fixed error when opening the default composition graph in the Graphics Compositor.
-(1318933)</p></li>
 <li><p>Graphics: Fixed for setScissorRect crashing on metal when adjusting panels in editor.
 (<a href="https://issuetracker.unity3d.com/issues/setscissorrect-crashes-on-metal-when-adjusting-panels-in-editor">1256241</a>)</p></li>
 <li><p>Graphics: Fixed FrameTimingManager produced incorrect frame time on Vulkan and DirectX12.
 (<a href="https://issuetracker.unity3d.com/issues/frametimingmanager-dot-getlatesttimings-returns-a-smaller-gpuframetime-than-it-actually-is">1274505</a>)</p></li>
-<li><p>Graphics: Fixed GC allocations from XR occlusion mesh when using multipass.</p></li>
 <li><p>Graphics: Fixed gradient sampling in Fixed mode.
 (<a href="https://issuetracker.unity3d.com/issues/fixed-gradient-colors-are-blended-when-time-is-interpolated-using-random-number-node">1212002</a>)</p></li>
 <li><p>Graphics: Fixed inconsistency issue where some meshes would be dynamically batched in editor but not in standalone player.
 (<a href="https://issuetracker.unity3d.com/issues/mobile-dynamic-batching-is-not-working-when-working-with-sub-mesh-on-a-mobile-device">1278480</a>)</p></li>
-<li><p>Graphics: Fixed incorrect debug wireframe overlay on tessellated geometry &#40;using littessellation&#41;, caused by the picking pass using an incorrect camera matrix.</p></li>
 <li><p>Graphics: Fixed incorrect GeometryJob Fence initialisation causing graphical corruption in UI canvas rendering.</p></li>
-<li><p>Graphics: Fixed issue of accessing default frame setting stored in current HDRPAsset instead fo the default HDRPAsset.</p></li>
 <li><p>Graphics: Fixed issue on Metal-MacOS Standalone where HDR enabled Don't Clear and Depth Only cameras would clear the background &#40;rendering the empty texture&#41;.
 (<a href="https://issuetracker.unity3d.com/issues/metal-player-rendering-breaks-when-a-second-non-fullscreen-camera-is-enabled">1184769</a>)</p></li>
-<li><p>Graphics: Fixed issue when debug full screen 'Transparent Screen Space Reflection' do not take in consideration debug exposure.</p></li>
 <li><p>Graphics: Fixed issue where changing from fullscreen to windowed mode causes black screen on Linux when using OpenGL.
 (<a href="https://issuetracker.unity3d.com/issues/black-screen-after-switching-from-fullscreen-to-windowed-on-a-linux-build">1314460</a>)</p></li>
 <li><p>Graphics: Fixed issue where passing a null value to GetBlendShapeIndex function on Mesh class would cause the editor to crash.
 (<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-getchannelindex-when-passing-null-to-mesh-dot-getblendshapeindex">1288012</a>)</p></li>
-<li><p>Graphics: Fixed issue with automatic exposure settings not updating scene view.</p></li>
-<li><p>Graphics: Fixed issue with compositor custom pass hooks added/removed repeatedly.
-(1315971)</p></li>
-<li><p>Graphics: Fixed issue with compositor related custom passes still active after disabling the compositor.
-(1305330)</p></li>
-<li><p>Graphics: Fixed issue with Depth of Field CoC debug view.</p></li>
-<li><p>Graphics: Fixed issue with physically-based DoF computation and transparent materials with depth-writes ON.</p></li>
-<li><p>Graphics: Fixed issue with shadow mask and area lights.</p></li>
-<li><p>Graphics: Fixed issue with velocity rejection in post-DoF TAA. Fixing this reduces ghosting.
-(1304381)</p></li>
-<li><p>Graphics: Fixed issues with compositor's undo.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-graphics-compositor-editor-crashes-on-doing-undo-operation-after-adding-image-sublayer-in-render-schedule">1305633</a>)</p></li>
-<li><p>Graphics: Fixed issues with path-traced volumetric scattering.
-(1295222, 1295234)</p></li>
-<li><p>Graphics: Fixed label style in pbr sky editor.</p></li>
-<li><p>Graphics: Fixed LayerMask editor for volume parameters.</p></li>
-<li><p>Graphics: Fixed light gizmo showing shadow near plane when shadows are disabled.</p></li>
-<li><p>Graphics: Fixed light layer issue when performing editing on multiple lights.</p></li>
-<li><p>Graphics: Fixed lights shadow frustum near and far planes.</p></li>
 <li><p>Graphics: Fixed loading of png files with large chunks.
 (<a href="https://issuetracker.unity3d.com/issues/file-could-not-be-read-error-is-thrown-when-importing-a-png-that-has-xattr">1273050</a>)</p></li>
 <li><p>Graphics: Fixed loading Renderdoc causing textures to disappear in the texture inspector.
 (1296238)</p></li>
-<li><p>Graphics: Fixed LookDev environment library assignement after leaving playmode.</p></li>
-<li><p>Graphics: Fixed loss of persistency of ratio between pivot position and size when sliding by 0 in DecalProjector inspector.
-(1308338)</p></li>
-<li><p>Graphics: Fixed material keywords with fbx importer.</p></li>
 <li><p>Graphics: Fixed Metal error when creating pipeline state if number of shader components is less than render target pixel format.
 (1242218)</p></li>
-<li><p>Graphics: Fixed missing BeginCameraRendering call for custom render mode of a Camera.</p></li>
-<li><p>Graphics: Fixed missing option to use POM on emissive for tessellated shaders.</p></li>
 <li><p>Graphics: Fixed missing support for coarse/fine derivatives in shader code.</p></li>
 <li><p>Graphics: Fixed missing support for mip tails in sparse textures on Vulkan.
 (1265578)</p></li>
 <li><p>Graphics: Fixed missing warning UI about Projector component being unsupported.
 (1300327)</p></li>
-<li><p>Graphics: Fixed model import by adding additional data if needed.</p></li>
-<li><p>Graphics: Fixed multiple HDRP Frame Settings panel issues: missing "Refraction" Frame Setting. Fixing ordering of Rough Distortion, it should now be under the Distortion setting.</p></li>
-<li><p>Graphics: Fixed nullref in layered lit shader editor.</p></li>
-<li><p>Graphics: Fixed nullref when adding a volume component in a Volume profile asset.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-nullreference-error-when-adding-any-override-to-a-volume">1317156</a>)</p></li>
 <li><p>Graphics: Fixed OpenGL bug where projection matrix was not correctly restored after calling Graphics.DrawMeshNow and GL.PopMatrix.
 (<a href="https://issuetracker.unity3d.com/issues/ios-projection-matrix-gets-corrupted">1262117</a>)</p></li>
-<li><p>Graphics: Fixed path tracing alpha channel support.
-(1304187)</p></li>
-<li><p>Graphics: Fixed PCSS filtering issues with cached shadow maps.</p></li>
-<li><p>Graphics: Fixed performance issue with ShaderGraph and Alpha Test.</p></li>
 <li><p>Graphics: Fixed possible crash on Adreno when using RenderPass API and Vulkan.
 (<a href="https://issuetracker.unity3d.com/issues/android-vulkan-crash-on-adreno-devices-with-vulkan-when-using-subpass-data-from-previous-subpass">1282143</a>)</p></li>
 <li><p>Graphics: Fixed potential divide by 0 when running graphics jobs on UWP Player.</p></li>
 <li><p>Graphics: Fixed Prefab Inspector preview &#40;Editor&#41; adding Renderer components into existing RayTracingAccelerationStructures while the Inspector preview is visible.
 (<a href="https://issuetracker.unity3d.com/issues/dxr-a-raytracingaccelerationstructure-using-automatic-management-mode-will-also-include-the-mesh-in-prefab-inspector">1297799</a>)</p></li>
-<li><p>Graphics: Fixed register spilling on  FXC in light list shaders.</p></li>
 <li><p>Graphics: Fixed repaint of VFX Graph in play mode.</p></li>
-<li><p>Graphics: Fixed resize IES when already baked in the Atlas.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-ies-profile-breaks-point-light-after-increasing-resolution-past-1024">1299233</a>)</p></li>
-<li><p>Graphics: Fixed Rough Distortion frame setting not greyed out when Distortion is disabled in HDRP Asset.</p></li>
 <li><p>Graphics: Fixed sample mesh skinned &#40;vfx&#41; when GPUSkinning is disabled.
 (1275889)</p></li>
-<li><p>Graphics: Fixed screen being over-exposed when changing very different skies.</p></li>
 <li><p>Graphics: Fixed Shader.globalRenderPipeline tag is not being set correctly at runtime.
 (1141848)</p></li>
 <li><p>Graphics: Fixed shadow maps in frame debugger.
 (<a href="https://issuetracker.unity3d.com/issues/game-view-is-black-when-using-frame-debugger-in-render-main-shadowmap">1278463</a>)</p></li>
-<li><p>Graphics: Fixed shadow matte not working with ambient occlusion when MSAA is enabled.</p></li>
 <li><p>Graphics: Fixed shadowmask behavior for terrain trees that have LODs.
 (1285466)</p></li>
-<li><p>Graphics: Fixed side effect on styles during compositor rendering.</p></li>
 <li><p>Graphics: Fixed situation where Hybrid Renderer could throw errors because of invalid reflection data.</p></li>
-<li><p>Graphics: Fixed size and spacing of compositor info boxes.
-(<a href="https://issuetracker.unity3d.com/issues/imgui-hdrp-base-layer-aovs-property-warning-text-is-clipped-in-graphics-compositor-window">1305652</a>)</p></li>
-<li><p>Graphics: Fixed skybox for ortho cameras.</p></li>
-<li><p>Graphics: Fixed some render texture leaks.</p></li>
 <li><p>Graphics: Fixed spacing between property fields on the Volume Component Editors.</p></li>
-<li><p>Graphics: Fixed spacing of UI widgets in the Graphics Compositor.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-graphics-compositor-color-palette-alpha-line-changes-its-position-on-changing-the-chroma-keying-index-in-input-filters">1305638</a>)</p></li>
-<li><p>Graphics: Fixed SSGI frame setting not greyed out while SSGI is disabled in HDRP Asset.</p></li>
-<li><p>Graphics: Fixed StackLit ShaderGraph surface option property block to only display energy conserving specular color option for the specular parametrization.
-(<a href="https://issuetracker.unity3d.com/issues/shadergraph-hdrp-transmission-and-energy-conserving-specular-color-should-appear-only-in-their-respective-modes">1257050</a>)</p></li>
 <li><p>Graphics: Fixed stateful case where ComputeShader could be put in a bad state internally if user forgot to bind out buffer. Required Editor restart to get rid of previously.</p></li>
-<li><p>Graphics: Fixed sub-shadow rendering for cached shadow maps.</p></li>
 <li><p>Graphics: Fixed terrain material being reset to builtin terrain material after reopening an SRP project.</p></li>
-<li><p>Graphics: Fixed the condition on temporal accumulation in the reflection denoiser.
-(1303504)</p></li>
-<li><p>Graphics: Fixed the default background color for previews to use the original color.</p></li>
 <li><p>Graphics: Fixed the default background color for previews to use the original color.</p></li>
 <li><p>Graphics: Fixed the default background color for previews to use the original color.</p></li>
 <li><p>Graphics: Fixed the display name of a Volume Parameter when is defined the attribute InspectorName.</p></li>
 <li><p>Graphics: Fixed the selection of the Additional properties from ALL/NONE when the option "Show additional properties" is disabled.</p></li>
-<li><p>Graphics: Fixed timing issues with accumulation motion blur.</p></li>
-<li><p>Graphics: Fixed undo-redo on layered lit editor.</p></li>
-<li><p>Graphics: Fixed Undo/Redo instability of light temperature.</p></li>
 <li><p>Graphics: Fixed unintentional crossfades for LODs when the animated cross-fading flag is enabled.
 (1305495)</p></li>
-<li><p>Graphics: Fixed update upon light movement for directional light rotation.</p></li>
 <li><p>Graphics: Fixed Validation error from creating 0 size frame buffers on Vulkan.
 (1278091)</p></li>
-<li><p>Graphics: Fixed various issues with non-temporal SSAO and rendergraph.</p></li>
 <li><p>Graphics: Fixed VFX Assets being reverted after save.
 (<a href="https://issuetracker.unity3d.com/issues/vfx-reverts-the-first-compilation-change-after-the-vfx-asset-is-saved">1315191</a>)</p></li>
 <li><p>Graphics: Fixed Vulkan validation error Shader requires vertexPipelineStoresAndAtomics but is not enabled on the device.
 (1288889)</p></li>
 <li><p>Graphics: Fixed Vulkan Validation warnings when fragment shader input is not produced for render pass attachment.
 (1278088)</p></li>
-<li><p>Graphics: Fixed Warnings about "SceneIdMap" missing script in eye material sample scene.</p></li>
-<li><p>Graphics: Fixed white flashes on camera cuts on volumetric fog.</p></li>
-<li><p>Graphics: Fixed wizard checking FrameSettings not in HDRP Default Settings.</p></li>
-<li><p>Graphics: Fixed wrong shader / properties assignement to materials created from 3DsMax 2021 Physical Material.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-importing-a-model-with-a-3ds-max-physical-material-assign-an-incorrect-shader-and-does-not-apply-its-textures">1293576</a>)</p></li>
-<li><p>Graphics: Fixed XR depth copy when using MSAA.</p></li>
 <li><p>Graphics: Fixed &#91;VFX&#93; HUP regressions introduced by editor repaint optimizations.
 (<a href="https://issuetracker.unity3d.com/issues/camera-command-list-issues-leading-to-broken-gpu-sorting-and-mesh-lods">1293323</a>)</p></li>
-<li><p>Graphics: Fixed: SSR with transparent.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-prb-accumulation-does-not-work-when-ssr-for-transparents-is-enabled">1311088</a>)</p></li>
 <li><p>Graphics: Fixes a crash, when changing the mesh data during the frame.
 (<a href="https://issuetracker.unity3d.com/issues/crash-on-createdirect3d11surfacefromdxgisurface-when-a-material-in-mesh-renderer-is-selected">1227781</a>)</p></li>
 <li><p>Graphics: Fixes instanced shadow rendering when using closest fit with a single cascade.
@@ -1408,6 +1287,119 @@ Fixed crash due to invalid shaderpass index when changing materials in a CustomR
 <li><p>Graphics: When blitting textures with multiple slices, all slices are now blit across the source and destination.
 (<a href="https://issuetracker.unity3d.com/issues/texture2darrays-blit-source-destination-is-not-copying-the-entire-texture-source-to-destination">1211291</a>)</p></li>
 <li><p>GraphView: Added capability support to stacks, stack children, and groups to help better avoid unsupported behaviors. Specifically with grouping and heterogeneous selections.</p></li>
+<li><p>HDRP: Fixed a locale issue with the diffusion profile property values in ShaderGraph on PC where comma is the decimal separator.</p></li>
+<li><p>HDRP: Fixed a reload bug when using objects from the scene in the lookdev.
+(1300916)</p></li>
+<li><p>HDRP: Fixed ability to override AlphaToMask FrameSetting while camera in deferred lit shader mode.</p></li>
+<li><p>HDRP: Fixed after post process custom pass scale issue when dynamic resolution is enabled.
+(<a href="https://issuetracker.unity3d.com/issues/viewport-is-incorrect-in-a-custom-pass-running-in-afterpostprocess-when-using-dynamic-resolution">1299194</a>)</p></li>
+<li><p>HDRP: Fixed alpha output in debug view and AOVs when using shadow matte.
+(<a href="https://issuetracker.unity3d.com/issues/unrecognized-identifier-error-is-thrown-when-hdrp-slash-unlit-shadow-matte-is-enabled-and-common-material-properties-is-set-to-alpha">1311830</a>)</p></li>
+<li><p>HDRP: Fixed an exception when opening the color picker in the material UI.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-unityengine-dot-exitguiexception-error-is-thrown-on-opening-color-palette-window-in-the-material-inspector">1307143</a>)</p></li>
+<li><p>HDRP: Fixed an issue in shadergraph when switch from a RenderingPass.
+(<a href="https://issuetracker.unity3d.com/issues/shader-graph-graph-settings-window-gets-blank-with-argumentexception-on-changing-the-material-value-to-lit-in-hdrp-settings">1307653</a>)</p></li>
+<li><p>HDRP: Fixed an issue in the planar reflection probe convolution.</p></li>
+<li><p>HDRP: Fixed an issue where first frame of SSAO could exhibit ghosting artefacts.</p></li>
+<li><p>HDRP: Fixed an issue where selection in a debug panel would reset when cycling through enum items.</p></li>
+<li><p>HDRP: Fixed an issue with half res ssgi upscale.</p></li>
+<li><p>HDRP: Fixed an issue with light intensity prefab override application not visible in the inspector.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-apply-to-prefab-option-is-missing-when-pressing-on-the-light-component-intensity-propertys-label-on-a-prefab">1299563</a>)</p></li>
+<li><p>HDRP: Fixed an issue with material using distortion from ShaderGraph init after Material creation.
+(<a href="https://issuetracker.unity3d.com/issues/shader-has-different-effects-depending-on-whether-the-material-was-created-by-selecting-the-shader-or-applying-it-afterwards">1294026</a>)</p></li>
+<li><p>HDRP: Fixed an issue with the capture callback &#40;now includes post processing results&#41;.</p></li>
+<li><p>HDRP: Fixed an issue with the frame count management for the volumetric fog.
+(1299251)</p></li>
+<li><p>HDRP: Fixed an issue with the mipmap generation internal format after rendering format change.</p></li>
+<li><p>HDRP: Fixed an issue with transparent meshes writing their depths and recursive rendering.
+(1314409)</p></li>
+<li><p>HDRP: Fixed box light attenuation.</p></li>
+<li><p>HDRP: Fixed Clearcoat on Stacklit or Lit breaks when URP is imported into the project.
+(1297806)</p></li>
+<li><p>HDRP: Fixed decal draw order for ShaderGraph decal materials.</p></li>
+<li><p>HDRP: Fixed decal normal for double sided materials.
+(1312065)</p></li>
+<li><p>HDRP: Fixed decals in material debug display.</p></li>
+<li><p>HDRP: Fixed Emissive color property from Autodesk Interactive materials not editable in Inspector.
+(<a href="https://issuetracker.unity3d.com/issues/materials-emissive-color-cannot-be-changed-when-the-material-is-using-hdrp-autodesk-interactive-shaders">1307234</a>)</p></li>
+<li><p>HDRP: Fixed error in Depth Of Field near radius blur calculation.
+(1306228)</p></li>
+<li><p>HDRP: Fixed error in the RTHandle scale of Depth Of Field when TAA is enabled.</p></li>
+<li><p>HDRP: Fixed error when increasing the maximum planar reflection limit.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-editor-crashes-on-increasing-max-planer-reflection-on-screen-property-value-in-the-hdrp-settings">1306530</a>)</p></li>
+<li><p>HDRP: Fixed error when opening the default composition graph in the Graphics Compositor.
+(1318933)</p></li>
+<li><p>HDRP: Fixed GC allocations from XR occlusion mesh when using multipass.</p></li>
+<li><p>HDRP: Fixed incorrect debug wireframe overlay on tessellated geometry &#40;using littessellation&#41;, caused by the picking pass using an incorrect camera matrix.</p></li>
+<li><p>HDRP: Fixed issue of accessing default frame setting stored in current HDRPAsset instead fo the default HDRPAsset.</p></li>
+<li><p>HDRP: Fixed issue when debug full screen 'Transparent Screen Space Reflection' do not take in consideration debug exposure.</p></li>
+<li><p>HDRP: Fixed issue with automatic exposure settings not updating scene view.</p></li>
+<li><p>HDRP: Fixed issue with compositor custom pass hooks added/removed repeatedly.
+(1315971)</p></li>
+<li><p>HDRP: Fixed issue with compositor related custom passes still active after disabling the compositor.
+(1305330)</p></li>
+<li><p>HDRP: Fixed issue with Depth of Field CoC debug view.</p></li>
+<li><p>HDRP: Fixed issue with physically-based DoF computation and transparent materials with depth-writes ON.</p></li>
+<li><p>HDRP: Fixed issue with shadow mask and area lights.</p></li>
+<li><p>HDRP: Fixed issue with velocity rejection in post-DoF TAA. Fixing this reduces ghosting.
+(1304381)</p></li>
+<li><p>HDRP: Fixed issues with compositor's undo.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-graphics-compositor-editor-crashes-on-doing-undo-operation-after-adding-image-sublayer-in-render-schedule">1305633</a>)</p></li>
+<li><p>HDRP: Fixed issues with path-traced volumetric scattering.
+(1295222, 1295234)</p></li>
+<li><p>HDRP: Fixed label style in pbr sky editor.</p></li>
+<li><p>HDRP: Fixed LayerMask editor for volume parameters.</p></li>
+<li><p>HDRP: Fixed light gizmo showing shadow near plane when shadows are disabled.</p></li>
+<li><p>HDRP: Fixed light layer issue when performing editing on multiple lights.</p></li>
+<li><p>HDRP: Fixed lights shadow frustum near and far planes.</p></li>
+<li><p>HDRP: Fixed LookDev environment library assignement after leaving playmode.</p></li>
+<li><p>HDRP: Fixed loss of persistency of ratio between pivot position and size when sliding by 0 in DecalProjector inspector.
+(1308338)</p></li>
+<li><p>HDRP: Fixed material keywords with fbx importer.</p></li>
+<li><p>HDRP: Fixed missing BeginCameraRendering call for custom render mode of a Camera.</p></li>
+<li><p>HDRP: Fixed missing option to use POM on emissive for tessellated shaders.</p></li>
+<li><p>HDRP: Fixed model import by adding additional data if needed.</p></li>
+<li><p>HDRP: Fixed multiple HDRP Frame Settings panel issues: missing "Refraction" Frame Setting. Fixing ordering of Rough Distortion, it should now be under the Distortion setting.</p></li>
+<li><p>HDRP: Fixed nullref in layered lit shader editor.</p></li>
+<li><p>HDRP: Fixed nullref when adding a volume component in a Volume profile asset.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-nullreference-error-when-adding-any-override-to-a-volume">1317156</a>)</p></li>
+<li><p>HDRP: Fixed path tracing alpha channel support.
+(1304187)</p></li>
+<li><p>HDRP: Fixed PCSS filtering issues with cached shadow maps.</p></li>
+<li><p>HDRP: Fixed performance issue with ShaderGraph and Alpha Test.</p></li>
+<li><p>HDRP: Fixed register spilling on  FXC in light list shaders.</p></li>
+<li><p>HDRP: Fixed resize IES when already baked in the Atlas.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-ies-profile-breaks-point-light-after-increasing-resolution-past-1024">1299233</a>)</p></li>
+<li><p>HDRP: Fixed Rough Distortion frame setting not greyed out when Distortion is disabled in HDRP Asset.</p></li>
+<li><p>HDRP: Fixed screen being over-exposed when changing very different skies.</p></li>
+<li><p>HDRP: Fixed shadow matte not working with ambient occlusion when MSAA is enabled.</p></li>
+<li><p>HDRP: Fixed side effect on styles during compositor rendering.</p></li>
+<li><p>HDRP: Fixed size and spacing of compositor info boxes.
+(<a href="https://issuetracker.unity3d.com/issues/imgui-hdrp-base-layer-aovs-property-warning-text-is-clipped-in-graphics-compositor-window">1305652</a>)</p></li>
+<li><p>HDRP: Fixed skybox for ortho cameras.</p></li>
+<li><p>HDRP: Fixed some render texture leaks.</p></li>
+<li><p>HDRP: Fixed spacing of UI widgets in the Graphics Compositor.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-graphics-compositor-color-palette-alpha-line-changes-its-position-on-changing-the-chroma-keying-index-in-input-filters">1305638</a>)</p></li>
+<li><p>HDRP: Fixed SSGI frame setting not greyed out while SSGI is disabled in HDRP Asset.</p></li>
+<li><p>HDRP: Fixed StackLit ShaderGraph surface option property block to only display energy conserving specular color option for the specular parametrization.
+(<a href="https://issuetracker.unity3d.com/issues/shadergraph-hdrp-transmission-and-energy-conserving-specular-color-should-appear-only-in-their-respective-modes">1257050</a>)</p></li>
+<li><p>HDRP: Fixed sub-shadow rendering for cached shadow maps.</p></li>
+<li><p>HDRP: Fixed the condition on temporal accumulation in the reflection denoiser.
+(1303504)</p></li>
+<li><p>HDRP: Fixed the default background color for previews to use the original color.</p></li>
+<li><p>HDRP: Fixed timing issues with accumulation motion blur.</p></li>
+<li><p>HDRP: Fixed undo-redo on layered lit editor.</p></li>
+<li><p>HDRP: Fixed Undo/Redo instability of light temperature.</p></li>
+<li><p>HDRP: Fixed update upon light movement for directional light rotation.</p></li>
+<li><p>HDRP: Fixed various issues with non-temporal SSAO and rendergraph.</p></li>
+<li><p>HDRP: Fixed Warnings about "SceneIdMap" missing script in eye material sample scene.</p></li>
+<li><p>HDRP: Fixed white flashes on camera cuts on volumetric fog.</p></li>
+<li><p>HDRP: Fixed wizard checking FrameSettings not in HDRP Default Settings.</p></li>
+<li><p>HDRP: Fixed wrong shader / properties assignement to materials created from 3DsMax 2021 Physical Material.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-importing-a-model-with-a-3ds-max-physical-material-assign-an-incorrect-shader-and-does-not-apply-its-textures">1293576</a>)</p></li>
+<li><p>HDRP: Fixed XR depth copy when using MSAA.</p></li>
+<li><p>HDRP: Fixed: SSR with transparent.
+(<a href="https://issuetracker.unity3d.com/issues/hdrp-prb-accumulation-does-not-work-when-ssr-for-transparents-is-enabled">1311088</a>)</p></li>
 <li><p>IL2CPP: Corrected initialize the value of a Nullable when the nullable object is created via the null coalescing operator from a null value.
 (<a href="https://issuetracker.unity3d.com/issues/il2cpp-does-not-compile-null-coalescing-operator-properly-for-bool">1312533</a>)</p></li>
 <li><p>IL2CPP: Correctly report the public key for assemblies where is exists.</p></li>
@@ -2089,11 +2081,12 @@ is-treated-as-unentered&#41;.</p></li>
       </div>
       <div class="g12">
         <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
-  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/2020.3.1"></a></span>
-  <div class="tip">Unity 2020.3.1</div>
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/2020.3.3"></a></span>
+  <div class="tip">Unity 2020.3.3</div>
 </div>
-<div class="icon right">
-  <span class="btn next disabled ico-chevron-right"></span>
+<div class="scroll-link tooltip right" data-distance="-40|-30|top">
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/2021.1.1"></a></span>
+  <div class="tip">Unity 2021.1.1</div>
 </div>
       </div>
     </div>
