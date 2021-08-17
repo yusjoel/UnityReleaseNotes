@@ -104,66 +104,142 @@
         <h3>Known Issues in 2021.1.0f1</h3>
 
 <ul>
-<li><p>Addressable Assets: Performance bug reported by the DOTS team in PreloadManager::WaitForAllOperationToComplete
-(<a href="https://issuetracker.unity3d.com/issues/performance-bug-reported-by-the-dots-team-in-preloadmanager-waitforalloperationtocomplete">1322086</a>)</p></li>
-<li><p>2D: [URP] The Camera renders black screen when Post Processing is enabled in the 2D Renderer and in the Camera Component
-(<a href="https://issuetracker.unity3d.com/issues/urp-the-camera-renders-black-screen-when-post-processing-is-enabled-in-the-2d-renderer-and-in-the-camera-component">1318500</a>)</p></li>
-<li><p>Android:  App installed using APK from app bundle option in Android Studio fails to run
- (<a href="https://issuetracker.unity3d.com/issues/android-app-installed-using-apk-from-app-bundle-option-in-android-studio-fails-to-run">1314472</a>)</p></li>
-<li><p>Asset Bundles: Synchronous Asset Loading Does Not Correctly Load Preload Dependencies
-(<a href="https://issuetracker.unity3d.com/issues/synchronous-asset-loading-does-not-correctly-load-preload-dependencies">1321141</a>)</p></li>
-<li><p>Asset Importers: [Performance Regression] Importing an fbx model is noticeably slower when the model contains Animations
-(<a href="https://issuetracker.unity3d.com/issues/performance-regression-importing-an-fbx-model-is-noticeably-slower-when-the-model-contains-animations">1265275</a>)</p></li>
-<li><p>Asset Importers: Wintermute::Geometry::Verify errors are spammed when baking a Mesh with Mesh Compression set to Medium/High
-(<a href="https://issuetracker.unity3d.com/issues/wintermute-geometry-verify-errors-are-spammed-when-baking-a-mesh-with-mesh-compression-set-to-medium-slash-high">1313968</a>)</p></li>
-<li><p>Build Pipeline: [Cache Server] Building process freezes on compiling shader variants when connected to Accelerator
-(<a href="https://issuetracker.unity3d.com/issues/cache-server-building-process-freezes-on-compiling-shader-variants-when-connected-to-accelerator">1296800</a>)</p></li>
-<li><p>Cloth: Cloth is broken when parent GameObject scale is lower than 1 and Surface Penetration constraints are set 0
-(<a href="https://issuetracker.unity3d.com/issues/cloth-is-broken-when-parent-gameobject-scale-is-lower-than-1-and-surface-penetration-constraints-are-set-0">1319488</a>)</p></li>
-<li><p>Global Illumination: [GPUPLM] Crash in RadeonRaysMeshManager::RemoveGeometry while baking Terrain game object with 4k lightmaps on certain GPU
-(<a href="https://issuetracker.unity3d.com/issues/global-illumination-editor-crashes-while-baking-terrain-game-object-using-progressive-gpu-lightmapper">1255993</a>)</p></li>
-<li><p>Linux: Linux Editor throws "X Server took longer than x miliseconds to respond to SetGtkWindowSizeAndPosition" error after opening
-(<a href="https://issuetracker.unity3d.com/issues/linux-editor-throws-x-server-took-longer-than-x-miliseconds-to-respond-to-setgtkwindowsizeandposition-error-after-opening">1309607</a>)</p></li>
-<li><p>Mobile:  FixedUpdate gets called multiple times before the first Update when Build is run on a Device
-(<a href="https://issuetracker.unity3d.com/issues/mobile-fixedupdate-gets-called-multiple-times-before-the-first-update-when-build-is-run-on-a-device">1318647</a>)</p></li>
-<li><p>Packman: Package Manager incorrectly shows that there are no packages in a new project
-(<a href="https://issuetracker.unity3d.com/issues/package-manager-falsely-shows-that-there-are-no-packages-in-a-new-project">1319205</a>)</p></li>
+<li><p>Ads: [Android] Unity Ad return app to Lock screen
+(<a href="https://issuetracker.unity3d.com/issues/android-unity-ad-return-app-to-lock-screen">1281041</a>)</p></li>
+<li><p>Asset Import Pipeline: Editor crashes with out of memory while importing a lot of assets (mostly textures) at once, on Windows/DX11
+(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-with-system-out-of-memory-error-when-importing-size-heavy-textures">1324536</a>)</p></li>
+<li><p>Asset Importers: Editor crashes on UnityEditor.Unsupported:IsDestroyScriptableObject when applying changes to a custom asset
+(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-unityeditor-dot-unsupported-isdestroyscriptableobject-when-applying-changes-to-a-custom-asset">1353925</a>)</p></li>
+<li><p>Asset Importers: [MacOS] Second Unity instance in Activity Monitor is "not responding” after importing
+(<a href="https://issuetracker.unity3d.com/issues/macos-second-unity-instance-in-activity-monitor-is-not-responding-after-importing">1331736</a>)</p></li>
+<li><p>Audio: Crash on AudioCustomFilter::GetOrCreateDSP when recompiling scripts while in Play Mode
+(<a href="https://issuetracker.unity3d.com/issues/crash-on-audiocustomfilter-getorcreatedsp-when-recompiling-scripts-while-in-play-mode">1354002</a>)</p></li>
+<li><p>Audio: Crash on AudioMixer_CUSTOM_FindSnapshot when passing null as an argument to FindSnapshot()
+(<a href="https://issuetracker.unity3d.com/issues/crash-on-audiomixer-custom-findsnapshot-when-passing-null-as-an-argument-to-findsnapshot">1341752</a>)</p></li>
+<li><p>Customer QA Onboarding: Unity does not execute code weavers when the project is opened for the first time
+(<a href="https://issuetracker.unity3d.com/issues/unity-does-not-execute-code-weavers-when-its-opened-for-the-first-time">1350116</a>)</p></li>
+<li><p>Global Illumination: Crash while sculpting Terrain and Baking Lightmaps
+(<a href="https://issuetracker.unity3d.com/issues/crash-while-sculpting-terrain">1266511</a>)</p></li>
+<li><p>Global Illumination: [Enlighten] Fatal Error when closing the Editor while Generating Lighting
+(<a href="https://issuetracker.unity3d.com/issues/fatal-error-when-closing-the-editor-while-generating-lighting">1354238</a>)</p></li>
+<li><p>Global Illumination: [LightProbes] Probes lose their lighting data after entering Play mode when Baked and Realtime GI are enabled
+(<a href="https://issuetracker.unity3d.com/issues/light-probes-lose-their-lighting-data-after-entering-play-mode-when-baked-and-realtime-gi-are-enabled">1052045</a>)</p></li>
+<li><p>IMGUI: Editor's Toolbar is sometimes replaced by a white bar when opening any Scene
+(<a href="https://issuetracker.unity3d.com/issues/white-screen-replaces-the-play-scale-position-bars-editor-cannot-play">1341951</a>)</p></li>
+<li><p>Linux:  Crash on DisableSubMenu when double clicking to close a context menu
+(<a href="https://issuetracker.unity3d.com/issues/linux-crash-on-disablesubmenu-when-double-clicking-to-close-a-context-menu">1347655</a>)</p></li>
+<li><p>Linux: Linux Editor crashes at "_XFreeX11XCBStructure" when loading tutorials
+(<a href="https://issuetracker.unity3d.com/issues/linux-editor-crashes-at-xfreex11xcbstructure-when-loading-tutorials">1323204</a>)</p></li>
+<li><p>Metal: Performance in Game View is significantly impacted by Gfx.WaitForPresentOnGfxThread when a second monitor is connected
+(<a href="https://issuetracker.unity3d.com/issues/performance-in-game-view-is-significantly-impacted-by-gfx-dot-waitforpresentongfxthread-when-a-second-monitor-is-connected">1327408</a>)</p></li>
+<li><p>Mobile: [Android] App stops due to OnPixelCopyFinishedListener not being supported on devices with lower than 24 SDK
+(<a href="https://issuetracker.unity3d.com/issues/app-stops-due-to-onpixelcopyfinishedlistener-not-being-supported-on-devices-with-lower-than-24-sdk">1331290</a>)</p></li>
+<li><p>Mobile: [Android] Using TouchScreenKeyboard.Open with a non-empty placeholder multiple times causes the app to crash
+(<a href="https://issuetracker.unity3d.com/issues/android-using-touchscreenkeyboard-dot-open-with-a-non-empty-placeholder-multiple-times-causes-the-app-to-crash">1347370</a>)</p></li>
+<li><p>Mobile Graphics: [iOS] Player crashing when connecting external Display via USB-C port
+(<a href="https://issuetracker.unity3d.com/issues/ios-player-crashing-when-connecting-external-display-via-usb-c-port">1321153</a>)</p></li>
+<li><p>Mono: [Mono Upgrade] CommandBuffer native plugin events hang in the Editor
+(<a href="https://issuetracker.unity3d.com/issues/commandbuffer-native-plugin-events-hang-in-the-editor">1308216</a>)</p></li>
 <li><p>Packman: User can't easily configure location of both UPM and Asset Store package local cache
 (<a href="https://issuetracker.unity3d.com/issues/user-cant-easily-configure-location-of-both-upm-and-asset-store-package-local-cache">1317232</a>)</p></li>
-<li><p>Polybrush: [PolyBrush] Something went wrong saving brush settings Warning is thrown when Saving a Brush after opening the PolyBrush Window
-(<a href="https://issuetracker.unity3d.com/issues/polybrush-something-went-wrong-saving-brush-settings-warning-is-thrown-when-saving-a-brush-after-opening-the-polybrush-window">1315475</a>)</p></li>
-<li><p>Profiling: [Profiler] ArgumentNullException is thrown on maximizing Profiler window when Editor Record Mode is set
-(<a href="https://issuetracker.unity3d.com/issues/profiler-argumentnullexception-is-thrown-on-maximizing-profiler-window-when-editor-record-mode-is-set">1315755</a>)</p></li>
-<li><p>Project Browser: Basic primitive Meshes are not shown in Select Mesh window
-(<a href="https://issuetracker.unity3d.com/issues/basic-primitive-meshes-are-not-shown-in-select-mesh-window">1314696</a>)</p></li>
-<li><p>Quick Search: [Search] Fix asset worker log object thread stalling
-(<a href="https://issuetracker.unity3d.com/issues/search-fix-asset-worker-log-object-thread-stalling">1316768</a>)</p></li>
-<li><p>Scene Management: Freeze or crash on EditorSceneManager::ReloadScene when importing an Asset and reloading the opened Scene
-(<a href="https://issuetracker.unity3d.com/issues/freeze-or-crash-on-editorscenemanager-reloadscene-when-importing-an-asset-and-reloading-the-opened-scene">1309393</a>)</p></li>
+<li><p>Scene Management: Crash on BuildPrefabInstanceCorrespondingObjectMap when overriding nested prefab inside AssetDatabase.StartAssetEditing() block
+(<a href="https://issuetracker.unity3d.com/issues/crash-on-buildprefabinstancecorrespondingobjectmap-when-overriding-nested-prefab-inside-assetdatabase-dot-startassetediting-block">1324978</a>)</p></li>
 <li><p>Scripting: Crashes on mono_class_init when entering Play Mode after recompiling scripts
 (<a href="https://issuetracker.unity3d.com/issues/crashes-on-mono-class-init-when-entering-play-mode-after-recompiling-scripts">1262671</a>)</p></li>
-<li><p>Serialization: Crash in SerializedProperty::IsValid when reordering a SerializedProperty list
-(<a href="https://issuetracker.unity3d.com/issues/crash-in-serializedproperty-isvalid-when-reordering-a-serializedproperty-list">1320319</a>)</p></li>
-<li><p>Shader System: Crash on PAL_LocalIPC_IsConnected when IPC fails on launch
-(<a href="https://issuetracker.unity3d.com/issues/crash-on-pal-localipc-isconnected-when-ipc-fails-on-launch">1319336</a>)</p></li>
-<li><p>Shuriken: Crash on ParticleSystem_ShapeModule_CUSTOM_set_sprite_Injected when changing the shape.sprite of a null ParticleSystem
-(<a href="https://issuetracker.unity3d.com/issues/crash-on-particlesystem-shapemodule-custom-set-sprite-injected-when-changing-the-shape-dot-sprite-of-a-null-particlesystem">1319658</a>)</p></li>
+<li><p>Scripting: DomainReloadTests performance tests have regressed due to removal of built-in support for Visual Studio as a code editor
+(<a href="https://issuetracker.unity3d.com/issues/domainreloadtests-performance-tests-have-regressed-due-to-removal-of-built-in-support-for-visual-studio-as-a-code-editor">1336648</a>)</p></li>
+<li><p>Scripting: Error CS8035 is thrown on opening a project when using rulesets
+(<a href="https://issuetracker.unity3d.com/issues/error-cs8035">1349517</a>)</p></li>
+<li><p>Scripting: Increased Script Assembly reload time
+(<a href="https://issuetracker.unity3d.com/issues/increased-reload-time">1323490</a>)</p></li>
 <li><p>Terrain: Terrain Lit Opacity as Density option causes alpha'd areas on the 5th layer or greater to appear with artifacts
 (<a href="https://issuetracker.unity3d.com/issues/terrain-lit-opacity-as-density-option-causes-alphad-areas-on-the-5th-layer-or-greater-to-appear-with-artifacts">1283124</a>)</p></li>
+<li><p>uGUI: Performance degradation when activating or deactivating uGUI GameObject
+(<a href="https://issuetracker.unity3d.com/issues/performance-degradation-when-activating-or-deactivating-ugui-gameobject">1348763</a>)</p></li>
+<li><p>Video: Video player fails to start playing and null handle errors are thrown when running Unity Editor/Build with specific hardware
+(<a href="https://issuetracker.unity3d.com/issues/video-player-fails-to-start-playing-and-null-handle-errors-are-thrown-when-running-unity-editor-slash-build-with-specific-hardware">1237818</a>)</p></li>
+<li><p>Vulkan: [Editor] The Scene's GameObjects textures are seemingly random and change colours depending on the Scene's Camera pos.
+(<a href="https://issuetracker.unity3d.com/issues/vulkan-editor-the-scenes-gameobjects-textures-are-seemingly-random-and-change-colours-depending-on-the-scenes-camera-pos">1337772</a>)</p></li>
 </ul>
 
-<h3>Final 2021.1.0f1 Release Notes</h3>
+<h3>New 2021.1.0f1 Entries since 2021.1.0b12</h3>
 
-<h4>Features</h4>
+<h4>Improvements</h4>
 
 <ul>
-<li>Graphics : Added real-time Point Light Shadows to URP. <br> </li>
+<li>Package: Updated to ProBuilder 5.0.0.</li>
 </ul>
 
-<div class="inline-frame rel clear mb20">
-               <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-               <iframe src="https://www.youtube.com/embed/ruzVC4vnK2E?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-             </div>
+<h4>Changes</h4>
+
+<ul>
+<li><p>Package: Added the Code Coverage package at version 1.0.0. This package helps you identify areas of your code that need more testing, even if you haven't written any automated tests.</p></li>
+<li><p>Package: Updated FBX Exporter package to 4.0.1:<br>
+https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p></li>
+</ul>
+
+<h4>Fixes</h4>
+
+<ul>
+<li><p>Build Pipeline: Fixed excessive gizmo rebuilding increasing the player build times by a lot.
+(1307498)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Backed-out a changeset that introduced bad forced repaint in all Inspectors every frame.
+(<a href="https://issuetracker.unity3d.com/issues/an-empty-custom-editor-will-force-all-inspector-windows-to-be-redrawn-every-frame">1320482</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Fixed a regression with Inspector rebuild that was breaking SerializedProperties after Inspector refresh.
+(<a href="https://issuetracker.unity3d.com/issues/urp-nullreferenceexception-and-argumentnullexception-errors-thrown-on-changing-the-name-property-of-the-renderer-feature">1317257</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Fixed an issue where the Material selector was not able to reach out to the changed property after one Material change.
+(<a href="https://issuetracker.unity3d.com/issues/color-picker-controls-are-assigned-new-controlid-when-saving-current-scene">1315779</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Fixed issue where switching a material in the ObjectSelector breaks the event system of IMGUI.
+(<a href="https://issuetracker.unity3d.com/issues/unable-to-switch-to-different-material-when-selecting-another-material-from-asset-selector-window-on-particle-system-material">1308966</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Fixed Null reference exception regression in Inspectors.
+(<a href="https://issuetracker.unity3d.com/issues/preset-nullreferenceexception-error-thrown-on-disabling-auto-graphics-api-for-windows-checkbox-in-player-settings-preset-ass">1317707</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Fixed Null reference exception regression in Inspectors.
+(<a href="https://issuetracker.unity3d.com/issues/urp-unable-to-add-overrides-in-volume-profile">1318535</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Editor: Fixed Scene view selection outline rendering for transparent objects.
+(<a href="https://issuetracker.unity3d.com/issues/shuriken-particle-system-is-not-rendering-properly-in-the-scene-view">1316083</a>)<br>
+<em>First seen in 2021.1.0b8.</em></p></li>
+<li><p>Graphics: Correctly referenced the postprocessing package from the package manager.
+(<a href="https://issuetracker.unity3d.com/issues/post-processing-3-dot-0-3-package-cant-be-found-when-installing-from-package-manager">1317088</a>)</p></li>
+<li><p>Mobile: Aligned Scaler option checkboxes in the Simulator window.
+(<a href="https://issuetracker.unity3d.com/issues/adaptive-performance-scaler-options-checkboxes-are-misaligned-in-the-simulator-window">1297030</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Mobile: Fixed cases where the "View license" text in the settings view was obscuring the toggle.
+(<a href="https://issuetracker.unity3d.com/issues/adaptive-performance-ux-when-the-settings-view-is-narrowed-view-license-text-appears-on-top-of-the-toggle">1303986</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Mobile: Fixed Errors being thrown on installing Adaptive Performance Package when Simulator window is open.
+(<a href="https://issuetracker.unity3d.com/issues/adaptive-performance-errors-are-thrown-on-installing-adaptive-performance-package-when-simulator-window-is-open">1296672</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Mobile: Fixed Min and Max values not being saved after it is typed and the labels are too long.
+(<a href="https://issuetracker.unity3d.com/issues/adaptive-performance-ux-adaptive-framerate-or-adaptive-resolution-min-and-max-values-are-not-saved-after-it-is-typed">1304020</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Mobile: Updated the provider icon and info text to be displayed correctly.</p></li>
+<li><p>Package: Fixed bug that causes searcher window to be offset too far when accounting for host window boundaries.</p></li>
+<li><p>Package: Fixed bug that causes searcher window to close when double-clicking a category.
+(<a href="https://issuetracker.unity3d.com/issues/shadergraph-double-clicking-a-category-or-drop-down-arrow-closes-the-searcher">1302267</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Particles: Fixed <code>Simulate</code> behaviour being incorrectly labelled as Prewarm in the profiler.
+(<a href="https://issuetracker.unity3d.com/issues/particlesystem-dot-prewarm-is-caused-when-calling-particlesystem-dot-simulate-even-if-prewarm-option-is-disabled-on-the-particlesystem">1296365</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Prefabs: Added support for multiselection 'Create Variant' in Project Browser.
+(1313946)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+<li><p>Profiler: Selecting the Modules dropdown on Mac now closes the dropdown window if it's open.
+(<a href="https://issuetracker.unity3d.com/issues/profiler-profiler-modules-dropdown-window-doesnt-close-on-clicking-its-header">1317447</a>)</p></li>
+<li><p>Serialization: Fixed crash when entering play mode or on domain reload with a MonoBehaviour larger than 2,147,483,647 bytes.
+(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-raiseexception-when-allocating-huge-amount-of-memory">1313492</a>)<br>
+<em>This has already been backported to older releases and will not be mentioned in final notes.</em></p></li>
+</ul>
+
+<h3>Preview of Final 2021.1.0f1 Release Notes</h3>
+
+<h4>Features</h4>
 
 <ul>
 <li><p>2D: Added a button in the Tile Palette window to let users toggle drawing of Grid Gizmo in the Tile Palette window.</p></li>
@@ -199,14 +275,6 @@ This adds ability to use Alpha Transparency for padding pixels around Sprite Bor
 <li><p>Burst: Updated Burst to use version 10.0.0 of the LLVM compiler infrastructure by default.</p></li>
 <li><p>Burst: You can now select explicit x86/x64 architecture SIMD target for Universal Windows Platform.</p></li>
 <li><p>Editor: Added Device Simulator window as a Core feature of the Editor.</p></li>
-</ul>
-
-<div class="inline-frame rel clear mb20">
-               <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-               <iframe src="https://www.youtube.com/embed/swpdaMHZlBw?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-             </div>
-
-<ul>
 <li><p>Editor: Fetch the access token in a synchronous way if username and password are passed in arguments.</p></li>
 <li><p>Editor: Improved integration Search in Unity.</p></li>
 <li><p>Graphics: Added support for skinned mesh sampling in VFX.</p></li>
@@ -250,14 +318,6 @@ This adds ability to use Alpha Transparency for padding pixels around Sprite Bor
 <li><p>2D: Improved slicing performance.
 (<a href="https://issuetracker.unity3d.com/issues/2d-slicing-of-a-sprite-became-never-ending-process-when-cell-size-8-by-8-selected">1271316</a>)</p></li>
 <li><p>2D: Show grid preview when slicing spritesheets.</p></li>
-</ul>
-
-<div class="inline-frame rel clear mb20">
-               <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-               <iframe src="https://www.youtube.com/embed/SpMnWIGw_Ec?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-             </div>
-
-<ul>
 <li><p>2D: Store and reuse last used location when creating Tiles from the Tile Palette window.</p></li>
 <li><p>2D: Update 2D template to use current verified version of 2D packages.</p></li>
 <li><p>Android: Enabled use of Android 11 setFrameRate API when Optimized Frame Pacing is enabled and Vulkan is used, similar to OpenGL ES.</p></li>
@@ -292,8 +352,6 @@ This adds ability to use Alpha Transparency for padding pixels around Sprite Bor
 (<a href="https://issuetracker.unity3d.com/issues/console-window-add-clear-on-recompile-option">1264753</a>)</p></li>
 <li><p>Editor: Improve the multi-selection display of Culling Mask and Static fields of certain components.
 (<a href="https://issuetracker.unity3d.com/issues/imgui-maskfield-and-staticflags-multi-edit-control-behavior-should-be-improved">1190806</a>)</p></li>
-<li><p>Editor: Improved multi-select performance in ReorderableList.
-(<a href="https://issuetracker.unity3d.com/issues/inspector-multiselect-decreases-editor-performance">1279141</a>)</p></li>
 <li><p>Editor: Improved the reliability of our SQLite implementation.</p></li>
 <li><p>Editor: LODGroup values can now be edited via input fields in addition to the slider. Input field editing also works in multi-selection mode.</p></li>
 <li><p>Editor: Optimized mobile ASTC texture compression &#40;about two times faster now&#41;.</p></li>
@@ -307,8 +365,6 @@ This adds ability to use Alpha Transparency for padding pixels around Sprite Bor
 <li><p>Editor: Scene/Game view Gizmos drop-down window now has a Search field.
 (1274775)</p></li>
 <li><p>Editor: Two new events added to ObjectSelector: ObjectSelectorSelectionDone: An item in the list is double-clicked; and ObjectSelectorCanceled: The window was closed by explicitly pressing escape on the keyboard.</p></li>
-<li><p>Editor: Updated Navigation icons.
-(1254021)</p></li>
 <li><p>GI: Hid Enlighten-specific settings when it is not supported by the SRP. Affected areas are Mesh Renderer, Light, Scene view, Lighting Explorer and Lightmap Parameters.</p></li>
 <li><p>GI: Removed very verbose logging behavior during lighting data asset building.</p></li>
 <li><p>GI: Unity now stores memory-related logs in a file instead of just reporting them in the console.</p></li>
@@ -329,20 +385,12 @@ This adds ability to use Alpha Transparency for padding pixels around Sprite Bor
 <li><p>Mobile: Updated Mobile Notifications package to 1.3.2.</p></li>
 <li><p>Networking: Make UnityWebRequest objects properly show up in profiler.
 (1017004)</p></li>
-<li><p>Package: A warning is raised when adding more than one Input unit in a SuperUnit.</p></li>
-<li><p>Package: Open the inspector button and double clicking a graph in the project browser, now opens the visual scripting editor.</p></li>
 <li><p>Package: Updated input system package to 1.0.2.</p></li>
 <li><p>Package: Updated to ProBuilder 5.0.0.</p></li>
-</ul>
-
-<div class="inline-frame rel clear mb20">
-               <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-               <iframe src="https://www.youtube.com/embed/ZWK8rxZiQQI?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-             </div>
-
-<ul>
 <li><p>Package: Updated udp 2.1.4.</p></li>
-<li><p>Package: Warns the user when an Input System Package event is referencing an action of the wrong type for that event.</p></li>
+<li><p>Package: Visual Scripting: A warning is raised when adding more than one Input unit in a SuperUnit.</p></li>
+<li><p>Package: Visual Scripting: Open the inspector button and double clicking a graph in the project browser, now opens the visual scripting editor.</p></li>
+<li><p>Package: Visual Scripting: Warns the user when an Input System Package event is referencing an action of the wrong type for that event.</p></li>
 <li><p>Physics: Rearrange the ArticulationBody properties so that damping and friction is located right after mass and is not visually separated from it by the anchor properties.</p></li>
 <li><p>Prefabs: Optimized the performance of undo operations on objects in nested Prefabs by up to 30%.</p></li>
 <li><p>Profiler: Added profiling support for Asset importing via direct IP connection.</p></li>
@@ -355,14 +403,6 @@ This adds ability to use Alpha Transparency for padding pixels around Sprite Bor
 <li><p>Scripting: Added c/cpp/mm/m/java/h as defaults to "Project Settings-&gt;Editor-&gt;Additional extensions", so they appear in the code editor, which therefore provides an easy way to edit and inspect them.
 (1284679)</p></li>
 <li><p>Scripting: Added support for new managed code stripping annotation attributes.</p></li>
-</ul>
-
-<div class="inline-frame rel clear mb20">
-               <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-               <iframe src="https://www.youtube.com/embed/LSnxvdEtMQw?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-             </div>
-
-<ul>
 <li><p>Scripting: Added support for Unity Version Defines in Assembly definition import options.<br>
 This feature improvement allows scripts to easily specify different code snippets for different Unity version ranges. This is especially useful for introducing calls to newly added public APIs, in which case these API calls need to be guarded by defines based on a Unity version range of a given Unity version or later.<br>
 The Unity version range expression syntax is the same as the package version range expressions. The Unity version format differs from the package version format, so Unity version expressions are evaluated based on some rules specific to the Unity version format:<br></p>
@@ -371,13 +411,8 @@ The Unity version range expression syntax is the same as the package version ran
 <li>Comparison of release types follows the following rules: a&lt;b&lt;f=c&lt;p&lt;x. So for example, an alpha version is always smaller &#40;earlier&#41; than a beta version, regardless of the Incremental version.<br></li>
 <li>The Unity versions are allowed to have suffixes &#40;e.g 2020.1.3-bonfire&#41; which are ignored by the Unity version comparison code<br></li>
 <li>Chinese releases are equivalent to public releases &#40;f&#41; so for the sake of comparison in the version range expression 2020.1f3 would be equal to 2020.1c3.<br></li>
-<li>Experimental releases don't include an Incremental Version. For example. everything after 2020.2.1x would be treated as a suffix and ignored by the version comparison. </li>
-</ul>
-
-<div class="inline-frame rel clear mb20">
-           <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-           <iframe src="https://www.youtube.com/embed/6hFDEUAoGBY?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-         </div></li>
+<li>Experimental releases don't include an Incremental Version. For example. everything after 2020.2.1x would be treated as a suffix and ignored by the version comparison.</li>
+</ul></li>
 <li><p>Scripting: Changed Roslyn analyzers to be run as part of the normal compilation step.<br>
 This also results in analyzer errors being treated as compiler errors.</p></li>
 <li><p>Scripting: Greatly improved the performance of GameObject.FindGameObjectWithTag and GameObject.FindGameObjectsWithTag.</p></li>
@@ -516,8 +551,6 @@ Added Unity.IO.LowLevel.Unsafe.ReadStatusExtension methods -Unity.IO.LowLevel.Un
 <li><p>UI Toolkit: Changed: ProgressBar was moved to UnityEngine.UIElements to support runtime.</p></li>
 <li><p>UI Toolkit: Obsoleted: ShowHorizontal is obsolete. Use horizontalScrollerVisibility instead.</p></li>
 <li><p>UI Toolkit: Obsoleted: ShowVertical is obsolete. Use verticalScrollerVisibility instead.</p></li>
-<li><p>Universal: Added: Fixed material upgrader to run in batch mode.
-(1305402)</p></li>
 <li><p>Universal: Added: Removed Custom.meta which was causing warnings.
 (<a href="https://issuetracker.unity3d.com/issues/urp-warnings-about-missing-metadata-appear-after-installing">1314288</a>)</p></li>
 <li><p>VFX Graph: Added: Added sample vertices of a transformed skinned mesh with Position &#40;Skinned Mesh&#41; and Sample Skinned Mesh operator.</p></li>
@@ -561,7 +594,6 @@ Added Unity.IO.LowLevel.Unsafe.ReadStatusExtension methods -Unity.IO.LowLevel.Un
 <li><p>Editor: Deprecated Device Simulator package, feature moved to Core.</p></li>
 <li><p>Editor: Quick Search is now part of the Unity Editor and no package needs to be installed.</p></li>
 <li><p>Graphics: Changed so texture formats DXT1 and DXT5 in the UI labels are now named "DXT1&#124;BC1" and "DXT5&#124;BC3", indicating terminology used by modern graphics APIs.</p></li>
-<li><p>Graphics: Changed switch shaders to now use separate samplers instead of combined texture-samplers objects.</p></li>
 <li><p>Graphics: ComputeBuffer.IsValid now returns false when compute is not supported and ComputeBuffer.BeginWrite throws InvalidOperationException for invalid ComputeBuffers.
 (<a href="https://issuetracker.unity3d.com/issues/android-gles3-crash-on-samsung-galaxy-j5-after-launching-gfx-tests">1259525</a>)</p></li>
 <li><p>Graphics: Removed postprocessing package from core packages list.</p></li>
@@ -593,18 +625,13 @@ Added Unity.IO.LowLevel.Unsafe.ReadStatusExtension methods -Unity.IO.LowLevel.Un
 <li><p>HDRP: Updated the tooltip for the Decal Angle Fade property &#40;requires to enable Decal Layers in both HDRP asset and Frame settings&#41;.
 (1308048)</p></li>
 <li><p>Mobile: Made session bugfixes for Adaptive Performance provider subsystem management.</p></li>
+<li><p>Package: Added the Code Coverage package at version 1.0.0. This package helps you identify areas of your code that need more testing, even if you haven't written any automated tests.</p></li>
 <li><p>Package: Storyboard Global Mute moved from Cinemachine menu to Cinemachine preferences.</p></li>
 <li><p>Package: UI update - Moved Cinemachine menu to GameObject Create menu and Right Click context menu for Hierarchy.</p></li>
 <li><p>Package: Updated com.unity.cinemachine to 2.7.2.</p></li>
 <li><p>Package: Updated com.unity.purchasing version to 3.0.1.</p></li>
-<li><p>Package: Added the Code Coverage package at version 1.0.0. This package helps you identify areas of your code that need more testing, even if you haven't written any automated tests.</p></li>
 <li><p>Package: Updated FBX Exporter package to 4.0.1:<br>
-https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p>
-
-<div class="inline-frame rel clear mb20">
-           <img src="/profiles/unity3d/themes/unity/images/assets/elements/blank-1080.gif" class="blank bg-dg" />
-           <iframe src="https://www.youtube.com/embed/Iutu15CdL2E?HD=1&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;theme=dark&amp;color=white&amp;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1"></iframe>
-         </div></li>
+https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p></li>
 <li><p>Package Manager: The Package Manager no longer discards the existing package state in case of critical errors such as failure to parse the project manifest.</p></li>
 <li><p>Scripting: AsyncReadManager.Read no longer writes the number of bytes read to the input ReadCommand array. The bytes read can now be accessed via the new ReadHandle.GetBytesRead method.</p></li>
 <li><p>Scripting: Changed NativeArray limit of 2GiB in size, and now it can contain 2^31 items instead.</p></li>
@@ -636,10 +663,6 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 <h4>Fixes</h4>
 
 <ul>
-<li><p>2D: Clear existing Tile data in Tilemap when refreshing Tilemap due to editor validation.
-(<a href="https://issuetracker.unity3d.com/issues/crash-without-a-stacktrace-when-moving-tilemap-brush-in-the-scene-window">1272540</a>)</p></li>
-<li><p>2D: Fixed Create Physics2DMaterial menu item not being available when Physics2D module is enabled.
-(<a href="https://issuetracker.unity3d.com/issues/the-physicsmaterial-2d-cant-be-created-when-the-2d-sprite-package-is-not-installed">1300647</a>)</p></li>
 <li><p>2D: Fixed dynamic batching of SpriteRenderers with TilemapRenderers in Individual Mode with the BaseMap shader property.</p></li>
 <li><p>2D: Fixed exception when upgrading/downgrading packages used by Sprite Editor Window that is currently active.
 (<a href="https://issuetracker.unity3d.com/issues/2d-sprite-editor-window-to-turn-blank-along-with-exception-on-updating-2danimation-package-with-skinning-editor-selected">1242988</a>)</p></li>
@@ -663,14 +686,8 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 <li><p>2D: Order Tile Palette better when creating Tiles from a Sprite Texture when the size of Sprites are of multiples of each other.
 (<a href="https://issuetracker.unity3d.com/issues/tilepalette-tiles-are-not-ordered-in-the-palette-for-some-pre-sliced-textures">1281560</a>)</p></li>
 <li><p>2D: Prevent Tile Palette Prefabs from showing as a Active Target for the Tile Palette window when selected.</p></li>
-<li><p>2D: Removed border visual from 2D default Sprite textures.
-(<a href="https://issuetracker.unity3d.com/issues/some-2d-sprite-shapes-are-missing-when-trying-to-create-standard-sprites">1299684</a>)</p></li>
-<li><p>2D: Sprite Editor Window shows Editor Window's 'Save Changes' dialog before if it is closed if there are pending changes that needs to be apply.
-(<a href="https://issuetracker.unity3d.com/issues/uielement-uielement-is-not-compatible-error-is-thrown-while-closing-spriteeditor-window-without-applying">1274232</a>)</p></li>
 <li><p>2D: Store modified values of Grid Selection when asset/s are saved.
 (<a href="https://issuetracker.unity3d.com/issues/the-tile-palette-is-not-marked-as-dirty-and-changes-are-lost-after-editing-properties-of-a-tile-and-saving-the-scene">1287084</a>)</p></li>
-<li><p>Ads: Fixed issue where there could be a 400 error when enabling ads.
-(1308010)</p></li>
 <li><p>AI: Fixed editor crash when accessing null terrain tree meshes.
 (<a href="https://issuetracker.unity3d.com/issues/crash-on-calculatemeshbounds-when-baking-navmesh">1271682</a>)</p></li>
 <li><p>Android: Added a warning if making a signed release Android build without Arm64 binaries.
@@ -683,8 +700,6 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 (<a href="https://issuetracker.unity3d.com/issues/android-time-dot-unscaleddeltatime-does-not-match-time-dot-deltatime-when-timescale-is-1">1266965</a>)</p></li>
 <li><p>Android: Fixed a problem with custom Aspect ratio value in manifest file.
 (<a href="https://issuetracker.unity3d.com/issues/android-build-fails-when-setting-a-custom-aspect-ratio-up-to-2-dot-1-in-player-settings">1284210</a>)</p></li>
-<li><p>Android: Fixed an issue when using RenderDoc on Android with Vulkan on some Adreno devices caused by Unity's ASTC HDR support detection.
-(<a href="https://issuetracker.unity3d.com/issues/android-astc-hdr-check-may-cause-issues-with-renderdoc">1287309</a>)</p></li>
 <li><p>Android: Fixed an issue where the Build Settings window went black when SDK/build-tools were missing.
 (<a href="https://issuetracker.unity3d.com/issues/android-build-settings-window-goes-black-when-sdk-slash-build-tools-directory-is-empty">1230551</a>)</p></li>
 <li><p>Android: Fixed crash when using UAV with Vulkan on older Mali devices.
@@ -703,8 +718,6 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 (<a href="https://issuetracker.unity3d.com/issues/android-macos-macos-tooltip-file-path-to-preferences-in-android-build-settings-is-incorrect">1213519</a>)</p></li>
 <li><p>Android: When running Android SDK tool with elevated privileges use JDK bundled with Unity, previous behavior was the SDK tool would use java from PATH env variable, and would fail if there's no java installed and there's no java path set in PATH env variable.
 (<a href="https://issuetracker.unity3d.com/issues/android-windows-getting-unable-to-install-additional-sdk-when-java-is-not-installed-onto-windows-machine">1290206</a>)</p></li>
-<li><p>Animation: Fixed a display issue in the Inspector window that occurred after adding multiple StateMachineBehaviours to an object.
-(<a href="https://issuetracker.unity3d.com/issues/only-one-of-multiple-copies-of-the-same-statemachinebehaviour-script-is-visible-when-added-to-the-animation-state">1278575</a>)</p></li>
 <li><p>Animation: Fixed an animation out of bounds issue.
 (1295247)</p></li>
 <li><p>Animation: Fixed an issue where a humanoid mask did not correctly override during a transform.
@@ -738,15 +751,9 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 (1243094)</p></li>
 <li><p>Asset Import: Removed auto-alphabetization of items within a prefab.
 (<a href="https://issuetracker.unity3d.com/issues/the-object-hierarchy-is-not-preserved-when-objects-are-imported-using-scriptedimporter">1112123</a>)</p></li>
-<li><p>Asset Import: Texture Preview now updates correctly when switching from Alpha 8.
-(<a href="https://issuetracker.unity3d.com/issues/texture-preview-doesnt-update-correctly-when-changing-formats-from-the-alpha-8-format">1181655</a>)</p></li>
 <li><p>Asset Pipeline: Added warning dialog before running out of disk space. Check is done on every refresh.</p></li>
 <li><p>Asset Pipeline: Asset db file scanner will now error report files/folders that have a path or name that exceeded current limits. Path limit is 505/510 bytes &#40;510 for meta file&#41; and file name limit is 250/255 &#40;255 for meta file&#41;. This fixes also an issue that would occur if a folder name was too long for getting a .meta counterpart.
 (<a href="https://issuetracker.unity3d.com/issues/assertion-failed-on-expression-res-equals-equals-eagain-hasabortingerrors-when-importing-files-with-long-path">1280028</a>)</p></li>
-<li><p>Asset Pipeline: Deleting an asset in use in import worker could cause an infinite refresh loop.
-(1263755)</p></li>
-<li><p>Asset Pipeline: Fixed an issue where hash of a .asset file on disk was being updated locally without going through the AssetDatabase, resulting in native source assets to not be reloaded.
-(1183116)</p></li>
 <li><p>Asset Pipeline: Fixed for invalid artifact id assert that could get raised, when undo was restoring an object from a deleted asset.
 (<a href="https://issuetracker.unity3d.com/issues/tilemap-assertion-failed-exception-thrown-on-undo-action-after-removing-tilemap-and-tilemaprenderer-component">1254071</a>)</p></li>
 <li><p>Asset Pipeline: Fixed issue when calling AssetDatabase.IsValidFolder&#40;&#41; with a path that has a trailing slash at the end.
@@ -757,10 +764,6 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 (<a href="https://issuetracker.unity3d.com/issues/changes-made-to-asset-outside-unity-are-not-applied-during-play-mode-when-recompile-after-finish-playing-is-set-in-preferences">1150790</a>)</p></li>
 <li><p>Asset Pipeline: Logging in import worker will now always log to local import worker log file.
 (1286454)</p></li>
-<li><p>Audio: Fixed a crash that occurred on the macOS version of the Unity editor when AudioRenderer was repeatedly stopped then played.
-(<a href="https://issuetracker.unity3d.com/issues/macos-editor-crashes-when-repeatedly-stopping-and-playing-the-audiorenderer">1283073</a>)</p></li>
-<li><p>Audio: Fixed a volume fluctuation issue that occurred in Timeline audio when the scene was changed.
-(<a href="https://issuetracker.unity3d.com/issues/audio-clips-on-scene-end-while-switching-scenes-when-one-scene-has-timeline-audio-playing">1198128</a>)</p></li>
 <li><p>Audio: Fixed an initialization issue on macOS that occurred when no audio input devices were available.</p></li>
 <li><p>Audio: Fixed an issue in the Inspector window where the Wet slider did not immediately appear after selecting "Allow wet mixing" in the AudioGroup Strip View
 (1276039)</p></li>
@@ -805,8 +808,6 @@ https://docs.unity3d.com/Packages/com.unity.formats.fbx@4.0/manual/index.html</p
 <li><p>Burst: Fixed a bug whereby for platforms that require us to write intermediate LLVM bitcode files, UTF paths would be incorrectly handled.</p></li>
 <li><p>Burst: Fixed a bug with constant expressions that could cause a compile-time hang.</p></li>
 <li><p>Burst: Fixed a bug with float/double vector constructors of <code>Unity.Mathematics</code> that take half or half vector parameters.</p></li>
-<li><p>Burst: Fixed a macOS hang that could occur when a native hardware exception was thrown from Burst code while a dylib was being loaded from disk.
-(<a href="https://issuetracker.unity3d.com/issues/macos-crash-on-gc-mark-from-when-trashed-gc-objects-are-used-by-burst">1307691</a>)</p></li>
 <li><p>Burst: Fixed a poor error message when a generic unsupported type &#40;like a class or an auto-layout struct&#41; combined with an unsupported managed array &#40;like &#40;int, float&#41;&#91;&#93;&#41; wouldn't give the user any context on where the code went wrong.</p></li>
 <li><p>Burst: Fixed a very obscure bug where if you had a function-pointer that was called from another function-pointer of job, and that function-pointer happened to be compiled in a player build in the same bucket as the caller, and the no-alias cloning analysis identified that it could clone the original function-pointer to enable more aliasing optimizations, it could create a duplicate symbol error.</p></li>
 <li><p>Burst: Fixed alignment issues associated with xxHash3 on ArmV7 &#40;case 1288992&#41;.</p></li>
@@ -845,8 +846,6 @@ Non-static class member "isListening" is not initialized in this constructor nor
 <li><p>DX12: Fixed a crash when executing a CommandBuffer that references a deleted RayTracingAccelerationStructure object.</p></li>
 <li><p>DX12: Fixed a crash when RayTracingShader.Dispatch is called with an acceleration structure that was deleted in the meantime.
 (1281285)</p></li>
-<li><p>DX12: Fixed for incorrect parameter type on native plugin API IUnityGraphicsD3D12v5::TextureFromRenderBuffer and IUnityGraphicsD3D12v6::TextureFromRenderBuffer.
-(1278695)</p></li>
 <li><p>DX12: Fixed potential crash in Debug builds when exiting Unity Editor when DX12 is used.
 (1309031)</p></li>
 <li><p>Editor: Added a foolproof EditorGUIUtility.ResetGUIState&#40;&#41;; when drawing Inspectors in the Override Preview panel.
@@ -855,8 +854,6 @@ Non-static class member "isListening" is not initialized in this constructor nor
 (<a href="https://issuetracker.unity3d.com/issues/drawing-serialized-properties-with-hideininspector-attribute-only-works-for-some-variable-types">1273848</a>)</p></li>
 <li><p>Editor: Added padding to ReorderableList elements.
 (1281324)</p></li>
-<li><p>Editor: Added some missing sizes &#40;64, 128, 256&#41; for selected icons.
-(<a href="https://issuetracker.unity3d.com/issues/gameobject-and-folder-icons-become-pixelated-when-quality-levels-are-deleted-and-texture-quality-is-set-to-eight-res">1249745</a>)</p></li>
 <li><p>Editor: Allow Hyphen character in Input Field when ContentType Property is set to Name.
 (<a href="https://issuetracker.unity3d.com/issues/hyphen-symbol-is-not-allowed-inside-the-inputfield-if-its-content-type-is-set-to-name">1270473</a>)</p></li>
 <li><p>Editor: Checking and enabling VSync when Unmaximizing the Game view.
@@ -866,8 +863,6 @@ Non-static class member "isListening" is not initialized in this constructor nor
 <li><p>Editor: Create Empty Parent' no longer relies on Scene View position.</p></li>
 <li><p>Editor: Cursor is now locked to the center of the Game view in the Linux editor instead of the center of the screen when cursor lock is called in Play mode.
 (<a href="https://issuetracker.unity3d.com/issues/linux-editor-cursor-placed-in-center-of-screen-after-unlock">1272190</a>)</p></li>
-<li><p>Editor: Detect circular asset references, instead of crashing.
-(<a href="https://issuetracker.unity3d.com/issues/shadergraph-creating-a-2-deep-recursive-subgraph-crashes-unity-and-makes-project-unopenable">1249114</a>)</p></li>
 <li><p>Editor: Double-click on tab header maximizes/unmaximizes it.
 (1279177)</p></li>
 <li><p>Editor: Dragging-and-dropping files across folders inside the Project Window will now prompt the user to choose what to do with a file when there are conflicting file names.
@@ -921,22 +916,12 @@ Non-static class member "isListening" is not initialized in this constructor nor
 <li><p>Editor: Fixed an issue where, after Play In Editor completed, settings were reset to default.</p></li>
 <li><p>Editor: Fixed an issue with adding new tags and sorting layers in the Preset of 'Tags &amp; Layers'.
 (<a href="https://issuetracker.unity3d.com/issues/editor-new-tags-and-sorting-layers-are-not-created-and-added-in-the-list-of-preset-of-tags-and-layers">1268174</a>)</p></li>
-<li><p>Editor: Fixed an issue with object selector closing inappropriately on click.
-(1286812)</p></li>
-<li><p>Editor: Fixed Animation window keyframe Copy/Paste keyboard shortcuts not working before the main curve area has been clicked on.
-(<a href="https://issuetracker.unity3d.com/issues/keyframes-are-not-pasted-from-one-animation-clip-to-another">1265480</a>)</p></li>
 <li><p>Editor: Fixed bad initial sync of search query.
 (<a href="https://issuetracker.unity3d.com/issues/search-sync-sends-wrong-initial-search-query">1296709</a>)</p></li>
-<li><p>Editor: Fixed blue line that appears when component cannot be placed while reordering or adding new components in the Inspector.
-(<a href="https://issuetracker.unity3d.com/issues/a-blue-line-appears-when-component-can-not-be-placed-while-reordering-or-adding-new-components-in-the-inspector">1300581</a>)</p></li>
 <li><p>Editor: Fixed broken search for many types when attempting to assign assets to exposed property fields.
 (<a href="https://issuetracker.unity3d.com/issues/broken-search-for-many-types-mesh-texture-etc-dot-when-attempting-to-assigning-assets-to-exposed-property-fields">1307402</a>)</p></li>
-<li><p>Editor: Fixed ConsoleWindow copy for SafeMode.
-(1276089)</p></li>
 <li><p>Editor: Fixed crash in GizmoUtilTests.
 (1274537)</p></li>
-<li><p>Editor: Fixed crash when duplicating a GameObject with HideInHierarchy flag.
-(<a href="https://issuetracker.unity3d.com/issues/crash-on-transform-setsiblingindexinternal-when-duplicating-or-copy-pasting-a-specific-gameobject">1288394</a>)</p></li>
 <li><p>Editor: Fixed CSharpCompiler.CompileAssemblyFromSource on Linux.</p></li>
 <li><p>Editor: Fixed Custom font reset option not resetting all the values to their defaults.
 (<a href="https://issuetracker.unity3d.com/issues/imgui-reset-functionality-doesnt-work-for-custom-font-asset">1268319</a>)</p></li>
@@ -980,24 +965,12 @@ Non-static class member "isListening" is not initialized in this constructor nor
 (<a href="https://issuetracker.unity3d.com/issues/logging-does-not-fully-clear-the-memory-used-once-the-console-is-cleared">1264725</a>)</p></li>
 <li><p>Editor: Fixed issue where rectangle selection box sometimes did not select all vertices in the rectangle when editing a shape for Shadow Caster 2D.
 (<a href="https://issuetracker.unity3d.com/issues/rectangle-selection-box-sometimes-does-not-select-all-vertices-in-the-rectangle-when-editing-shape-for-shadow-caster-2d">1282153</a>)</p></li>
-<li><p>Editor: Fixed issue where switching a material in the ObjectSelector breaks the event system of IMGUI.
-(<a href="https://issuetracker.unity3d.com/issues/unable-to-switch-to-different-material-when-selecting-another-material-from-asset-selector-window-on-particle-system-material">1308966</a>)</p></li>
-<li><p>Editor: Fixed issue where the Editor Script extending GameView function like Device Package in Non-English&#40;e.g. Japanese&#41; raises exceptions every frame.
-(<a href="https://issuetracker.unity3d.com/issues/gameview-stop-working-with-devicesimulator-installed-when-editor-is-in-different-language-japanese">1275960</a>)</p></li>
-<li><p>Editor: Fixed issue where WinMerge would not be detected as a diff tool on some systems.
-(<a href="https://issuetracker.unity3d.com/issues/winmerge-is-not-defectected-in-preferences-diff-tool-dropdown">1303298</a>)</p></li>
-<li><p>Editor: Fixed issue with the alignment of certain buttons in some of the 2D colliders.
-(<a href="https://issuetracker.unity3d.com/issues/imgui-edit-collider-button-is-overlapping-with-the-material-property-for-all-2d-collider">1281292</a>)</p></li>
-<li><p>Editor: Fixed LayoutGroup errors when renaming Prefab after changes in Isolation mode.
-(<a href="https://issuetracker.unity3d.com/issues/endlayoutgroup-beginlayoutgroup-must-be-called-first-error-is-thrown-when-manually-saving-changes-to-prefab-after-renaming-it">1291996</a>)</p></li>
 <li><p>Editor: Fixed LOD Group presets to not include references to renderers as these are related to Game Objects rather than project Assets.
 (<a href="https://issuetracker.unity3d.com/issues/assigning-a-preset-to-a-lodgroup-removes-reference-to-the-selected-renderer">1251159</a>)</p></li>
 <li><p>Editor: Fixed modal window becoming non-interactable when creating a child modal window.
 (1215161)</p></li>
 <li><p>Editor: Fixed not being able to delete array elements via keyboard 'Delete' key.
 (<a href="https://issuetracker.unity3d.com/issues/an-array-elements-content-is-not-deleted-when-selecting-the-element-in-the-inspector-window-and-pressing-del-key">1260899</a>)</p></li>
-<li><p>Editor: Fixed OnDrawGizmos function is not called when the "Enter Play Mode Options" is enabled.
-(<a href="https://issuetracker.unity3d.com/issues/ondrawgizmos-function-is-not-called-when-the-enter-play-mode-options-is-enabled">1296270</a>)</p></li>
 <li><p>Editor: Fixed organization refresh every tick.
 (1280142)</p></li>
 <li><p>Editor: Fixed out of bounds errors when copying mesh renderer lists containing more renderers than the destination LOD Group in the Inspector.
@@ -1005,15 +978,11 @@ Non-static class member "isListening" is not initialized in this constructor nor
 <li><p>Editor: Fixed ping highlight does not mark a folded child GameObject in the Hierarchy correctly when scrolling is required to reach the object.
 (<a href="https://issuetracker.unity3d.com/issues/ping-highlight-does-not-mark-a-folded-child-gameobject-in-the-hierarchy-correctly-when-scrolling-is-required-to-reach-the-object">1171103</a>)</p></li>
 <li><p>Editor: Fixed Play and Pause button toggle icons not loading the correct "On" state when entering Play mode.</p></li>
-<li><p>Editor: Fixed Play mode button presses not always registering if done during script compilation.
-(<a href="https://issuetracker.unity3d.com/issues/editor-shows-that-play-mode-button-is-pressed-if-the-play-mode-button-is-pressed-while-a-script-hasnt-finished-compiling">1300377</a>)</p></li>
 <li><p>Editor: Fixed Player Settings Reset not clearing some icons for Android and iOS.
 (<a href="https://issuetracker.unity3d.com/issues/mobile-resetting-the-player-settings-does-not-reset-icons-to-default-empty-values">1263065</a>)</p></li>
 <li><p>Editor: Fixed player settings visual glitch, "Metal API Validation" check box having an extra indentation level.</p></li>
 <li><p>Editor: Fixed PropertyEditor callback issue which prevented PropertyEditor from being deallocated.</p></li>
 <li><p>Editor: Fixed rare crash when several Editors are opened.</p></li>
-<li><p>Editor: Fixed ReorderableList array property disregarding 'includeChildren'.
-(1312364)</p></li>
 <li><p>Editor: Fixed ReorderableList having wrong label/field width ratio.</p></li>
 <li><p>Editor: Fixed ReorderableList incorrectly looping element selection when using arrow up or arrow down keys.
 (<a href="https://issuetracker.unity3d.com/issues/array-selection-cycling-using-the-arrow-key-shortcuts-is-inconsistent">1305527</a>)</p></li>
@@ -1051,14 +1020,10 @@ Non-static class member "isListening" is not initialized in this constructor nor
 (<a href="https://issuetracker.unity3d.com/issues/the-items-of-reorderable-list-are-not-expanded-slash-collapsed-when-using-right-slash-left-arrow-keys">1281321</a>)</p></li>
 <li><p>Editor: Improved default Hierarchy search engine's performance.
 (1313691)</p></li>
-<li><p>Editor: Improved Editor rendering performance.
-(<a href="https://issuetracker.unity3d.com/issues/urp-template-major-performance-drop-in-the-editor-during-play-mode">1277222</a>)</p></li>
 <li><p>Editor: Improved the performance of the model importer when dealing with degenerate triangles.
 (<a href="https://issuetracker.unity3d.com/issues/unity-editor-freezes-when-importing-a-specific-fbx-file">1232201</a>)</p></li>
 <li><p>Editor: Last selected console log entry now stays active after search filter is removed.
 (1264776)</p></li>
-<li><p>Editor: Made 3D RenderTexture inspector use 3D Texture preview.
-(1227413)</p></li>
 <li><p>Editor: On Windows, LTS builds of the Editor will now each have their own entry in Add/Remove programs.
 (<a href="https://issuetracker.unity3d.com/issues/final-release-versions-are-not-listed-separately-in-programs-and-features-list-of-applications-in-the-system">1267038</a>)</p></li>
 <li><p>Editor: Optimized rendering of TreeView when it has a large selection set.</p></li>
@@ -1070,9 +1035,6 @@ Non-static class member "isListening" is not initialized in this constructor nor
 (1273682)</p></li>
 <li><p>Editor: Scene/Game view gizmo fadeout is less aggressive now, and can be user controlled via "Fade Gizmos" slider in Gizmos window.
 (<a href="https://issuetracker.unity3d.com/issues/wire-gizmos-not-visible-from-a-distance">1274317</a>)</p></li>
-<li><p>Editor: Since the picking zones were increased for touch &#40;tablet + finger&#41; it seems that tablet users have trouble using scrollbars because the splitter gets in the way.<br>
-The behavior is reverted.
-(<a href="https://issuetracker.unity3d.com/issues/part-of-a-scrollbar-can-not-be-clicked-and-scrolled-because-window-starts-resizing">1240329</a>)</p></li>
 <li><p>Editor: String, Integer, Float, Character and BoundsInt type SerializedProperties now have Copy/Paste context menu options.</p></li>
 <li><p>Editor: The input package now correctly calculates mouse deltas when the cursor is locked under Linux.
 (<a href="https://issuetracker.unity3d.com/issues/linux-inputsystems-mouse-delta-values-do-not-change-when-the-cursor-lockstate-is-set-to-locked">1248389</a>)</p></li>
@@ -1090,22 +1052,14 @@ The behavior is reverted.
 (1296465)</p></li>
 <li><p>GI: Cookies on baked point lights now respect light rotation.
 (<a href="https://issuetracker.unity3d.com/issues/rotation-of-baked-point-light-with-a-cookie-ignored-when-baking-lightmap">1289490</a>)</p></li>
-<li><p>GI: Disc Lights now have Gizmos.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-disk-light-does-not-have-a-3d-icon">1273193</a>)</p></li>
 <li><p>GI: Fixed a bug so that the Clear Baked data control now resets the ambient probe and default reflection probe fields.
 (<a href="https://issuetracker.unity3d.com/issues/gi-clearing-bake-data-does-not-sync-to-game-view-or-scene-view-immediately">1200802</a>)</p></li>
 <li><p>GI: Fixed a Static Analysis Defect 53772 in EnlightenJobHelpers.h which passed a tainted expression "sz" to "resize", which uses it as an allocation size.
 (1290400)</p></li>
-<li><p>GI: Fixed custom bake pipeline.
-(1293007)</p></li>
 <li><p>GI: Fixed HDR reflection probe baking when the Editor is in mobile platform mode with 11.11.10 HDR format active.
 (1280354)</p></li>
-<li><p>GI: Improved performance; HashTexEnv in Materials.cpp was resource-intensive.
-(1138460)</p></li>
 <li><p>GI: Scene objects the user deletes and restores now retain their lightmaps.
 (<a href="https://issuetracker.unity3d.com/issues/the-lightmaps-are-not-restored-after-removing-baked-gameobject-and-undoing">1225425</a>)</p></li>
-<li><p>GI: The A-Trous denoiser associated with the CPU Progressive Lightmapper no longer introduces triangle-shaped artifacts into lightmaps.
-(<a href="https://issuetracker.unity3d.com/issues/cpu-plm-artifacts-on-the-baked-shadow-when-baking-with-using-a-trous-filter">1255973</a>)</p></li>
 <li><p>GI: The Auto Generate control is now accessible from every tab of the Lighting Window.
 (<a href="https://issuetracker.unity3d.com/issues/in-lighting-window-auto-generate-toggle-disappears-when-going-into-a-non-scene-tab">1266957</a>)</p></li>
 <li><p>GI: The Editor now selects the correct GPU for eGPU baking.
@@ -1117,8 +1071,6 @@ The behavior is reverted.
 (<a href="https://issuetracker.unity3d.com/issues/plm-opencl-errors-appear-in-the-console-when-attempting-to-generate-lighting-using-plm">1289660</a>)</p></li>
 <li><p>GI: Users can now animate indirect bounce intensity.
 (<a href="https://issuetracker.unity3d.com/issues/some-light-properties-are-not-animatable">1278770</a>)</p></li>
-<li><p>GI: When the Editor sets baked coefficients in Play mode, it now stops writing to stored Light Probes.
-(<a href="https://issuetracker.unity3d.com/issues/changes-to-the-coefficients-of-the-light-probes-persist-after-exiting-the-play-mode-when-they-were-changed-during-the-play-mode">1265063</a>)</p></li>
 <li><p>GI: While the Editor is rendering cubemaps, it now backs up and restores built in parameters.
 (<a href="https://issuetracker.unity3d.com/issues/shaders-that-use-lightcolor0-dot-rgb-flicker-to-black-in-game-view-when-reflection-probes-are-updated-in-realtime">1242415</a>)</p></li>
 <li><p>Graphics: Added a space in the Tier list UI in Graphic Settings.
@@ -1145,8 +1097,6 @@ The behavior is reverted.
 <li><p>Graphics: CPU optimisation for graphics memory allocation/deallocations.</p></li>
 <li><p>Graphics: Dirty prefab when dirtying a material used by that prefab.
 (1282291)</p></li>
-<li><p>Graphics: Encoding an R8-image to JPG or TGA no longer results in a cyan-tinted image; the result is now gray, as is the case for R16-images and for encoding to PNG.
-(<a href="https://issuetracker.unity3d.com/issues/images-with-encodetojpg-and-encodetotga-encoding-have-blue-tint-when-textureformat-dot-r8-format-is-used">1259972</a>)</p></li>
 <li><p>Graphics: Extended supported formats for GPU readback.
 (1123748)</p></li>
 <li><p>Graphics: Fixed a casting issue when assigning an int to a bool with HLSLcc.</p></li>
@@ -1182,10 +1132,6 @@ The behavior is reverted.
 (<a href="https://issuetracker.unity3d.com/issues/black-screen-after-switching-from-fullscreen-to-windowed-on-a-linux-build">1314460</a>)</p></li>
 <li><p>Graphics: Fixed issue where passing a null value to GetBlendShapeIndex function on Mesh class would cause the editor to crash.
 (<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-getchannelindex-when-passing-null-to-mesh-dot-getblendshapeindex">1288012</a>)</p></li>
-<li><p>Graphics: Fixed loading of png files with large chunks.
-(<a href="https://issuetracker.unity3d.com/issues/file-could-not-be-read-error-is-thrown-when-importing-a-png-that-has-xattr">1273050</a>)</p></li>
-<li><p>Graphics: Fixed loading Renderdoc causing textures to disappear in the texture inspector.
-(1296238)</p></li>
 <li><p>Graphics: Fixed Metal error when creating pipeline state if number of shader components is less than render target pixel format.
 (1242218)</p></li>
 <li><p>Graphics: Fixed missing support for coarse/fine derivatives in shader code.</p></li>
@@ -1195,8 +1141,6 @@ The behavior is reverted.
 (1300327)</p></li>
 <li><p>Graphics: Fixed OpenGL bug where projection matrix was not correctly restored after calling Graphics.DrawMeshNow and GL.PopMatrix.
 (<a href="https://issuetracker.unity3d.com/issues/ios-projection-matrix-gets-corrupted">1262117</a>)</p></li>
-<li><p>Graphics: Fixed possible crash on Adreno when using RenderPass API and Vulkan.
-(<a href="https://issuetracker.unity3d.com/issues/android-vulkan-crash-on-adreno-devices-with-vulkan-when-using-subpass-data-from-previous-subpass">1282143</a>)</p></li>
 <li><p>Graphics: Fixed potential divide by 0 when running graphics jobs on UWP Player.</p></li>
 <li><p>Graphics: Fixed Prefab Inspector preview &#40;Editor&#41; adding Renderer components into existing RayTracingAccelerationStructures while the Inspector preview is visible.
 (<a href="https://issuetracker.unity3d.com/issues/dxr-a-raytracingaccelerationstructure-using-automatic-management-mode-will-also-include-the-mesh-in-prefab-inspector">1297799</a>)</p></li>
@@ -1217,22 +1161,14 @@ The behavior is reverted.
 <li><p>Graphics: Fixed the default background color for previews to use the original color.</p></li>
 <li><p>Graphics: Fixed the display name of a Volume Parameter when is defined the attribute InspectorName.</p></li>
 <li><p>Graphics: Fixed the selection of the Additional properties from ALL/NONE when the option "Show additional properties" is disabled.</p></li>
-<li><p>Graphics: Fixed unintentional crossfades for LODs when the animated cross-fading flag is enabled.
-(1305495)</p></li>
 <li><p>Graphics: Fixed Validation error from creating 0 size frame buffers on Vulkan.
 (1278091)</p></li>
-<li><p>Graphics: Fixed VFX Assets being reverted after save.
-(<a href="https://issuetracker.unity3d.com/issues/vfx-reverts-the-first-compilation-change-after-the-vfx-asset-is-saved">1315191</a>)</p></li>
 <li><p>Graphics: Fixed Vulkan validation error Shader requires vertexPipelineStoresAndAtomics but is not enabled on the device.
 (1288889)</p></li>
 <li><p>Graphics: Fixed Vulkan Validation warnings when fragment shader input is not produced for render pass attachment.
 (1278088)</p></li>
 <li><p>Graphics: Fixed &#91;VFX&#93; HUP regressions introduced by editor repaint optimizations.
 (<a href="https://issuetracker.unity3d.com/issues/camera-command-list-issues-leading-to-broken-gpu-sorting-and-mesh-lods">1293323</a>)</p></li>
-<li><p>Graphics: Fixes a crash, when changing the mesh data during the frame.
-(<a href="https://issuetracker.unity3d.com/issues/crash-on-createdirect3d11surfacefromdxgisurface-when-a-material-in-mesh-renderer-is-selected">1227781</a>)</p></li>
-<li><p>Graphics: Fixes instanced shadow rendering when using closest fit with a single cascade.
-(<a href="https://issuetracker.unity3d.com/issues/instanced-terrain-shadows-are-flickering-when-no-shadow-cascades-and-close-fit-shadow-projection-are-used-and-camera-is-moving">1257896</a>)</p></li>
 <li><p>Graphics: Fixes NullReferenceException on Terrain Shaders when project is opened after deleting Library folder.
 (<a href="https://issuetracker.unity3d.com/issues/urp-nullreferenceexception-on-terrain-shaders-when-project-is-opened-after-deleting-library-folder">1240491</a>)</p></li>
 <li><p>Graphics: Fixes reflections in baked reflection probes not being rendered when rendering path is set to deferred.
@@ -1243,8 +1179,6 @@ The behavior is reverted.
 (1261622)</p></li>
 <li><p>Graphics: Handle depthSlice -1 for backbuffer when using OpenGL ES.
 (1281747)</p></li>
-<li><p>Graphics: Improved frustum test for point lights. Fix cyclic error in computing <code>Projection -&amp;gt;  CalculateObliqueMatrix -&amp;gt; Projection</code>.
-(<a href="https://issuetracker.unity3d.com/issues/cullingresults-dot-visiblelights-returns-positive-light-count-while-there-are-no-visible-lights-in-the-camera-frustum">1266851</a>)</p></li>
 <li><p>Graphics: Keep it possible to create textures using deprecated ASTC enums.
 (<a href="https://issuetracker.unity3d.com/issues/ios-unable-to-create-texture2ds-with-astc-rgba-4x4-texture-format-at-runtime">1277203</a>)</p></li>
 <li><p>Graphics: Made accessing buffer dimensions an error when compiling for metal.
@@ -1265,19 +1199,10 @@ The behavior is reverted.
 (1229974)</p></li>
 <li><p>Graphics: Small bugfixes in the texture mipmap streamer.</p></li>
 <li><p>Graphics: Standalone Server Build forces Gfx Threading Mode Direct.</p></li>
-<li><p>Graphics: Static batching and Mesh.CombineMeshes can handle more vertex formats now, for example Float16 normals or UVs. It also no longer clamps vertex colors to UNorm8 format - if input meshes have higher precision vertex colors, then combined mesh will have high precision colors too.
-(<a href="https://issuetracker.unity3d.com/issues/assertion-triggered-by-mesh-dot-combinemeshes-when-underlying-meshs-vertex-format-has-changed">1274815</a>)</p></li>
-<li><p>Graphics: StencilSampling wrongly reported as supported due to incorrect mappings of FormatUsage between C&#35; and C++.
-(1315531)</p></li>
 <li><p>Graphics: Terrain asset presets no longer include instance data. This corrects the intended behavior, and significantly improves performance.
 (<a href="https://issuetracker.unity3d.com/issues/application-dot-processwindowsmessage-loading-window-is-displayed-when-closing-select-preset-window-of-a-terrain">1244214</a>)</p></li>
 <li><p>Graphics: Terrain no longer has artifacts on some iOS devices when using Anisotropic Textures and Instancing.
 (<a href="https://issuetracker.unity3d.com/issues/ios-metal-opengles3-terrain-is-rendered-with-artifacts-on-ios-devices-when-using-anisotropic-textures">1103084</a>)</p></li>
-<li><p>Graphics: Texture2DArray, Texture3D and Texture2D inspectors now allow undo &#40;ctrl+z&#41; actions.<br>
-Runtime CustomRenderTextures can now be exported to .png from the inspector.<br>
-Color space change prompt can now be localized.<br>
-Fixed crash due to invalid shaderpass index when changing materials in a CustomRenderTexture.
-(<a href="https://issuetracker.unity3d.com/issues/texturecubemap-texture2darray-texture3d-and-texture2d-type-asset-inspector-undo-functionality-is-broken">1175907</a>, <a href="https://issuetracker.unity3d.com/issues/texture-argumentexception-thrown-when-custom-render-texture-is-exported-from-its-preset">1284784</a>, 1288007, 1293804, <a href="https://issuetracker.unity3d.com/issues/editor-crashes-when-changing-customrendertextures-material-shader-if-the-new-shader-has-a-mismatched-number-of-passes">1300770</a>)</p></li>
 <li><p>Graphics: The Post-processing package has been updated to version 3.0.1.</p></li>
 <li><p>Graphics: Updated SRP packages to 10.2.0.</p></li>
 <li><p>Graphics: Updated terrain warning against using shaders that rely on tangents to recommend the correct shaders for SRPs.
@@ -1325,8 +1250,6 @@ Fixed crash due to invalid shaderpass index when changing materials in a CustomR
 <li><p>HDRP: Fixed error in Depth Of Field near radius blur calculation.
 (1306228)</p></li>
 <li><p>HDRP: Fixed error in the RTHandle scale of Depth Of Field when TAA is enabled.</p></li>
-<li><p>HDRP: Fixed error when increasing the maximum planar reflection limit.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-editor-crashes-on-increasing-max-planer-reflection-on-screen-property-value-in-the-hdrp-settings">1306530</a>)</p></li>
 <li><p>HDRP: Fixed error when opening the default composition graph in the Graphics Compositor.
 (1318933)</p></li>
 <li><p>HDRP: Fixed GC allocations from XR occlusion mesh when using multipass.</p></li>
@@ -1400,28 +1323,14 @@ Fixed crash due to invalid shaderpass index when changing materials in a CustomR
 <li><p>HDRP: Fixed XR depth copy when using MSAA.</p></li>
 <li><p>HDRP: Fixed: SSR with transparent.
 (<a href="https://issuetracker.unity3d.com/issues/hdrp-prb-accumulation-does-not-work-when-ssr-for-transparents-is-enabled">1311088</a>)</p></li>
-<li><p>IL2CPP: Corrected initialize the value of a Nullable when the nullable object is created via the null coalescing operator from a null value.
-(<a href="https://issuetracker.unity3d.com/issues/il2cpp-does-not-compile-null-coalescing-operator-properly-for-bool">1312533</a>)</p></li>
 <li><p>IL2CPP: Correctly report the public key for assemblies where is exists.</p></li>
 <li><p>IL2CPP: Fixed issue with generated Visual Studio Solution project files that caused IntelliSense and other code analysis tools to fail when scanning source files.
 (1285102)</p></li>
-<li><p>IL2CPP: Fixed nullable value being corrupted after a call to GetType&#40;&#41; in generic code.
-(<a href="https://issuetracker.unity3d.com/issues/il2cpp-nullable-variables-become-null-in-a-generic-method-in-il2cpp-builds">1310458</a>)</p></li>
-<li><p>IMGUI: Fixed an issue where cursor does not jump to start of text on home key in project browser window.
-(<a href="https://issuetracker.unity3d.com/issues/the-cursor-does-not-jump-to-the-start-of-the-text-field-when-using-home-key-while-renaming-assets-in-the-project-window">1287121</a>)</p></li>
-<li><p>IMGUI: Fixed Null object being created when dropping Sprite to Array in Inspector.
-(<a href="https://issuetracker.unity3d.com/issues/dropping-sprite-in-a-reorderable-list-will-add-a-null-object">1281986</a>)</p></li>
 <li><p>IMGUI: Https://jira.unity3d.com/browse/UIT-191: The rect transform rectangle visual is too light.</p></li>
 <li><p>IMGUI: Updated Layers drop down icon positions and images.
 (1184677)</p></li>
-<li><p>iOS: Background audio is no longer cut when "Mute Other Audio Sources" is unchecked.
-(<a href="https://issuetracker.unity3d.com/issues/ios-background-audio-is-cut-off-regardless-if-mute-other-audio-sources-is-untoggled">1259748</a>)</p></li>
-<li><p>iOS: Background audio no longer stopped when Unity audio is disabled.
-(<a href="https://issuetracker.unity3d.com/issues/ios-background-audio-sources-are-stopped-when-launching-an-app-with-disable-unity-audio-checked">1286259</a>)</p></li>
 <li><p>iOS: Fixed a crash when going to background from portrait upside down on some devices.
 (<a href="https://issuetracker.unity3d.com/issues/ios-app-is-crashing-when-it-is-switched-out-of-focus-and-focused-again-while-it-is-in-reverse-portrait">1285042</a>)</p></li>
-<li><p>iOS: Fixed an issue where password input cleared on the first character when touch keyboard input is hidden.
-(<a href="https://issuetracker.unity3d.com/issues/tmp-ios-password-input-field-with-hidden-mobile-input-deletes-characters-after-re-focus">1251498</a>)</p></li>
 <li><p>iOS: Fixed application not rendering when using a very high Application.targetFrameRate.</p></li>
 <li><p>iOS: Fixed xcode12 picking "generic" target by default, resulting in "build and run" not running app.
 (<a href="https://issuetracker.unity3d.com/issues/ios-xcode12-build-and-run-generates-an-xcodeproj-project-but-does-not-build-or-run-it-when-using-xcode-12">1279315</a>)</p></li>
@@ -1445,8 +1354,6 @@ Fixed crash due to invalid shaderpass index when changing materials in a CustomR
 (<a href="https://issuetracker.unity3d.com/issues/linux-editor-tooltips-appear-in-the-same-loaction-and-of-the-same-size-as-the-first-one-if-shown-consecutively-one-after-another">1279878</a>)</p></li>
 <li><p>Linux: Fixed Unity Bug Reporter taskbar icon on Ubuntu LTS showing "unknown".
 (<a href="https://issuetracker.unity3d.com/issues/linux-unity-bug-reporter-taskbar-icon-description-says-unknown">1188799</a>)</p></li>
-<li><p>Linux: Package Manager's prompt keeps reappearing to resolve packages.
-(<a href="https://issuetracker.unity3d.com/issues/package-managers-prompt-keeps-reappearing-to-resolve-packages">1315014</a>)</p></li>
 <li><p>Linux: Re-enable CanAllocateALotOfMemory test.
 (1111793)</p></li>
 <li><p>Linux: Show error if Linux Mono support is not installed.
@@ -1470,8 +1377,6 @@ Fixed crash due to invalid shaderpass index when changing materials in a CustomR
 (<a href="https://issuetracker.unity3d.com/issues/macos-bottom-part-of-the-inspector-is-hidden-when-entering-fullscreen-mode-in-the-editor">1283862</a>)</p></li>
 <li><p>macOS: Fixed improper layout of the Package Manager Window when making the Editor full screen.
 (<a href="https://issuetracker.unity3d.com/issues/package-manager-package-manager-window-does-not-become-fullscreen-when-maximized">1278245</a>)</p></li>
-<li><p>macOS: Fixed Unity Editor stealing focus, by activating tooltips when other apps are currently active.
-(<a href="https://issuetracker.unity3d.com/issues/mac-tooltip-and-certain-buttons-in-the-editor-cause-loss-of-focus-on-top-level-windows-when-vs-or-vs-code-debugger-is-attached">1269177</a>)</p></li>
 <li><p>macOS: Report shader compiler error when invalid texture samplers are used in Metal shaders.
 (<a href="https://issuetracker.unity3d.com/issues/macos-no-error-is-thrown-on-metal-graphics-api-when-shader-texture-slash-sampler-is-mismatched">1214014</a>)</p></li>
 <li><p>macOS: Target directory has to be selected instead of target .xcodeproj when building MacOS Xcode Project.</p></li>
@@ -1480,52 +1385,48 @@ Fixed crash due to invalid shaderpass index when changing materials in a CustomR
 <li><p>Mobile: Ignore touch events in DeviceSimulator in notches and cutouts.
 (<a href="https://issuetracker.unity3d.com/issues/devicesimulator-the-input-is-detected-when-clicking-on-notch">1295407</a>)</p></li>
 <li><p>Mobile: Updated the provider icon and info text to be displayed correctly.</p></li>
-<li><p>Mono: Fixed regression where we would wait a full 2 second timeout on shutdown.
-(<a href="https://issuetracker.unity3d.com/issues/built-player-takes-multiple-seconds-to-shut-down">1295072</a>)</p></li>
 <li><p>Multiplayer: Fixed out of bounds access error when doing connection checks in unet.</p></li>
 <li><p>Multiplayer: Resolved an issue where you can now set the threadpool size for LL API.</p></li>
-<li><p>Networking: UnityWebRequest: fix il2cpp stripping potentially making ReceiveContentLength not called on custom download handler.
-(1282106)</p></li>
-<li><p>Package: Dropdown icon is not clipped with TextField under "Get Variable".</p></li>
 <li><p>Package: Error message when loading new scene with DontDestroyOnLoad.
 (<a href="https://issuetracker.unity3d.com/issues/cinemachine-throws-an-argumentoutofrange-exception-when-destroying-a-camera-with-dontdestroyonload">1283984</a>)</p></li>
-<li><p>Package: Fixed "Restore to Defaults" buttons in the Project Settings window.</p></li>
-<li><p>Package: Fixed an error when executing "Fix Missing Scripts" in a HDRP project.</p></li>
 <li><p>Package: Fixed bug that causes searcher window to be offset too far when accounting for host window boundaries.</p></li>
-<li><p>Package: Fixed console errors when deleting a Prefab with a Visual Script.</p></li>
-<li><p>Package: Fixed console errors when editing nested graphs during Play Mode.</p></li>
 <li><p>Package: Fixed edge-case exception when vcam is deleted.
 (1284701)</p></li>
-<li><p>Package: Fixed error message when custom inspectors are generated.</p></li>
-<li><p>Package: Fixed Graph getting corrupted when adding "Get Action Map" unit.</p></li>
-<li><p>Package: Fixed Node description being sometimes clipped.</p></li>
-<li><p>Package: Fixed the object Variables tabs not being updated when creating a Prefab.</p></li>
-<li><p>Package: Fixed ThreadAbortException when entering Play Mode while searching in the Fuzzy Finder.</p></li>
-<li><p>Package: Fixed warnings overflow in the console when deleting and adding a boolean variable in the blackboard.</p></li>
-<li><p>Package: Fixed warnings when entering play mode when the "Script Changes While Playing" is set to Recompile And Continue Playing.</p></li>
-<li><p>Package: FlowMachine type is now back in usable types.</p></li>
-<li><p>Package: Fuzzy finder no longer blinks when trying to add a node &#91;BOLT-1157&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1157&#41;,.</p></li>
-<li><p>Package: Fuzzy finder search window no longer remains above all other windows &#91;BOLT-1197&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1197&#41;";;;;;;;;;.</p></li>
-<li><p>Package: Fuzzy search no longer drops keyboard inputs and respond slowly &#91;BOLT-1214&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1214&#41;,.</p></li>
-<li><p>Package: GraphPointerException occurs when nesting graph within itself &#91;BOLT-1257&#93;&#40;https://issuetracker.unity3d.com/issues/visual-scripting-graphpointerexception-occurs-when-nesting-<br>
-graph-within-itself&#41;.</p></li>
-<li><p>Package: Help button in the visual scripting Assets and Behaviours inspector now links to the package documentation.</p></li>
 <li><p>Package: Lens inspector sometimes displayed ortho vs perspective incorrectly for a brief time.
 (<a href="https://issuetracker.unity3d.com/issues/cinemachine-camera-randomly-changes-lens-parameter-from-orthographic-size-to-field-of-view-when-duplicated">1060230</a>)</p></li>
-<li><p>Package: Missing succession for Cooldown. Output of Cooldown completed is treated as unentered.  &#91;BOLT-725&#93;&#40;https://issuetracker.unity3d.com/issues/bolt-1-output-of-cooldown-completed-<br>
-is-treated-as-unentered&#41;.</p></li>
-<li><p>Package: Opening the graph window no longer causes Unity UI stop processing mouse click &#91;BOLT-1159&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1159&#41;,.</p></li>
 <li><p>Package: Removed unnecessary allocations and garbage collections during runtime.</p></li>
-<li><p>Package: RenamedFrom attribute does not function correctly on array references to a renamed type &#91;BOLT-1149&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1149&#41;.</p></li>
-<li><p>Package: Rendering of inactive ObjectFields.</p></li>
-<li><p>Package: Resize cursor rect on group when graph window is zoomed.</p></li>
-<li><p>Package: ScalarAdd unit migration from 1.4.13 to 1.4.14 and above.</p></li>
-<li><p>Package: Scale groups when zoom is not at 1x.</p></li>
-<li><p>Package: Sidebar &#40;graph inspector/blackboard&#41; resize when a vertical scrollbar is needed.</p></li>
-<li><p>Package: Variable type reset to Enum when changing from Enum to GameObject when both Blackbaord and Variables inspector are displayed.</p></li>
-<li><p>Package: Visual Scripting Preferences being searchable &#91;BOLT-1218&#93;&#40;https://issuetracker.unity3d.com/issues/visual-scripting-preferences-are-not-searchable-when-using-search-in-the-preferences-window&#41;.</p></li>
-<li><p>Package: Visual Scripting Preferences spacing has been adjusted to avoid overlaps.</p></li>
-<li><p>Package: VisualScripting.Generated folder is removed when removing the VisualScripting package.</p></li>
+<li><p>Package: Visual Scripting: Dropdown icon is not clipped with TextField under "Get Variable".</p></li>
+<li><p>Package: Visual Scripting: Fixed "Restore to Defaults" buttons in the Project Settings window.</p></li>
+<li><p>Package: Visual Scripting: Fixed an error when executing "Fix Missing Scripts" in a HDRP project.</p></li>
+<li><p>Package: Visual Scripting: Fixed console errors when deleting a Prefab with a Visual Script.</p></li>
+<li><p>Package: Visual Scripting: Fixed console errors when editing nested graphs during Play Mode.</p></li>
+<li><p>Package: Visual Scripting: Fixed error message when custom inspectors are generated.</p></li>
+<li><p>Package: Visual Scripting: Fixed Graph getting corrupted when adding "Get Action Map" unit.</p></li>
+<li><p>Package: Visual Scripting: Fixed Node description being sometimes clipped.</p></li>
+<li><p>Package: Visual Scripting: Fixed the object Variables tabs not being updated when creating a Prefab.</p></li>
+<li><p>Package: Visual Scripting: Fixed ThreadAbortException when entering Play Mode while searching in the Fuzzy Finder.</p></li>
+<li><p>Package: Visual Scripting: Fixed warnings overflow in the console when deleting and adding a boolean variable in the blackboard.</p></li>
+<li><p>Package: Visual Scripting: Fixed warnings when entering play mode when the "Script Changes While Playing" is set to Recompile And Continue Playing.</p></li>
+<li><p>Package: Visual Scripting: FlowMachine type is now back in usable types.</p></li>
+<li><p>Package: Visual Scripting: Fuzzy finder no longer blinks when trying to add a node &#91;BOLT-1157&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1157&#41;,.</p></li>
+<li><p>Package: Visual Scripting: Fuzzy finder search window no longer remains above all other windows &#91;BOLT-1197&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1197&#41;";;;;;;;;;.</p></li>
+<li><p>Package: Visual Scripting: Fuzzy search no longer drops keyboard inputs and respond slowly &#91;BOLT-1214&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1214&#41;,.</p></li>
+<li><p>Package: Visual Scripting: GraphPointerException occurs when nesting graph within itself &#91;BOLT-1257&#93;&#40;https://issuetracker.unity3d.com/issues/visual-scripting-graphpointerexception-occurs-when-nesting-<br>
+graph-within-itself&#41;.</p></li>
+<li><p>Package: Visual Scripting: Help button in the visual scripting Assets and Behaviours inspector now links to the package documentation.</p></li>
+<li><p>Package: Visual Scripting: Missing succession for Cooldown. Output of Cooldown completed is treated as unentered.  &#91;BOLT-725&#93;&#40;https://issuetracker.unity3d.com/issues/bolt-1-output-of-cooldown-completed-<br>
+is-treated-as-unentered&#41;.</p></li>
+<li><p>Package: Visual Scripting: Opening the graph window no longer causes Unity UI stop processing mouse click &#91;BOLT-1159&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1159&#41;,.</p></li>
+<li><p>Package: Visual Scripting: RenamedFrom attribute does not function correctly on array references to a renamed type &#91;BOLT-1149&#93;&#40;https://issuetracker.unity3d.com/product/unity/issues/guid/BOLT-1149&#41;.</p></li>
+<li><p>Package: Visual Scripting: Rendering of inactive ObjectFields.</p></li>
+<li><p>Package: Visual Scripting: Resize cursor rect on group when graph window is zoomed.</p></li>
+<li><p>Package: Visual Scripting: ScalarAdd unit migration from 1.4.13 to 1.4.14 and above.</p></li>
+<li><p>Package: Visual Scripting: Scale groups when zoom is not at 1x.</p></li>
+<li><p>Package: Visual Scripting: Sidebar &#40;graph inspector/blackboard&#41; resize when a vertical scrollbar is needed.</p></li>
+<li><p>Package: Visual Scripting: Variable type reset to Enum when changing from Enum to GameObject when both Blackbaord and Variables inspector are displayed.</p></li>
+<li><p>Package: Visual Scripting: Visual Scripting Preferences being searchable &#91;BOLT-1218&#93;&#40;https://issuetracker.unity3d.com/issues/visual-scripting-preferences-are-not-searchable-when-using-search-in-the-preferences-window&#41;.</p></li>
+<li><p>Package: Visual Scripting: Visual Scripting Preferences spacing has been adjusted to avoid overlaps.</p></li>
+<li><p>Package: Visual Scripting: VisualScripting.Generated folder is removed when removing the VisualScripting package.</p></li>
 <li><p>Package Manager: Changed the Package Manager window to open to the first package with an entitlement error after displaying a warning where the user selects <em>Continue</em>.</p></li>
 <li><p>Package Manager: Fixed an issue in the Package Manager window where a package's status icon was being offset and wasn't aligning with other icons when its name was too long.
 (1287317)</p></li>
@@ -1566,47 +1467,23 @@ is-treated-as-unentered&#41;.</p></li>
 (1268064)</p></li>
 <li><p>Particles: Ensure smooth size updates when doing slow-mo scrubbing of the particle playback time.
 (<a href="https://issuetracker.unity3d.com/issues/mesh-particle-system-update-frequency-is-too-low-and-causes-visible-stutters-when-adjusting-with-playback-time-slider">1224857</a>)</p></li>
-<li><p>Particles: Fixed crash when prewarming a Particle System that uses a sub-emitter which itself uses the Trigger module.
-(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-when-particle-system-prewarm-property-is-enabled-and-sub-emitter-has-a-trigger-property-set-to-kill-or-callback">1305352</a>)</p></li>
-<li><p>Particles: Fixed crash when using a Stop Action set to Disable.
-(<a href="https://issuetracker.unity3d.com/issues/shuriken-crash-on-particlesystem-endupdateall">1311212</a>)</p></li>
 <li><p>Particles: Fixed crash when using BakeTrails with <code>Attach Ribbons to Transform</code>.</p></li>
 <li><p>Particles: Fixed emit from script bug when emitting particles from LateUpdate during Edit Mode.
 (<a href="https://issuetracker.unity3d.com/issues/shuriken-emitparams-getting-overwritten-with-empty-values-when-using-emit-in-editmode">1283939</a>)</p></li>
 <li><p>Particles: Fixed ParticleSystem Window throwing an error when Undo was performed after creating a sub-system.
 (<a href="https://issuetracker.unity3d.com/issues/shuriken-errors-on-undo-operation-after-creating-partcle-effect-from-particle-editor-window">1280126</a>)</p></li>
-<li><p>Particles: Fixed <code>Simulate</code> behaviour being incorrectly labelled as Prewarm in the profiler.
-(<a href="https://issuetracker.unity3d.com/issues/particlesystem-dot-prewarm-is-caused-when-calling-particlesystem-dot-simulate-even-if-prewarm-option-is-disabled-on-the-particlesystem">1296365</a>)</p></li>
 <li><p>Particles: Remove the warning about mis-matched vertex streams when creating a default Particle System.
 (1259366)</p></li>
 <li><p>Physics: CCD type is restored to specified Collision Detection type in Rigidbody Inspector when isKinematic is toggled from true to false. Inspector does not show speculative CCD in use during kinematic override. There are no warnings that this is occurring.
 (<a href="https://issuetracker.unity3d.com/issues/rigidbody-collision-detection-mode-cannot-be-updated-after-setting-the-iskinematic-field-to-true-then-false-during-runtime">1177698</a>)</p></li>
-<li><p>Physics: Clarified how certain HideFlags affected physics.
-(<a href="https://issuetracker.unity3d.com/issues/onenable-slash-ondisable-is-called-the-second-time-when-setting-prefabs-instance-flags-to-hideanddontsave">1239147</a>)</p></li>
 <li><p>Physics: Display Linear and Angular damping in the root of the ArticulationBody.</p></li>
-<li><p>Physics: Ensure that the LocalPhysicsMode argument when used to load a Unity scene correctly creates a 2D/3D local physics world.
-(<a href="https://issuetracker.unity3d.com/issues/physics-are-interracting-between-the-scenes-when-scenes-are-loaded-with-loadsceneinplaymode-using-localphysicsmode">1295676</a>)</p></li>
-<li><p>Physics: Fixed a crash when the maximum allowed ArticulationBody components &#40;64&#41; was reached in a single hierarchy.
-(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-physx-ig-islandsim-activatenode-when-entering-play-mode-and-articulationbody-is-present-in-a-scene">1284372</a>)</p></li>
-<li><p>Physics: Fixed an issue where a line/ray cast against a rotated BoxCollider2D that uses a non-zero EdgeRadius didn't always return a detection.
-(<a href="https://issuetracker.unity3d.com/issues/raycast-does-not-hit-boxcollider2d-with-rigidbody2d-when-its-rotated-180-degrees">1303344</a>)</p></li>
-<li><p>Physics: Fixed an issue where an empty set of brackets would appear in a scene file when regenerating a CompositeCollider2D.
-(<a href="https://issuetracker.unity3d.com/issues/the-parser-failure-error-appears-after-loading-the-specific-scenes">1292639</a>)</p></li>
-<li><p>Physics: Fixed crash when calling ArticulationBody.GetDenseJacobian method with a ArticulationJacobian that was initialized with the default constructor.
-(<a href="https://issuetracker.unity3d.com/issues/crash-in-unity-articulationbody-getdensejacobian-unity-articulationjacobian-and-when-calling-articulationbody-dot-getdensejacobian">1275091</a>)</p></li>
 <li><p>Physics: Fixed crashes/instabilities of physics simulation for ArticulationBody component hierarchy modifications during the runtime.</p></li>
 <li><p>Physics: Fixed internal issues happening when a joint connected a rigidbody to an inactive articulation body.
 (<a href="https://issuetracker.unity3d.com/issues/error-message-is-thrown-when-referencing-an-inactive-articulationbody-from-a-joint">1293798</a>)</p></li>
-<li><p>Physics: Fixed multiple issues with the HingeJoint2D including maintaining a reference angle when deactivating and subsequently reactivating, ensuring that any initial rotation of either anchored Rigidbody2D are correctly taken into account and that the associated scene gizmo takes into account the reference angle used when displaying the joint limits.
-(<a href="https://issuetracker.unity3d.com/issues/hinge-joint-2d-limits-doesnt-restrict-gameobjects-rotation-when-they-are-falling">1297373</a>)</p></li>
 <li><p>Physics: Fixed Physics Debug window section titles to be clickable for dropdown.
 (<a href="https://issuetracker.unity3d.com/issues/physics-dropdown-doesnt-expand-on-clicking-its-title-under-physics-debugger-window">1261353</a>)</p></li>
 <li><p>Physics: Fixed the kinematic flag not being not being applied correctly when off and when there were concave meshes attached.
 (<a href="https://issuetracker.unity3d.com/issues/errors-on-enabling-slash-disabling-is-kinematic-if-convex-is-unchecked-on-a-mesh">1299855</a>)</p></li>
-<li><p>Physics: Fixed the physics debug window being lost forever after entering the playmode.
-(<a href="https://issuetracker.unity3d.com/issues/physics-debug-scene-view-down-right-corner-ui-window-disappears-when-entering-play-mode">1230368</a>)</p></li>
-<li><p>Physics: Hide the joint editor tool gizmos when the joint is not active at all.
-(<a href="https://issuetracker.unity3d.com/issues/crash-in-unity-joint-setupaxes-when-disabling-a-gameobject-while-editing-its-hinge-joint-angular-limits">1275862</a>)</p></li>
 <li><p>Physics: Physics Collider Tooltips were revised.
 (<a href="https://issuetracker.unity3d.com/issues/physics-tooltips-are-missing-for-the-properties-under-collider-component">1261350</a>)</p></li>
 <li><p>Physics: When using the Physics Debugger, GameView and SceneView gizmo highlights are now synced.
@@ -1615,22 +1492,14 @@ is-treated-as-unentered&#41;.</p></li>
 (<a href="https://issuetracker.unity3d.com/issues/assembly-cache-should-be-empty-appears-in-the-console-when-evaluating-a-timeline-during-onenable">1246997</a>)</p></li>
 <li><p>Plugins: Removed console exceptions for Magic Leap.
 (1252217)</p></li>
-<li><p>Prefabs: Added and applying new events to a deeper level Prefab when there is an event already corrupts the newly added events.
-(<a href="https://issuetracker.unity3d.com/issues/adding-and-applying-new-events-to-a-deeper-level-prefab-when-there-is-an-event-already-corrupts-the-newly-added-events">1292519</a>)</p></li>
 <li><p>Prefabs: Added missing tooltips for Revert and Apply buttons in Prefab overrides comparison view.
 (<a href="https://issuetracker.unity3d.com/issues/improved-prefab-tooltips-are-missing-for-apply-and-revert-buttons-in-the-override-window">1261334</a>)</p></li>
-<li><p>Prefabs: Added support for multiselection 'Create Variant' in Project Browser.
-(1313946)</p></li>
 <li><p>Prefabs: Fixed crash when exiting Prefab mode in some circumstances.
 (1269978)</p></li>
-<li><p>Prefabs: Fixed Editor crashes when applying changes to Prefab Mesh via Script.
-(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-when-applying-changes-to-prefab-mesh-via-script">1307624</a>)</p></li>
 <li><p>Prefabs: Fixed Prefab preview in Inspector doesn't update until reselected.
 (<a href="https://issuetracker.unity3d.com/issues/improved-prefabs-prefab-preview-in-inspector-doesnt-update-until-reselected">1056071</a>)</p></li>
 <li><p>Prefabs: Fixed so deleting the context parent in Prefab Mode in Context is prevented from the UI.
 (<a href="https://issuetracker.unity3d.com/issues/deleting-the-dummy-parent-in-prefab-mode-in-context-should-be-prevented-from-the-ui">1291699</a>)</p></li>
-<li><p>Prefabs: Fixed that the scene is no longer dirty after dragging a Prefab into the Scene view and then undoing.
-(<a href="https://issuetracker.unity3d.com/issues/dragging-a-prefab-into-the-scene-view-and-undoing-the-action-does-not-undirty-the-scene">1299185</a>)</p></li>
 <li><p>Prefabs: Fixed that there is no information provided about the Prefab when a Prefab's child has broken references after using ForceReserializeAssets.
 (<a href="https://issuetracker.unity3d.com/issues/there-is-no-information-provided-about-the-parent-when-prefabs-child-has-broken-references-after-using-forcereserializeassets">1262196</a>)</p></li>
 <li><p>Prefabs: The apply menu in the Prefab overrides comparison view no longer lists apply targets where all overrides are default overrides compared to that apply target. This brings the apply menu items in the comparison view in line with the apply menu items in component context menus and ensures there's no apply menu items that don't have any effect.
@@ -1641,8 +1510,6 @@ is-treated-as-unentered&#41;.</p></li>
 (1252764)</p></li>
 <li><p>Profiler: Fixed a crash while using Profiler ProfilerProperty and ProfilerFrameDataIterator API.
 (1289580)</p></li>
-<li><p>Profiler: Fixed an issue when Profiler might lose metadata for markers spanned across multiple frames.
-(1288339)</p></li>
 <li><p>Profiler: Fixed an issue which caused RegisterNewMarkerCallback to be called multiple times with the same marker.
 (1158554)</p></li>
 <li><p>Profiler: Fixed an issue with wrong chart scale after profiler capture load.
@@ -1691,8 +1558,6 @@ is-treated-as-unentered&#41;.</p></li>
 (<a href="https://issuetracker.unity3d.com/issues/profiler-null-reference-exception-thrown-on-maximizing-ui-system-preview-window">1287275</a>)</p></li>
 <li><p>Scene Manager: Enforce required full path for LoadSceneInPlayMode.
 (<a href="https://issuetracker.unity3d.com/issues/scenes-are-loaded-without-any-gameobjects-present-when-valid-scene-name-is-passed-to-loadscene-async-inplaymode">1220015</a>)</p></li>
-<li><p>Scene Manager: Made sure objects are cleaned up properly if they are children of GameObject with DontSave flag.
-(<a href="https://issuetracker.unity3d.com/issues/gameobjects-with-hideflags-dot-dontsave-raise-an-error-when-reloading-the-scene">1157422</a>)</p></li>
 <li><p>Scene Manager: Make GetSceneByPath no longer case sensitive.
 (<a href="https://issuetracker.unity3d.com/issues/scenemanager-getscenebypath-returns-an-invalid-scene-when-lower-case-slash-not-case-sensitive-path-is-provided">1214583</a>)</p></li>
 <li><p>Scene Manager: Prevent loading scene where multiple objects have same identifier.
@@ -1743,10 +1608,6 @@ is-treated-as-unentered&#41;.</p></li>
 (1310424)</p></li>
 <li><p>Serialization: Fields of type UnityEngine.Hash128 are now correctly serialized in ScriptableObjects and MonoBehaviours.
 (<a href="https://issuetracker.unity3d.com/issues/unityengine-dot-hash128-and-unityeditor-dot-guid-are-not-serialized-in-user-components">1271062</a>)</p></li>
-<li><p>Serialization: Fixed crash on JSONUtility read when class has both a field named "references" and &#91;SerializedReference&#93; fields.
-(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-serializetraits-transfer-when-calling-jsonutility-dot-fromjson">1198073</a>)</p></li>
-<li><p>Serialization: Fixed for inspection of enum fields on classes referenced with SerializeReference.
-(1304095)</p></li>
 <li><p>Serialization: Fixed SerializedProperty.arraySize and add SerializedProperty.minArraySize.
 (<a href="https://issuetracker.unity3d.com/issues/type-is-not-a-supported-string-value-error-appears-in-the-console-window-when-selecting-multiple-fbx-models">1279753</a>)</p></li>
 <li><p>Serialization: HDRP/TerrainLit shader no longer produce build errors when in Always included Shaders list.
@@ -1777,14 +1638,10 @@ is-treated-as-unentered&#41;.</p></li>
 <li><p>Shaders: Added a new keyword to handle the custom editors per render pipeline in ShaderLab to ensure a smooth material workflow between render pipelines.</p></li>
 <li><p>Shaders: Added Material.SetInteger, Material.GetInteger, MaterialPropertyBlock.SetInteger, MaterialPropertyBlock.GetInteger, Shader.SetGlobalInteger and Shader.GetGlobalInteger that use integers internally; added Integer property type to ShaderLab.
 (<a href="https://issuetracker.unity3d.com/issues/material-setint-and-getint-methods-are-not-precise-when-large-values-are-used">1277994</a>)</p></li>
-<li><p>Shaders: Fixed a crash when PrimitiveID is the only input to a stage.
-(<a href="https://issuetracker.unity3d.com/issues/internal-error-communicating-with-the-shader-compiler-process-when-sv-primitiveid-is-the-only-input-signature">1289378</a>)</p></li>
 <li><p>Shaders: Fixed Integer property type not affecting uniform state and fixed function state in shaders.
 (<a href="https://issuetracker.unity3d.com/issues/integer-property-type-in-shaderlab-has-no-effect-on-uniforms-and-fixed-function-state">1294048</a>)</p></li>
 <li><p>Shaders: Fixed iOS Tesselation shader compilation issue when using appdata_full.
 (<a href="https://issuetracker.unity3d.com/issues/ios-metal-shaders-with-tessellation-are-not-compiled-when-displacement-feature-is-removed-from-number-pragma">1281129</a>)</p></li>
-<li><p>Shaders: Fixed ShaderCache.db growing in size after each build.
-(<a href="https://issuetracker.unity3d.com/issues/shader-error-db-grows-on-each-build">1317744</a>)</p></li>
 <li><p>Shaders: Fixed the "end of shader compiler log" printing to the editor log at compiler crashes if the compiler log is very small.</p></li>
 <li><p>Shaders: Frame debugger now shows Integer properties in the draw call description.
 (<a href="https://issuetracker.unity3d.com/issues/integer-properties-do-not-show-up-in-frame-debugger">1294069</a>)</p></li>
@@ -1823,24 +1680,14 @@ is-treated-as-unentered&#41;.</p></li>
 (1288809)</p></li>
 <li><p>Timeline: Fixed an alignment issue with property reference fields in Timeline.
 (<a href="https://issuetracker.unity3d.com/issues/timeline-source-game-object-input-field-is-misaligned-under-contol-playable-asset-for-contol-track">1222744</a>)</p></li>
-<li><p>Timeline: Fixed an issue with an audio clip not playing properly when scheduled at the beginning of a timeline.
-(<a href="https://issuetracker.unity3d.com/issues/audio-track-is-missing-some-samples-if-it-starts-at-the-first-frame-of-a-timeline-in-player">1215183</a>)</p></li>
-<li><p>Timeline: Fixed an issue with playing short audio clip at the beginning of a timeline.
-(<a href="https://issuetracker.unity3d.com/issues/audioclipplayable-played-with-first-couple-of-frames-skipped">1302398</a>)</p></li>
 <li><p>Timeline: Fixed an issue with Timeline audio playing at the wrong time when Time.timeScale was not set to 1.
 (<a href="https://issuetracker.unity3d.com/issues/timeline-audio-clips-are-played-early-when-time-scale-is-less-than-1">981046</a>)</p></li>
 <li><p>UI: Added OnSubmit functionality which will be called when the input field should be sumitted.
 (1262424)</p></li>
 <li><p>UI: Fixed an issue where canvas takes the Display size for RenderTexture.
 (1294869)</p></li>
-<li><p>UI: Fixed issue where a selected UI element would not get the highlight state when hovered.
-(<a href="https://issuetracker.unity3d.com/issues/ugui-button-does-not-get-highlighted-if-it-has-been-pressed-at-least-once">1274735</a>)</p></li>
-<li><p>UI: Fixed issue where focus wouldnt be given back to main window on mouse click causing incorrect input event position.
-(<a href="https://issuetracker.unity3d.com/issues/graphic-raycaster-stops-hitting-gameobjects-when-opening-a-selection-window-while-in-the-play-mode">1290074</a>)</p></li>
 <li><p>UI: Fixed issue where PixelPerfect wouldn't update right away when toggled on the Canvas.
 (<a href="https://issuetracker.unity3d.com/issues/pixel-perfect-setting-not-applied-immediately">1261788</a>)</p></li>
-<li><p>UI: Fixed issue with disabled fonts getting added to tracking list and never removed.
-(<a href="https://issuetracker.unity3d.com/issues/ui-dangling-references-in-fontupdatetracker-when-changing-the-font-of-a-disabled-text-component-and-later-destroying-it">1315573</a>)</p></li>
 <li><p>UI: Fixed issue with layout property preview not having contrast in light skin.
 (<a href="https://issuetracker.unity3d.com/issues/low-color-contrast-between-text-and-its-background-in-the-layout-properties-section-when-the-editor-theme-is-set-to-light">1293782</a>)</p></li>
 <li><p>UI: Fixed issue with UI profiler showing wrong batch count for canvas's that shrink.
@@ -1890,8 +1737,6 @@ is-treated-as-unentered&#41;.</p></li>
 <li><p>UI Toolkit: Fixed element highlight overlay not being reset after deleting the element. &#40;UI Builder&#41;.</p></li>
 <li><p>UI Toolkit: Fixed Element not visisle after being hiden/shown in specific sequence.
 (<a href="https://issuetracker.unity3d.com/issues/ui-builder-button-elements-sometimes-not-visible-after-being-pressed-multiple-times">1269414</a>)</p></li>
-<li><p>UI Toolkit: Fixed ellipsis showing up for no reason on UI Toolkit labels.
-(<a href="https://issuetracker.unity3d.com/issues/titles-of-the-packages-in-the-package-manager-are-truncated">1291452</a>)</p></li>
 <li><p>UI Toolkit: Fixed error with UI Elements Samples window after Minimizing/Maximizing another window.
 (<a href="https://issuetracker.unity3d.com/issues/uielements-maximizing-ui-toolkit-sample-window-throws-invalid-editor-window-unityeditor-dot-fallbackeditorwindow-errors">1244800</a>)</p></li>
 <li><p>UI Toolkit: Fixed exception thrown when selecting the currently open UXML asset in the Project Window. &#40;UI Builder&#41;.</p></li>
@@ -1921,8 +1766,6 @@ is-treated-as-unentered&#41;.</p></li>
 <li><p>UI Toolkit: Fixed scrollView's showHorizontal and showVertical limitations. They are converted to a tristate enum, horizontalScrollerVisibility and verticalScrollerVisibility, to support a new Hidden state, along with AlwaysVisible and Auto.
 (1278466)</p></li>
 <li><p>UI Toolkit: Fixed settings search not working for UI Builder settings in the Project Settings window. &#40;UI Builder&#41;.</p></li>
-<li><p>UI Toolkit: Fixed the inability to launch the editor in clamped GLES 3.0 and 3.1 mode. Also, it is now possible to use UIToolkit on GLES 3.0 and 3.1 devices that do not support float render textures.
-(<a href="https://issuetracker.unity3d.com/issues/uir-r32g32b32a32-sfloat-not-supported-on-opengl-es-3-dot-0-and-3-dot-1">1311845</a>)</p></li>
 <li><p>UI Toolkit: Fixed the InvalidCastException thrown when assigning a built-in image asset to a Texture2D in the UI Builder inspector. &#40;UI Builder&#41;.</p></li>
 <li><p>UI Toolkit: Fixed unsaved changes * indicator not being reset when going inside a child sub-document while discarding changes in the parent.</p></li>
 <li><p>UI Toolkit: Only use mapped buffers when the graphics device support it.
@@ -1936,57 +1779,34 @@ is-treated-as-unentered&#41;.</p></li>
 <li><p>UI Toolkit: Throw a proper argument null exception when using UQuery.</p></li>
 <li><p>UI Toolkit: Trying to move/rename nested uxml/uss files of an opened document will prompt the invalid action dialog as it should. &#40;UI Builder&#41;.
 (1315594)</p></li>
-<li><p>Universal: Fixed a regression where the precision was changed.
-(<a href="https://issuetracker.unity3d.com/issues/urp-shader-precision-is-reduced-to-half-when-scriptablerenderfeature-class-is-in-the-project">1313942</a>)</p></li>
 <li><p>Universal: Fixed an issue such that it is now posible to enqueue render passes at runtime.</p></li>
 <li><p>Universal: Fixed an issue where bokeh dof is applied incorrectly when there is an overlay camera in the camera stack.
 (<a href="https://issuetracker.unity3d.com/issues/urp-bokeh-depth-of-field-is-applied-incorrectly-when-the-main-camera-has-an-overlay-camera-in-the-camera-stack">1303572</a>)</p></li>
-<li><p>Universal: Fixed an issue where having "Opaque Texture" and MSAA enabled would cause the opaque texture to be rendered black on old Apple GPUs.
-(<a href="https://issuetracker.unity3d.com/issues/urp-metal-opaque-objects-are-rendered-black-when-msaa-is-enabled">1247423</a>)</p></li>
 <li><p>Universal: Fixed an issue where objects in motion might jitter when the Pixel Perfect Camera is used.
 (<a href="https://issuetracker.unity3d.com/issues/urp-characters-sprite-repeats-in-the-build-when-using-pixel-perfect-camera-and-2d-renderer">1300474</a>)</p></li>
-<li><p>Universal: Fixed an issue where the Cinemachine Pixel Perfect Extension might cause the Orthographic Size of the Camera to jump to 1 when the Scene is loaded.
-(<a href="https://issuetracker.unity3d.com/issues/cinemachine-pixel-perfect-camera-extension-causes-the-orthogonal-size-to-jump-to-1-when-the-scene-is-loaded">1249076</a>)</p></li>
 <li><p>Universal: Fixed an issue where the inspector of Renderer Data would break after adding RenderObjects renderer feature and then adding another renderer feature.</p></li>
-<li><p>Universal: Fixed an issue where the letter box/pillar box areas were not properly cleared when the Pixel Perfect Camera is used.
-(<a href="https://issuetracker.unity3d.com/issues/pixel-perfect-image-artifact-appear-between-the-reference-resolution-and-screen-resolution-borders-when-strech-fill-is-enabled">1291224</a>)</p></li>
-<li><p>Universal: Fixed an issue where the scene view camera was not correctly cleared for the 2D Renderer.
-(<a href="https://issuetracker.unity3d.com/issues/heavy-ghosting-in-the-editor-scene-window-when-using-2d-lights">1311377</a>)</p></li>
 <li><p>Universal: Fixed GC allocations from XR occlusion mesh when using multipass.</p></li>
 <li><p>Universal: Fixed shadow cascade blend culling factor.</p></li>
 <li><p>Universal: Fixed the default background color for previews to use the original color.</p></li>
-<li><p>Universal: Fixed wrong shader / properties assignement to materials created from 3DsMax 2021 Physical Material.
-(<a href="https://issuetracker.unity3d.com/issues/hdrp-importing-a-model-with-a-3ds-max-physical-material-assign-an-incorrect-shader-and-does-not-apply-its-textures">1293576</a>)</p></li>
-<li><p>Universal Windows Platform: Fixed Certificate not being set in UWP publish settings with certain passwords.
-(<a href="https://issuetracker.unity3d.com/issues/uwp-certificate-can-not-be-set-in-uwp-publishing-settings-when-it-is-protected-with-password">1301223</a>)</p></li>
+<li><p>Universal: Fixed wrong shader / properties assignement to materials created from 3DsMax 2021 Physical Material.</p></li>
 <li><p>Universal Windows Platform: Fixed input on IMGUI elements when using the new input system.
 (<a href="https://issuetracker.unity3d.com/issues/uwp-unitys-ui-and-imgui-cannot-be-interacted-while-new-input-system-is-on">1201666</a>)</p></li>
 <li><p>Universal Windows Platform: Fixed Tab key on the TouchScreenKeyboard not inserting a tab character.
 (<a href="https://issuetracker.unity3d.com/issues/uwp-tab-key-on-hololens2-keyboard-doesnt-insert-tabs-into-inputfield-slash-tmp">1314405</a>)</p></li>
 <li><p>Version Control: Fixed '-vcsMode' command-line argument being applied after API Updater.
 (1266509)</p></li>
-<li><p>Version Control: ProjectVersion.txt file is correctly updated when updating a project to a new Unity version while having Provider.preCheckoutCallback set to a non null value.
-(<a href="https://issuetracker.unity3d.com/issues/plastic-scm-precheckoutcallback-throws-an-exception-on-project-startup">1291360</a>)</p></li>
 <li><p>Version Control: Status overlay icons are no longer "washed out colors" in Linear color space.
 (<a href="https://issuetracker.unity3d.com/issues/vcs-linear-color-space-affects-version-control-icons">1218701</a>)</p></li>
 <li><p>VFX Graph: Fixed unexpected compilation warning in VFXMouseBinder.
 (<a href="https://issuetracker.unity3d.com/issues/unexpected-compilation-warning-in-vfxmouseeventbinder">1313003</a>)</p></li>
 <li><p>VFX Graph: Fixed VFXEventBinderBase throwing a null reference exception in runtime.</p></li>
 <li><p>VFX Graph: Removed some useless compilation triggers &#40;modifying not connected or disabled nodes for instance&#41;.</p></li>
-<li><p>Video: Fixed cases where changing VideoPlayer.frame before playing the video did not change Video clock time.
-(<a href="https://issuetracker.unity3d.com/issues/changing-videoplayer-dot-frame-before-playing-the-video-does-not-change-video-clock-time">1297646</a>)</p></li>
 <li><p>Video: Fixed video preview in editor.</p></li>
-<li><p>Video: Fixed VideoPlayer.frameReady not geting invoked after seeking a video to a frame.
-(<a href="https://issuetracker.unity3d.com/issues/videoplayer-dot-frameready-does-not-get-invoked-after-seeking-a-video-to-a-frame">1302462</a>)</p></li>
 <li><p>Video: Uncommented the EndReached callback in VideoPlayback playmode tests and updated the tests since the original fix for the callback issue had landed.
 (1062515)</p></li>
-<li><p>Video: Video starts playing from an arbitrary frame when VideoPlayer.Pause is called before VideoPlayer.Play.
-(<a href="https://issuetracker.unity3d.com/issues/video-starts-playing-from-an-arbitrary-frame-when-videoplayer-dot-pause-is-called-before-videoplayer-dot-play">1297648</a>)</p></li>
 <li><p>Virtual Texturing: Fixed a crash during tile extraction of invalid virtual texture stacks.</p></li>
 <li><p>WebGL: Added more detailed information when a page load fails due to misconfiguration in server hosting settings. Note that Firefox does not currently support Brotli compression for local development &#40;https://bugzilla.mozilla.org/show_bug.cgi?id=1670675&#41;.
 (<a href="https://issuetracker.unity3d.com/issues/brotli-compressed-build-fails-to-run-in-firefox">1283658</a>)</p></li>
-<li><p>WebGL: Added support for JS side to customize the render target size of the WebGL canvas, instead of requiring it to always match 1:1 with the High DPI CSS size of the canvas &#40;enabled by setting 'config.matchWebGLToCanvasSize = false; in page .html template&#41;.
-(<a href="https://issuetracker.unity3d.com/issues/webgl-builds-dont-allow-separate-control-on-canvas-render-buffer-size">1178725</a>)</p></li>
 <li><p>WebGL: Applied a workaround to Chrome specific Web Audio performance issue https://bugs.chromium.org/p/chromium/issues/detail?id=1133233.
 (<a href="https://issuetracker.unity3d.com/issues/webgl-audiosource-dot-update-cpu-usage-increases-overtime-when-playing-audiosources-on-chromium-browsers">1270768</a>)</p></li>
 <li><p>WebGL: Attempting to open a dynamic library will now throw a DllNotFoundException rather than aborting execution as a runtime error.
@@ -2000,8 +1820,6 @@ is-treated-as-unentered&#41;.</p></li>
 (<a href="https://issuetracker.unity3d.com/issues/imgui-on-webgl-builds-appears-washed-out-when-comparing-to-same-imgui-in-the-editor">1187401</a>)</p></li>
 <li><p>WebGL: Fixed a hang in Caching.ClearCache&#40;&#41; when building against multithreaded WebGL.
 (<a href="https://issuetracker.unity3d.com/issues/webgl-build-with-threading-stalls-when-invoking-caching-dot-clearcache">1146530</a>)</p></li>
-<li><p>WebGL: Fixed a WebAssembly trap when a touch point got canceled on mobile devices.
-(<a href="https://issuetracker.unity3d.com/issues/webgl-2-dot-0-ios-13-application-on-browser-crashes-when-trying-to-minimize-the-browser-out-of-bounds-trunc-operation">1262657</a>)</p></li>
 <li><p>WebGL: Fixed an issue when a failing cross-domain revalidation request prevents a file from being downloaded.
 (1266091)</p></li>
 <li><p>WebGL: Fixed default page template to properly scale the canvas size at startup on mobile. Removed by-default low DPI scaling on mobile pages &#40;use a custom template .html to do half-res or quarter-res rendering if desired&#41;.
@@ -2026,48 +1844,26 @@ is-treated-as-unentered&#41;.</p></li>
 (<a href="https://issuetracker.unity3d.com/issues/unitywebrequest-throws-an-error-when-exceptions-set-to-none">1283652</a>)</p></li>
 <li><p>WebGL: Fixed video playback in Firefox to loop seamlessly. For more information, see https://bugzilla.mozilla.org/show_bug.cgi?id=1668591.
 (<a href="https://issuetracker.unity3d.com/issues/theres-a-black-frame-in-a-video-on-firefox-browser-when-the-video-loops">1267333</a>)</p></li>
-<li><p>WebGL: Improved error messages that are printed when a build to WebGL fails.
-(<a href="https://issuetracker.unity3d.com/issues/webgl-il2cpp-development-builds-fail-on-unity-dot-webgl-dot-extensions-slash-programutils-dot-cs-48-when-building-for-webgl-slash-il2cpp">1245847</a>)</p></li>
-<li><p>WebGL: Keyboard input is not detected in the Input Field when built on WebGL.
-(<a href="https://issuetracker.unity3d.com/issues/unable-to-write-text-in-the-input-field-with-the-new-input-system-in-webgl-build">1258876</a>)</p></li>
 <li><p>WebGL: Overlay cameras will no longer cause full screen renders to be incorrect.
 (<a href="https://issuetracker.unity3d.com/issues/webgl-multiple-camera-viewports-in-fullscreen-mode-are-rendered-differently-in-webgl-builds-than-in-the-editor">1184385</a>)</p></li>
 <li><p>WebGL: Reduced memory usage on dual Intel integrated + NVidia GPU Windows laptops when using URP in a large scene with many individual objects.
 (<a href="https://issuetracker.unity3d.com/issues/webgl-urp-large-memory-allocations-on-builds-when-many-objects-are-visible-in-the-viewport-while-using-integrated-gpu">1225254</a>)</p></li>
 <li><p>WebGL: Removed support for Wasm arithmetic exceptions in preparation for updating to LLVM Wasm backend.
 (<a href="https://issuetracker.unity3d.com/issues/webgl-ui-toolkit-player-crashes-when-using-textfield">1286167</a>)</p></li>
-<li><p>WebGL: WebGL: WebGL: Fix use after free of m_Context in GfxDeviceGLES destructor, which resulted in "Memory access out of bounds" exceptions when quitting an application in WebGL builds.
-(<a href="https://issuetracker.unity3d.com/issues/urp-webgl-memory-access-out-of-bounds-exceptions-are-thrown-when-calling-quit-function-on-webgl-build-through-webpage">1204734</a>)</p></li>
 <li><p>Windows: Batchmode now allows settings resolution and window mode.
 (<a href="https://issuetracker.unity3d.com/issues/standalone-player-resolution-is-not-correct-when-build-is-ran-in-batchmode-with-custom-screen-width-and-height-arguments">1266308</a>)</p></li>
 <li><p>Windows: Fixed Time.deltaTime calculations on D3D11 and D3D12 when VSync is force disabled from the driver software &#40;like Nvidia Control Panel, Radeon Settings or Intel Graphics Command Center&#41;.</p></li>
 <li><p>Windows: Fixed Unity Editor Icon at the top left is blurry.
 (<a href="https://issuetracker.unity3d.com/issues/unity-editor-icon-at-the-top-left-is-blurry">1264422</a>)</p></li>
 <li><p>Windows: Fixed Windows player infrequently deadlocking when changing fullscreen modes on D3D11 and D3D12 graphics APIs.</p></li>
-<li><p>Windows: Object selector no longer opens in between two windows in side-by-side multi-monitor setups.
-(<a href="https://issuetracker.unity3d.com/issues/mesh-slash-material-selection-window-opens-between-2-screens-when-using-dual-monitor">1289440</a>)</p></li>
 <li><p>Windows: Popover window in Frame debugger now closes when pressing up or down on the keyboard in the tree view.</p></li>
 <li><p>Windows: Provide informational message in developer console when Open Log File operation fails.
 (<a href="https://issuetracker.unity3d.com/issues/open-log-file-button-doesnt-create-slash-open-log-file-in-developer-console">1276710</a>)</p></li>
 <li><p>Windows: Removed UWP "USB Device" Build and Run option.
 (<a href="https://issuetracker.unity3d.com/issues/build-and-run-usb-device-option-is-broken">1292590</a>)</p></li>
-<li><p>Windows: X86_64 is now the default Windows architecture.
-(<a href="https://issuetracker.unity3d.com/issues/default-architecture-in-build-settings-is-x86-instead-of-x64">1283651</a>)</p></li>
 <li><p>XR: Added XR Interaction Toolkit as a pre-release package.</p></li>
-<li><p>XR: Backport trunk fix for gfx event was missing when FrameDebugger enabled to 2021.1 branch.
-(<a href="https://issuetracker.unity3d.com/issues/xr-quest-frame-debugger-frame-debugger-first-freezes-unity-then-breaks-xr-rendering-and-head-tracking">1275361</a>)</p></li>
 <li><p>XR: Corrected document link underlining.</p></li>
-<li><p>XR: Enabled EditorXR edit mode to work with XR SDK.
-(1318732)</p></li>
-<li><p>XR: Enabled Vulkan lazy allocation for memory savings on Oculus Quest.
-(1314165)</p></li>
 <li><p>XR: Fixed a deadlock that occurred when the Windows player was hidden and VR was enabled.</p></li>
-<li><p>XR: Fixed an issue where screenspace shadows were not rendered with XR multiview.
-(<a href="https://issuetracker.unity3d.com/issues/oculus-gearvr-cascade-shadows-are-not-rendered-on-mobile-devices-when-built-on-oculus-vr-sdk">1168315</a>)</p></li>
-<li><p>XR: Fixed an issue where shadows jittered while rotating a camera at an extreme distance from the origin of the scene in mono rendering.
-(<a href="https://issuetracker.unity3d.com/issues/shadows-flickering-when-scene-is-offset-from-origin-and-camera-has-a-low-near-clip-plane">1281930</a>)</p></li>
-<li><p>XR: Fixed an issue where the frame debugger caused the Editor to freeze, and broke HMD rendering when XR was enabled.
-(<a href="https://issuetracker.unity3d.com/issues/xr-quest-frame-debugger-frame-debugger-first-freezes-unity-then-breaks-xr-rendering-and-head-tracking">1275361</a>)</p></li>
 <li><p>XR: Fixed an issue with Graphics.Blit when using VRTextureUsage.TwoEyes.
 (<a href="https://issuetracker.unity3d.com/issues/graphics-dot-blit-0-index-texture-will-not-be-drawn-when-vrtextureusage-is-set-to-twoeyes">1258990</a>)</p></li>
 <li><p>XR: Removed error-reporting for XR Devices if no tracking features found on device.</p></li>
@@ -2081,8 +1877,8 @@ is-treated-as-unentered&#41;.</p></li>
       </div>
       <div class="g12">
         <div class="scroll-link tooltip left mr1" data-distance="-40|-30|top">
-  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/2020.3.15"></a></span>
-  <div class="tip">Unity 2020.3.15</div>
+  <span class="btn prev ico-chevron-left rel"><a href="/unity/whats-new/2020.3.16"></a></span>
+  <div class="tip">Unity 2020.3.16</div>
 </div>
 <div class="scroll-link tooltip right" data-distance="-40|-30|top">
   <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/2021.1.1"></a></span>
