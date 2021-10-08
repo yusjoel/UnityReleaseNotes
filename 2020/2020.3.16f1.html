@@ -100,11 +100,9 @@
         <h3>Known Issues in 2020.3.16f1</h3>
 
 <ul>
-<li><p>Asset Import Pipeline: Editor crashes with out of memory while importing a lot of assets (mostly textures) at once, on Windows/DX11
-(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-with-system-out-of-memory-error-when-importing-size-heavy-textures">1324536</a>)</p></li>
 <li><p>Asset Importers: Editor crashes on UnityEditor.Unsupported:IsDestroyScriptableObject when applying changes to a custom asset
 (<a href="https://issuetracker.unity3d.com/issues/editor-crashes-on-unityeditor-dot-unsupported-isdestroyscriptableobject-when-applying-changes-to-a-custom-asset">1353925</a>)</p></li>
-<li><p>Asset Importers: [MacOS] Second Unity instance in Activity Monitor is "not responding” after importing
+<li><p>Asset Importers: [MacOS] Second Unity instance in Activity Monitor is "not responding” after importing.
 (<a href="https://issuetracker.unity3d.com/issues/macos-second-unity-instance-in-activity-monitor-is-not-responding-after-importing">1331736</a>)</p></li>
 <li><p>Audio: Crash on AudioMixer_CUSTOM_FindSnapshot when passing null as an argument to FindSnapshot()
 (<a href="https://issuetracker.unity3d.com/issues/crash-on-audiomixer-custom-findsnapshot-when-passing-null-as-an-argument-to-findsnapshot">1341752</a>)</p></li>
@@ -237,6 +235,8 @@
 (<a href="https://issuetracker.unity3d.com/issues/texture-importer-inspector-throws-errors-when-a-built-in-texture-inspector-is-overwritten-in-c-number">1317450</a>)</p></li>
 <li><p>Asset Import: Prevent data in the Assets&#92;StreamingAssets folder from being cached by the Unity Accelerator.
 (<a href="https://issuetracker.unity3d.com/issues/long-player-build-times-when-using-the-accelerator-and-addressables-local-bundles">1295717</a>)</p></li>
+<li><p>Asset Importers: Fixed a crash (due to running out of VRAM) when importing many textures using DX11.
+(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-with-system-out-of-memory-error-when-importing-size-heavy-textures">1324536</a>)</p></li>
 <li><p>Asset Pipeline: Fixed a problem with old script type dependencies. In some cases they could result in &#40;incorrect&#41; artifact match.
 (<a href="https://issuetracker.unity3d.com/issues/nested-prefabs-script-values-get-reset-to-default-when-upgrading-to-2019-dot-4-23f1-or-above">1340159</a>)</p></li>
 <li><p>Asset Pipeline: Fixed an issue where searching in the object selector would for some searches only show icons even if previews could be shown.
