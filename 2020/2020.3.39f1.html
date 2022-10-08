@@ -100,11 +100,15 @@
         <h3>Known Issues in 2020.3.39f1</h3>
 
 <ul>
+<li><p>AI Navigation Core: NavMesh::Raycast freezes the whole editor in an infinite loop on Application.UpdateScene
+(<a href="https://issuetracker.unity3d.com/issues/navmesh-raycast-freezes-the-whole-editor-in-an-infinite-loop-on-application-dot-updatescene">UUM-2496</a>)</p></li>
 <li><p>Asset Bundles: AssetBundle indeterminism caused by mesh streaming info
 (<a href="https://issuetracker.unity3d.com/issues/assetbundle-indeterminism-caused-by-mesh-streaming-info">UUM-12721</a>)</p></li>
 <li><p>GI: If a user is experience lighting coruption they be may required to reimport due to a fix to which correctly fixes a Uv unwrapping issue &#40;1330830&#41;.</p></li>
 <li><p>MacOS: Crash with demangling_unexpected_handler() when rapidly modifying serialized fields
 (<a href="https://issuetracker.unity3d.com/issues/crash-with-demangling-unexpected-handler-when-rapidly-modifying-serialized-fields">UUM-3310</a>)</p></li>
+<li><p>XR SRP: Meta Quest performance loss between URP versions when built
+(<a href="https://issuetracker.unity3d.com/issues/meta-quest-performance-loss-between-urp-versions-when-built">UUM-15608</a>)</p></li>
 </ul>
 
 <h3>2020.3.39f1 Release Notes</h3>
@@ -173,24 +177,16 @@ called from the main thread.<br></li>
 <li><p>Android: Fixed bug with test provider and settings showing up in Project Settings.</p></li>
 <li><p>Android: Fixed crash during low memory kill.
 (UUM-4811)</p></li>
-<li><p>Android: Fixed crash when using UAV with Vulkan on older Mali devices
-(<a href="https://issuetracker.unity3d.com/issues/backport-android-vulkan-crash-on-samsung-note8-while-running-gfx-tests">UUM-1957</a>)</p></li>
 <li><p>Android: Fixed orientation issues in laptop mode and tablet mode on Chromebooks
 (<a href="https://issuetracker.unity3d.com/issues/chromeos-pixelbook-can-switch-to-portrait-orientations-which-result-in-vertical-resolution-that-cannot-be-undone">UUM-782</a>)</p></li>
 <li><p>Android: Fixed screen distortion when minimizing and maximizing the app on ChromeOS
 (<a href="https://issuetracker.unity3d.com/issues/screen-distorts-when-minimizing-and-maximizing-the-app-on-chromeos">UUM-523</a>)</p></li>
 <li><p>Android: Toggling Build App Bundle in the Build Player Window will now prompt for a save location rather than attempting to use the last build location which would have been the incorrect type of package.
 (<a href="https://issuetracker.unity3d.com/issues/backport-android-building-app-using-ctrl-plus-b-shortcut-uses-the-last-used-configuration-instead-of-the-current-one">UUM-1692</a>)</p></li>
-<li><p>Android: &#91;Backport&#93; Fix for 2020.3: Static Image for Splash Screen Moving When Loading on Android Build
-(<a href="https://issuetracker.unity3d.com/issues/backport-custom-static-image-for-splash-screen-moves-on-android-build-when-loading">UUM-1803</a>)</p></li>
 <li><p>Asset Bundles: Fixed memarchive0 error when entering play mode
 (UUM-11182)</p></li>
-<li><p>Audio: Fixed doc for GamepadSpeakerOutputType to be used exclusively for playstation 4, playstation 5 platforms and editor platforms only.
-(<a href="https://issuetracker.unity3d.com/issues/error-gamepadspeakeroutputtype-does-not-exist-in-the-namespace-unityengine-occurs-in-the-console-when-building-a-project">UUM-407</a>)</p></li>
-<li><p>Documentation: The "linear" parameter was stated to be true by default for Texture2DArray, this has been fixed.
-(UUM-8157)</p></li>
-<li><p>DX12: Fixed crash that can occur when calling ComputeBuffer.GetData&#40;&#41; with non zero computeBufferStartIndex parameter
-(<a href="https://issuetracker.unity3d.com/issues/crash-on-play-when-getdata-attempts-a-partial-read-on-directx12-dx12">UUM-11444</a>)</p></li>
+<li><p>Audio: Fixed unexpected output from OnAudioFilterRead when the audio source is stopped and the 'spatialize' property is enabled.
+(<a href="https://issuetracker.unity3d.com/issues/stopped-audio-souce-outputs-audio-when-the-spatialize-property-is-enabled">UUM-6318</a>)</p></li>
 <li><p>Editor: Fix crash when creating a default 3D texture with an unsupported format on Metal
 (<a href="https://issuetracker.unity3d.com/issues/m1-mobile-rosetta-crash-with-mtlgetenvcase-when-building-for-ios-slash-android">UUM-2996</a>)</p></li>
 <li><p>Editor: Fixed loading Scene Templates from Packages directories.
@@ -199,63 +195,29 @@ called from the main thread.<br></li>
 (<a href="https://issuetracker.unity3d.com/issues/backport-prefabs-with-light-component-are-listed-in-the-light-explorer-when-the-show-inactive-objects-property-is-checked">UUM-835</a>)</p></li>
 <li><p>GI: Fixed a case where scene objects would lose their lighting data when they are packed into or unpacked from a prefab, and playmode is entered without first saving the scene.
 (UUM-11182)</p></li>
-<li><p>GI: Fixed denoising issues with OIDN and OptiX denoisers on GPULM when using different values for direct lighting sample count and indirect lighting sample count.
-(<a href="https://issuetracker.unity3d.com/issues/backport-gpu-plm-denoising-artifacts-after-baking-gi-with-certain-lighting-settings-and-denoising-enabled">UUM-2158</a>)</p></li>
 <li><p>Graphics: Fix crash when using bad args in CommandBuffer.DrawRenderer
-(HRB-20)</p></li>
+(<a href="https://issuetracker.unity3d.com/issues/backport-crash-when-trying-to-render-a-specific-submesh-with-commandbuffer-dot-drawrenderer">HRB-20</a>)</p></li>
 <li><p>Graphics: Fixed ImageConversion.LoadImage and Texture2D.LoadImage always returning true even in case of a failure.
 (<a href="https://issuetracker.unity3d.com/issues/backport-texture2d-dot-loadimage-returns-true-and-sets-the-texture-to-a-question-mark-when-loading-fails">UUM-2528</a>)</p></li>
-<li><p>Graphics: Fixed Texture2D.GetPixel&#40;int x, int y, int miplevel&#41; internally passing the miplevel parameter incorrectly.&#93;
-(UUM-8157)</p></li>
-<li><p>Graphics: Updated libjpeg-turbo to version 2.1.2 to solve security issues with version 1.3.1, used by Texture2D and ImageConversion LoadImage API and ImageConversion EncodeToJPG API.
-(UUM-4950)</p></li>
-<li><p>IL2CPP: Avoid an intermittent crash in the .NET thread pool implementation when a thread is incorrectly removed from the pool twice.
-(<a href="https://issuetracker.unity3d.com/issues/android-il2cpp-system-dot-threading-dot-threadpool-sometimes-causes-player-to-crash-when-queueing-tasks">UUM-11191</a>)</p></li>
-<li><p>IL2CPP: Avoid an intermittent crash on shutdown when many threads are waiting on a Monitor object inside for a C&#35; lock statement.
-(<a href="https://issuetracker.unity3d.com/issues/crash-in-getmonitorandthrowifnotlockedbycurrentthread-when-running-the-project-repeatedly-and-using-il2cpp">UUM-10374</a>)</p></li>
-<li><p>IL2CPP: Correctly layout structures in memory with an explicit layout and a size parameter.
-(UUM-9100)</p></li>
-<li><p>IL2CPP: Fixed crash when ill formed utf16 content is converted to utf8
-(<a href="https://issuetracker.unity3d.com/issues/backport-il2cpp-doesnt-properly-handle-invalid-surrogate-pairs-causing-crash">UUM-1801</a>)</p></li>
 <li><p>iOS: Disable capitalization, autocorrection and others when soft keyboard is secure and input is hidden
 (<a href="https://issuetracker.unity3d.com/issues/shift-is-pressed-in-the-keyboard-when-textmeshpro-input-field-content-type-is-password-and-hide-mobile-input-is-checked">UUM-5974</a>)</p></li>
 <li><p>iOS: Fixed crash on warming up shader variants with procedural instancing
 (UUM-10114)</p></li>
-<li><p>iOS: Fixed orientation handling on startup &#40;when the phone is rotated between starting up and showing unity itself&#41;
-(<a href="https://issuetracker.unity3d.com/issues/input-dot-gyro-dot-gravity-inverted-sign-on-x-and-y-axis-depending-on-ios-device-orientation-when-app-starts">UUM-7461</a>)</p></li>
-<li><p>iOS: Stop Touch.rawPosition changing position when touch is dragged
-(<a href="https://issuetracker.unity3d.com/issues/ios-touch-dot-rawposition-changes-position-when-touch-is-dragged">UUM-7581</a>)</p></li>
 <li><p>Kernel: Improved termination of player connection.</p></li>
-<li><p>Linux: Fixed print stack trace frequently crashing
-(UUM-1595)</p></li>
 <li><p>macOS: Fixed code sign of ppc fat dylibs.
 (UUM-2196)</p></li>
 <li><p>Networking: Fixed texture leak when UnityWebRequest is used with DownloadHandlerTexture and a texture is never queried.
 (<a href="https://issuetracker.unity3d.com/issues/backport-unitywebrequest-interrupted-before-completion-causes-memory-leak">UUM-953</a>)</p></li>
-<li><p>Networking: Upgrade curl to 7.84.0
-(UUM-11134)</p></li>
-<li><p>Package Manager: HTML text cleaned up in details view.
-(<a href="https://issuetracker.unity3d.com/issues/package-manager-release-details-of-assets-include-html-tags">UUM-7701</a>)</p></li>
 <li><p>Particles: Ensured Trigger Module does not ignore 2D Trigger Colliders.
 (<a href="https://issuetracker.unity3d.com/issues/particles-are-not-detecting-2d-colliders-when-is-trigger-is-on">1364520</a>)</p></li>
 <li><p>Particles: Skip draw call for gpu instanced mesh particle trails if using same material as particles.
 (UUM-7071)</p></li>
 <li><p>Project Browser: Fixed context menu does not appear when holding Ctrl and pressing left mouse button in the Project window on Mac.
 (UUM-5191)</p></li>
-<li><p>Scene Manager: Opening a broken scene with light mapping enabled could crash the editor.
-(<a href="https://issuetracker.unity3d.com/issues/scene-causes-editor-crash-when-specific-lighting-data-asset-is-used">UUM-9319</a>)</p></li>
 <li><p>Scripting: Don't cast Mathf.Abs to float when passing a float value &#40;increases performance&#41;.
 (<a href="https://issuetracker.unity3d.com/issues/backport-unnecessary-cast-to-float-when-calling-mathf-dot-abs">UUM-1821</a>)</p></li>
-<li><p>Scripting: Fix an issue where define constraints on unity's pre-defined symbols like "UNITY_INCLUDE_TESTS" were misbehaving for Precompiled assemblies
-(<a href="https://issuetracker.unity3d.com/issues/a-dll-file-is-included-in-the-build-when-the-only-reference-to-it-is-enclosed-in-number-if-unity-editor">UUM-9378</a>)</p></li>
-<li><p>Scripting: Fix case when trying to serialize generics with generic fields of types from different assemblies.
-(<a href="https://issuetracker.unity3d.com/issues/exception-for-unresolved-inflated-type-arguments">UUM-8844</a>)</p></li>
-<li><p>Scripting: Fixed an issue where messages from the compiler containing special character were not correctly printed in the console
-(<a href="https://issuetracker.unity3d.com/issues/backport-script-names-containing-non-ascii-characters-are-not-printed-correctly-to-the-console">UUM-1935</a>)</p></li>
 <li><p>Scripting: Fixed condition on accessing a game object from a callback while it was being constructed that was leaving the original GameObject managed wrapper in a detached state.
 (<a href="https://issuetracker.unity3d.com/issues/backport-gameobject-reference-is-null-when-creating-it-inside-reset-function-and-assigning-script-as-component">UUM-10043</a>)</p></li>
-<li><p>Serialization: Properly track managed-only classes so they are not stripped by the il2cpp linker.
-(<a href="https://issuetracker.unity3d.com/issues/backport-ui-toolkit-il2cpp-ui-is-not-visible-when-in-built-player-and-serialization-errors-are-thrown">UUM-4103</a>)</p></li>
 <li><p>Shaders: DrawMeshInstanced now provides error feedback when using a shader that does not support instancing.
 (<a href="https://issuetracker.unity3d.com/issues/backport-shader-dot-worldposition-interferes-with-drawing-of-the-shader-when-using-drawmeshinstanced">UUM-6026</a>)</p></li>
 <li><p>Shaders: Fixed HDRP Runtime test failure in Vulkan caused by incorrect shader code generation.
@@ -268,8 +230,6 @@ called from the main thread.<br></li>
 (<a href="https://issuetracker.unity3d.com/issues/broken-mouse-pointer-input-coordinates-in-graphicraycaster-for-certain-window-sizes-in-build-when-run-in-windowed-mode">UUM-7893</a>)</p></li>
 <li><p>Universal Windows Platform: Fixed IL2CPP failing to initialize when invoked in background task.
 (<a href="https://issuetracker.unity3d.com/issues/wns-push-notifications-via-background-task-is-not-working-when-push-notifications-are-sent-from-the-portal-or-using-the-wns-rest-apis">UUM-9644</a>)</p></li>
-<li><p>VFX Graph: Stop rendering VFX shadows when VFX are disabled in Scene View visibility menu
-(UUM-4752)</p></li>
 <li><p>Video: "Can't play movie" error is thrown when setting VideoPlayer.url to an invalid url through a script
 (<a href="https://issuetracker.unity3d.com/issues/backport-cant-play-movie-error-is-thrown-when-setting-videoplayer-dot-url-to-an-invalid-url-through-a-script">UUM-11380</a>)</p></li>
 <li><p>Video: Fixed crash when importing a file in play mode.
@@ -278,9 +238,6 @@ called from the main thread.<br></li>
 (<a href="https://issuetracker.unity3d.com/issues/backport-videos-fail-to-play-on-standalone-windows-players-with-some-amd-gpus">UUM-900</a>)</p></li>
 <li><p>Video: &#91;WIN 8 KN/N&#93; VideoPlayer inadequate error reporting on errorReceived callback when Media Player is not present.
 (<a href="https://issuetracker.unity3d.com/issues/backport-win-8-kn-slash-n-videoplayer-inadequate-error-reporting-on-errorreceived-callback-when-media-player-is-not-present">UUM-839</a>)</p></li>
-<li><p>Virtual Texturing: Added a notice regarding the experimental state of Virtual Texturing to the Player Settings editor.</p></li>
-<li><p>Virtual Texturing: Added a warning for Procedural Virtual Texturing clarifying that the feature is not currently supported.</p></li>
-<li><p>Virtual Texturing: The experimental state of Streaming Virtual Texturing and Procedural Virtual Texturing was not clearly indicated in the API docs and Manual, this has been corrected. For clarity, these features should not be used in production.</p></li>
 <li><p>WebGL: Added workaround for audio distortion bug in Safari.
 (<a href="https://issuetracker.unity3d.com/issues/webgl-macos-looping-audio-gets-distorted-and-echoes-when-played-over-time-on-safari">1350204</a>)</p></li>
 <li><p>WebGL: Fix WebGL build on macOS 12.3 by bundling Python 2.7
@@ -293,16 +250,10 @@ called from the main thread.<br></li>
 (<a href="https://issuetracker.unity3d.com/issues/webgl-fmod-error-spam-in-the-console-when-playing-an-audio-clip-in-a-timeline">1270635</a>)</p></li>
 <li><p>WebGL: Fixed non-finite double value error during audio playback.
 (UUM-11085)</p></li>
-<li><p>WebGL: Improve shader compilation performance problems on MacOS when GPU instancing is used.
-(<a href="https://issuetracker.unity3d.com/issues/backport-instanced-urp-shaders-using-spherical-harmonics-variables-causes-long-initial-mesh-render-time-when-used-in-webgl">UUM-6390</a>)</p></li>
 <li><p>Windows: Fixed crash on startup when Vjoy HID device is connected to a computer.
 (<a href="https://issuetracker.unity3d.com/issues/unity-crashing-upon-start-with-a-vjoy-controller-connected">UUM-8786</a>)</p></li>
-<li><p>Windows: Fixed mouse buttons do not get switched when the primary mouse button is changed.
-(<a href="https://issuetracker.unity3d.com/issues/input-system-windows-mouse-buttons-do-not-get-switched-when-the-primary-mouse-button-is-changed">UUM-3959</a>)</p></li>
 <li><p>Windows: UnityPlayer.dll properties sheet is now more complete.
 (<a href="https://issuetracker.unity3d.com/issues/unityplayer-dot-dll-properties-for-windows-standalone-player-are-incomplete-compared-to-uwp">UUM-10370</a>)</p></li>
-<li><p>XR: Fixed multiview is enabled when renderer is configured to SPI mode on PC
-(UUM-6003)</p></li>
 <li><p>XR: Updated XR Legacy Input Helpers to 2.1.10.</p></li>
 </ul>
 
