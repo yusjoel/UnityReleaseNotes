@@ -128,22 +128,20 @@
         <h3>Known Issues in 2021.3.11f1</h3>
 
 <ul>
-<li><p>AI Navigation Core: Trigger volumes are included in nav mesh generation for NavMeshSurface when geometry is set to Physics Colliders
-(<a href="https://issuetracker.unity3d.com/issues/trigger-volumes-are-included-in-nav-mesh-generation-for-navmeshsurface-when-geometry-is-set-to-physics-colliders">UUM-10109</a>)</p></li>
-<li><p>Asset Bundles: AssetBundle indeterminism caused by mesh streaming info
-(<a href="https://issuetracker.unity3d.com/issues/assetbundle-indeterminism-caused-by-mesh-streaming-info">UUM-12721</a>)</p></li>
-<li><p>Graphics Device Features: [Graphics] Crash when submitting depth with no MSAA
-(<a href="https://issuetracker.unity3d.com/issues/graphics-crash-when-submitting-depth-with-no-msaa">UUM-13249</a>)</p></li>
-<li><p>Linux: [Backport] [Linux] Editor crashes at "GfxDeviceGLES::DrawBuffersBatchMode" when entering Play Mode in the LEGO tutorial
-(<a href="https://issuetracker.unity3d.com/issues/backport-linux-editor-crashes-at-gfxdevicegles-drawbuffersbatchmode-when-entering-play-mode-in-the-lego-tutorial">UUM-971</a>)</p></li>
+<li><p>DirectX11: Unity Editor is rendered without the toolbar icons when using it on old hardware with integrated GPU
+(<a href="https://issuetracker.unity3d.com/issues/unity-editor-is-rendered-without-the-toolbar-icons-when-using-it-on-old-hardware-with-integrated-gpu">UUM-13134</a>)</p></li>
+<li><p>Linux:  Editor crashes at "DisconnectGtkSignal(void*, GtkCallbackResponse (<em>)(), void</em>)" when opening floating windows
+(<a href="https://issuetracker.unity3d.com/issues/linux-editor-crashes-at-burst-signal-handler-when-opening-floating-windows">UUM-11724</a>)</p></li>
 <li><p>MacOS: [M1] Crash on System.Object:__icall_wrapper_ves_icall_array_new_specific when launching a project
 (<a href="https://issuetracker.unity3d.com/issues/m1-crash-on-system-dot-object-icall-wrapper-ves-icall-array-new-specific-when-launching-a-project">UUM-3207</a>)</p></li>
 <li><p>Mono: Crash with ScanAssemblyForAttributesAndInterfaceImplementations when opening a project
 (<a href="https://issuetracker.unity3d.com/issues/crash-with-scanassemblyforattributesandinterfaceimplementations-when-opening-a-project">1376858</a>)</p></li>
-<li><p>Optimization: [Mac] Editor performance drops on macOS when clicking and dragging on Position, Rotation and Scale values in Transform component
-(<a href="https://issuetracker.unity3d.com/issues/mac-editor-performance-drops-on-macos-when-clicking-and-dragging-on-position-rotation-and-scale-values-in-transform-component">UUM-7457</a>)</p></li>
-<li><p>Scene Management: Crash when accessing transform component after calling Resources.UnloadUnusedAssets()
-(<a href="https://issuetracker.unity3d.com/issues/crash-when-accessing-transform-component-after-calling-resources-dot-unloadunusedassets">UUM-11111</a>)</p></li>
+<li><p>Scene Hierarchy: Undo action is not registered when undoing GameObjects list order in the Hierarchy window
+(<a href="https://issuetracker.unity3d.com/issues/undo-action-is-not-registered-when-undoing-gameobjects-list-order-in-the-hierarchy-window">UUM-16576</a>)</p></li>
+<li><p>Web Platform: Project fails with "UnityEditor.BuildPlayerWindow+BuildMethodException" when building for the WebGL platform
+(<a href="https://issuetracker.unity3d.com/issues/project-fails-with-unityeditor-dot-buildplayerwindow-plus-buildmethodexception-when-building-for-the-webgl-platform">UUM-17658</a>)</p></li>
+<li><p>XR SRP: Meta Quest performance loss between URP versions when built
+(<a href="https://issuetracker.unity3d.com/issues/meta-quest-performance-loss-between-urp-versions-when-built">UUM-15608</a>)</p></li>
 </ul>
 
 <h3>2021.3.11f1 Release Notes</h3>
@@ -159,8 +157,6 @@
 <li><p>Asset Pipeline: Do not assert on race when receiving import worker results for a deleted asset.
 (UUM-12649)</p></li>
 <li><p>Core: Added Transform.SetLocalPositionAndRotation&#40;&#41;. This allows you to set both the localPosition and localRotation of a transform in a single call, which is more efficient than assigning to localPosition and localRotation separately. &#40;Thank you to @DevDunk on the forum for the request&#33;&#41;.</p></li>
-<li><p>Graphics: Improved performance and memory usage of GPU/Compute Skinning on iOS.
-(<a href="https://issuetracker.unity3d.com/issues/buffermetal-allocnewversionedbuffer-exhibits-low-performance-and-high-memory-usage">UUM-11356</a>)</p></li>
 <li><p>Multiplayer: Added Unity Netcode for Gamebjects Package 1.0.1.</p></li>
 <li><p>Multiplayer: Added Unity Transport Package 1.2.0.</p></li>
 <li><p>Scripting: Improved pop-up error messages when attaching scripts to GameObjects.
@@ -186,40 +182,20 @@
 (DANB-125)</p></li>
 <li><p>2D: Fixed upgrading from 2020.3 might lost Sprite reference.
 (<a href="https://issuetracker.unity3d.com/issues/importer-textureimporter-generated-inconsistent-result-for-asset-when-importing-assets-from-unity-2020-dot-3">DANB-133</a>)</p></li>
-<li><p>Android: Fixed exporting the Android Studio project to a non-existing folder using Editor API
-(<a href="https://issuetracker.unity3d.com/issues/backport-buildpipeline-dot-buildplayer-throws-the-build-cannot-be-appended-exception-when-using-acceptexternalmodificationstopla">UUM-1886</a>)</p></li>
 <li><p>Android: Fixed orientation issues in laptop mode and tablet mode on Chromebooks.
 (<a href="https://issuetracker.unity3d.com/issues/chromeos-pixelbook-can-switch-to-portrait-orientations-which-result-in-vertical-resolution-that-cannot-be-undone">UUM-782</a>)</p></li>
-<li><p>Asset Import: Fixed import of some meshes with Blend Shape Normals set to Calculate.
-(<a href="https://issuetracker.unity3d.com/issues/fbx-model-breaks-when-normals-and-blend-shape-normals-properties-under-model-tab-are-set-to-calculate">UUM-7867</a>)</p></li>
 <li><p>Audio: Fixed Audio Clip Import Settings not getting saved when the "Override for Dedicated Server" setting is enabled.
 (<a href="https://issuetracker.unity3d.com/issues/audio-clip-import-settings-do-not-get-saved-when-the-override-for-dedicated-server-setting-is-enabled">UUM-399</a>)</p></li>
 <li><p>Audio: Fixed doc for GamepadSpeakerOutputType to be used exclusively for playstation 4, playstation 5 platforms and editor platforms only.
 (<a href="https://issuetracker.unity3d.com/issues/error-gamepadspeakeroutputtype-does-not-exist-in-the-namespace-unityengine-occurs-in-the-console-when-building-a-project">UUM-407</a>)</p></li>
-<li><p>Audio: Fixed unexpected output from OnAudioFilterRead when the audio source is stopped and the 'spatialize' property is enabled.
-(<a href="https://issuetracker.unity3d.com/issues/stopped-audio-souce-outputs-audio-when-the-spatialize-property-is-enabled">UUM-6318</a>)</p></li>
 <li><p>DX12: Fixed crash that can occur when calling ComputeBuffer.GetData&#40;&#41; with non zero computeBufferStartIndex parameter.
 (<a href="https://issuetracker.unity3d.com/issues/crash-on-play-when-getdata-attempts-a-partial-read-on-directx12-dx12">UUM-11444</a>)</p></li>
 <li><p>Editor: Backport Fix &#91;2021.3&#93; - Android Builds Fail When Windows Regional Format is Set to Thai.
 (UUM-954)</p></li>
 <li><p>Editor: Fixed an API breaking change for the EditorToolAttribute constructor.
 (<a href="https://issuetracker.unity3d.com/issues/editortoolattribute-changed-incompatibly">UUM-5792</a>)</p></li>
-<li><p>Editor: Fixed build process should be quicker to detect scripting backend changes when building to a pre-used folder &#40;1421700&#41;.
-(<a href="https://issuetracker.unity3d.com/issues/build-doesnt-fail-instantly-when-building-with-a-different-backend-over-an-existing-build">UUM-1949</a>)</p></li>
-<li><p>Editor: Fixed case where Editor would crash when a selected renderer was deleted.
-(<a href="https://issuetracker.unity3d.com/issues/editor-crashes-when-exiting-the-play-mode-while-a-certain-gameobject-is-selected">UUM-3249</a>)</p></li>
-<li><p>Editor: Fixed crash when opening scenes in builds that had missing Prefab sources.
-(<a href="https://issuetracker.unity3d.com/issues/crash-on-build-when-running-the-build-with-missing-prefabs">UUM-2546</a>)</p></li>
-<li><p>Editor: Fixed dragging prefab with ctrl on linux.
-(<a href="https://issuetracker.unity3d.com/issues/linux-ghost-assets-are-left-in-the-scene-while-drag-and-dropping-prefabs-to-scene-while-holding-ctrl-key">UUM-1601</a>)</p></li>
 <li><p>Editor: Fixed errors in DebugManager/DebugHandler that could occur after making a build.
 (UUM-13827)</p></li>
-<li><p>Editor: Fixed inspector and documentation to reflect intended behavior.
-(<a href="https://issuetracker.unity3d.com/issues/urp-greyed-out-culling-mask-option-still-takes-effect-when-light-layers-are-enabled-1">UUM-2392</a>)</p></li>
-<li><p>Editor: Fixed SceneVisibilityManager exceptions when using shortcuts with no Hierarchy window.
-(<a href="https://issuetracker.unity3d.com/issues/nullreferenceexception-is-thrown-when-hiding-a-gameobject-while-the-scene-view-is-maximized">1425103</a>)</p></li>
-<li><p>Editor: Fixed the "Auto-hide gizmos" preference in the Scene View page to persist value when reopening the editor.
-(<a href="https://issuetracker.unity3d.com/issues/auto-hide-gizmos-preference-is-not-saved-when-reopening-the-project">UUM-7848</a>)</p></li>
 <li><p>Editor: Fixed the selection when the root game object has a SelectionBase component and the child is a prefab.
 (<a href="https://issuetracker.unity3d.com/issues/selectionbase-doesnt-work-for-meshes-when-the-mesh-is-from-an-fbx">UUM-7831</a>)</p></li>
 <li><p>Editor: Game/Scene view window now no longer flickers on resizing when Graphics API is set to OpenGL.
@@ -230,8 +206,6 @@
 (UUM-11182)</p></li>
 <li><p>GI: Fixed baking stall occuring when baking terrain with holes.
 (<a href="https://issuetracker.unity3d.com/issues/backport-plm-baking-stalls-with-terrains-containing-lots-of-holes">UUM-950</a>)</p></li>
-<li><p>Graphics: Added error message for indirect compute buffers incorrectly flagged on DX11.
-(<a href="https://issuetracker.unity3d.com/issues/backport-unable-to-modify-rwstructuredbuffer-elements-via-indirect-dispatch-of-a-compute-shader-when-using-the-direct3d11-api">UUM-899</a>)</p></li>
 <li><p>Graphics: Fixed an issue where creating SparseTextures with certain TextureFormats could crash Unity, even though the equivalent GraphicsFormat is marked as unsupported for SparseTextures.
 (UUM-7671)</p></li>
 <li><p>Graphics: Fixed an issue where SystemInfo.IsFormatSupported&#40;&#40;My GraphicsFormat&#41;, FormatUsage.Sparse&#41; would always return false on Metal, even if the requested GraphicsFormat actually is supported.
@@ -240,18 +214,6 @@
 (UUM-7664)</p></li>
 <li><p>Graphics: Fixed an issue where using TextureFormat.YUY2 / GraphicsFormat.YUV2 with a SparseTexture would crash on Metal. &#40;if sparse textures are supported&#41;.
 (UUM-7671)</p></li>
-<li><p>Graphics: Fixed crash when using bad args in CommandBuffer.DrawRenderer.
-(<a href="https://issuetracker.unity3d.com/issues/backport-crash-when-trying-to-render-a-specific-submesh-with-commandbuffer-dot-drawrenderer">HRB-20</a>)</p></li>
-<li><p>Graphics: Fixed issue in which editor would get stuck when importing corrupted FBX models.
-(<a href="https://issuetracker.unity3d.com/issues/editor-get-stuck-loading-when-importing-corrupted-fbx-models">UUM-3981</a>)</p></li>
-<li><p>Graphics: Fixed sporadic freeze in mesh upload
-(UUM-4293)</p></li>
-<li><p>Graphics: Fixed Vulkan validation error when GFR is disabled
-(UUM-9583)</p></li>
-<li><p>Graphics: Graphic and Compute Buffer allocations will now allocate less garbage collected memory.
-(<a href="https://issuetracker.unity3d.com/issues/backport-graphicsbuffers-constructor-and-other-api-that-returns-graphicsbuffers-allocate-garbage">UUM-4005</a>)</p></li>
-<li><p>Graphics: Updated libjpeg-turbo to version 2.1.2 to solve security issues with version 1.3.1, used by Texture2D and ImageConversion LoadImage API and ImageConversion EncodeToJPG API.
-(UUM-4950)</p></li>
 <li><p>HDRP: Clamp negative absorption distance.
 (UUM-6746)</p></li>
 <li><p>HDRP: Clarify the error message saying the HDRP is not supported on a certain platform.
@@ -284,8 +246,7 @@
 (<a href="https://issuetracker.unity3d.com/issues/xr-sdk-hdrp-tessellation-shader-is-applied-per-eye">UUM-3338</a>)</p></li>
 <li><p>HDRP: Fixed the material rendering pass not correctly changed with multi-selection.
 (UUM-2236)</p></li>
-<li><p>HDRP: Fixed the new ray tracing quality nodes not working.
-(UUM-7987)</p></li>
+<li><p>HDRP: Fixed the new ray tracing quality nodes not working.</p></li>
 <li><p>HDRP: Fixed the ray traced ambient occlusion not rejecting the history when it should leading to severe ghosting.
 (UUM-3225)</p></li>
 <li><p>HDRP: Fixed tonemapping not being applied when using the Show Cascades debug view.
@@ -300,46 +261,28 @@
 (<a href="https://issuetracker.unity3d.com/issues/hdrp-sprite-mask-shading-mode-in-the-scene-view-shows-up-as-missing-shader-for-shader-graphs">UUM-3320</a>)</p></li>
 <li><p>HDRP: RTHandle sampling out of bounds on previous frame pyramid color. This causes sometimes bad pixel values to be reflected.
 (<a href="https://issuetracker.unity3d.com/issues/use-optimal-settings-for-dlss-in-combination-with-smoothness-settings-for-screen-space-reflections-causes-white-flickering">UUM-2331</a>)</p></li>
-<li><p>HDRP: Shaders correctly fallback to error shader.
-(UUM-1417)</p></li>
 <li><p>IL2CPP: Avoided a crash in the IL2CPP runtime when the GUID property of a type is obtained for a type with a StructLayout attribute but without a Guid attribute.
 (<a href="https://issuetracker.unity3d.com/issues/crash-on-il2cpp-icalls-mscorlib-system-runtimetype-getguid-when-building-and-running-a-project-using-il2cpp-scripting-backend">UUM-10859</a>)</p></li>
 <li><p>IL2CPP: Avoided a crash when using GetFiles multiple times for directories with many files on iOS..
 (<a href="https://issuetracker.unity3d.com/issues/ios-crash-when-calling-directory-dot-getfiles-twice">UUM-8885</a>)</p></li>
 <li><p>IL2CPP: Avoided an intermittent crash on shutdown when many threads are waiting on a Monitor object inside for a C&#35; lock statement.
 (<a href="https://issuetracker.unity3d.com/issues/crash-in-getmonitorandthrowifnotlockedbycurrentthread-when-running-the-project-repeatedly-and-using-il2cpp">UUM-10374</a>)</p></li>
-<li><p>IL2CPP: Corrected the build of a Mac Standalone player with an exported Xcode project when script debugging is enabled.
-(<a href="https://issuetracker.unity3d.com/issues/il2cpp-xcode-build-fails-when-building-an-exported-project-with-script-debugging-enabled">UUM-11352</a>)</p></li>
-<li><p>iOS: Disabled depth16 support on pre-iOS14 or pre-A9, since depth-bias does not work correctly
-(UUM-9562)</p></li>
-<li><p>iOS: Stop Touch.rawPosition changing position when touch is dragged
-(<a href="https://issuetracker.unity3d.com/issues/ios-touch-dot-rawposition-changes-position-when-touch-is-dragged">UUM-7581</a>)</p></li>
 <li><p>Kernel: Race condition in DualThreadAllocator when using BatchDelete.
 (UUM-5941)</p></li>
 <li><p>Linux: Enabled and fixed a failed integration test on linux.
 (UUM-1593)</p></li>
 <li><p>Linux: Fixed Server runtime not responding to SIGTERM and other signals.
-(<a href="https://issuetracker.unity3d.com/issues/unity-server-run-time-does-not-respond-to-sigterm-and-other-linux-signals-correctly-1">UUM-1582</a>)</p></li>
+(<a href="https://issuetracker.unity3d.com/issues/unity-server-run-time-does-not-respond-to-sigterm-and-other-linux-signals-correctly">UUM-1582</a>)</p></li>
 <li><p>Mono: Updated the machine config file for Android Player builds.
 (<a href="https://issuetracker.unity3d.com/issues/android-webrequest-dot-create-cause-an-exception-when-mono-is-used">UUM-12561</a>)</p></li>
-<li><p>Networking: UnityWebRequest will not change HEAD to GET on 302 or 303 response.
-(UUM-7274)</p></li>
-<li><p>Networking: Upgraded curl to 7.84.0.
-(UUM-11134)</p></li>
 <li><p>Package Manager: Fixed a regression where packages would fail to resolve with a ENOENT mkdir error when the project path or global cache path contained quotes.
 (<a href="https://issuetracker.unity3d.com/issues/package-manager-enoent-no-such-file-or-directory-mkdir">UUM-13252</a>)</p></li>
 <li><p>Package Manager: HTML text cleaned up in details view.
 (<a href="https://issuetracker.unity3d.com/issues/package-manager-release-details-of-assets-include-html-tags">UUM-7701</a>)</p></li>
-<li><p>Profiler: Fixed enabling Deep Profile on Standalone Profiler crashes the Standalone Profiler with "Sending message header failed" warnings.
-(<a href="https://issuetracker.unity3d.com/issues/backport-enabling-deep-profile-on-standalone-profiler-crashes-the-standalone-profiler-with-sending-message-header-failed-war">UUM-2371</a>)</p></li>
 <li><p>Profiler: Fixed failures in opening local documentation files from Editor on macOS.
 (<a href="https://issuetracker.unity3d.com/issues/application-cannot-be-opened-error-on-pressng-help-icon-in-profiler-window">UUM-6164</a>)</p></li>
 <li><p>Profiler: Fixed issue where autoconnecting to/disconnecting from profiling tools could cause a crash.
 (<a href="https://issuetracker.unity3d.com/issues/backport-ios-crash-when-launching-build-with-autoconnect-profiler-enabled-with-the-profiler-window-closed">UUM-876</a>)</p></li>
-<li><p>Scene Manager: Opening a broken scene with light mapping enabled could crash the editor.
-(<a href="https://issuetracker.unity3d.com/issues/scene-causes-editor-crash-when-specific-lighting-data-asset-is-used">UUM-9319</a>)</p></li>
-<li><p>Scene/Game View: Fixed case where gizmos with bounds near the camera could be incorrectly culled.
-(UUM-9158)</p></li>
 <li><p>Scripting: Fixed an issue where adding a component declared in a nested class could end up adding the wrong component type.
 (<a href="https://issuetracker.unity3d.com/issues/the-wrong-component-slash-class-gets-added-when-adding-a-nested-class-via-script-that-has-a-duplicate-class-elsewhere">UUM-9221</a>)</p></li>
 <li><p>Scripting: Fixed case when trying to serialize generics with generic fields of types from different assemblies.
@@ -352,12 +295,8 @@
 (UUM-9751)</p></li>
 <li><p>UI Elements: Fixed min max slider behaving abnormally when using larger thumb styling.
 (<a href="https://issuetracker.unity3d.com/issues/ui-toolkits-slider-behaves-abnormally-with-unity-default-runtime-theme">UUM-5017</a>)</p></li>
-<li><p>UI Toolkit: Fixed an issue where the children of a TwoPaneSplitView would have incorrect sizes when displayed after being hidden.
-(<a href="https://issuetracker.unity3d.com/issues/twopanesplitview-pane-resets-to-its-minimum-size-when-hidden-and-shown-again-1">UUM-2538</a>)</p></li>
 <li><p>UI Toolkit: Fixed bug where prefabs dragged to the Scene window aren't properly canceled if the drag ends on top of an overlay window.
 (<a href="https://issuetracker.unity3d.com/issues/prefabs-appear-in-the-scene-window-without-being-created-in-the-hierarchy-when-drag-and-dropping-over-the-latest-overlays-design">UUM-10082</a>)</p></li>
-<li><p>UI Toolkit: Fixed for 2021.3.X: &#91;UI Builder&#93; @import is stripped from the associated .uss file when saving .uxml.
-(<a href="https://issuetracker.unity3d.com/issues/ui-builder-at-import-is-stripped-from-the-associated-uss-file-when-saving-uxml-1">UUM-14414</a>)</p></li>
 <li><p>UI Toolkit: InspectorElement layout is broken if parent container flex direction is set to row.
 (UUM-8431)</p></li>
 <li><p>Universal RP: Fixed decal msaa error then camera is selected in deferred rendering path.
@@ -369,39 +308,21 @@
 <li><p>Universal RP: Fixed decals to pass correct viewDirectionWS to screen space and gbuffer lighting.</p></li>
 <li><p>Universal RP: Fixed decals to produce correct world to tangent matrix.
 (UUM-13674)</p></li>
-<li><p>Universal RP: Fixed default URP asset being included in builds when it wasn't supposed to be &#40;when URP asset overrides are available for all target's quality levels&#41;.
-(UUM-8487)</p></li>
 <li><p>Universal RP: Fixed instacing error when decals loaded, but not the decal shaders.</p></li>
 <li><p>Universal RP: Fixed render scale correctly work with screen size property. This includes decals.
 (UUM-13667)</p></li>
 <li><p>Universal RP: Universal RP: Fixed excessive banding from FSR in URP.
 (UUM-9558)</p></li>
-<li><p>URP: Added force depth prepass option when requesting the Depth Texture.
-(UUM-8273)</p></li>
 <li><p>URP: Fixed Gizmos in Game View when using Viewports &#40;UUM-7069&#41;.</p></li>
-<li><p>URP: Shaders correctly fallback to error shader.
-(UUM-1417)</p></li>
-<li><p>VFX Graph: Fixed flickering when sorting large systems.
-(UUM-9514)</p></li>
 <li><p>VFX Graph: Fixed position where VFX are created when VFX asset is dragged to Scene View.
 (UUM-4749)</p></li>
 <li><p>VFX Graph: Removed incompatible target generating shader targetting VFX.
 (<a href="https://issuetracker.unity3d.com/issues/backport-windows-flexiblefire-shader-graph-throws-an-error-when-attempting-to-build-the-project">UUM-8476</a>)</p></li>
 <li><p>VFX Graph: Stop rendering VFX shadows when VFX are disabled in Scene View visibility menu.
 (UUM-4752)</p></li>
-<li><p>Video: Editor crashes when playing a video file with 14 audio tracks in Play mode.
-(<a href="https://issuetracker.unity3d.com/issues/backport-editor-crashes-when-playing-a-video-file-with-14-audio-tracks-in-play-mode">UUM-861</a>)</p></li>
-<li><p>Video: VideoPlayer throws errors when VideoClip loaded from AssetBundle nears the end
-(<a href="https://issuetracker.unity3d.com/issues/backport-videoplayer-throws-errors-when-videoclip-loaded-from-assetbundle-nears-the-end">UUM-1888</a>)</p></li>
 <li><p>Virtual Texturing: Added a notice regarding the experimental state of Virtual Texturing to the Player Settings editor.</p></li>
 <li><p>Virtual Texturing: Added a warning for Procedural Virtual Texturing clarifying that the feature is not currently supported.</p></li>
 <li><p>Virtual Texturing: The experimental state of Streaming Virtual Texturing and Procedural Virtual Texturing was not clearly indicated in the API docs and Manual, this has been corrected. For clarity, these features should not be used in production.</p></li>
-<li><p>WebGL: Fixed a bug where losing focus on the player would cause buttons to become stuck.
-(<a href="https://issuetracker.unity3d.com/issues/input-value-is-constantly-repeated-on-webgl-player-when-changing-focus-of-the-player">UUM-3230</a>)</p></li>
-<li><p>WebGL: Fixed a bug where pressing the <code>CMD</code> key on Safari would cause buttons to become stuck.
-(UUM-12013)</p></li>
-<li><p>WebGL: Improve shader compilation performance problems on MacOS when GPU instancing is used.
-(<a href="https://issuetracker.unity3d.com/issues/backport-instanced-urp-shaders-using-spherical-harmonics-variables-causes-long-initial-mesh-render-time-when-used-in-webgl">UUM-6390</a>)</p></li>
 <li><p>WebGL: This PR fixes a regression in 3D audio effects. The audio listener orientation was not set correctly.
 (<a href="https://issuetracker.unity3d.com/issues/on-webgl-player-spatial-audio-3d-sound-settings-does-not-change-direction-from-where-the-sound-is-played">UUM-1165</a>)</p></li>
 <li><p>Windows: Fixed mouse buttons do not get switched when the primary mouse button is changed.
@@ -429,8 +350,8 @@
   <div class="tip">Unity 2021.3.10</div>
 </div>
 <div class="scroll-link tooltip right" data-distance="-40|-30|top">
-  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/2022.1.0"></a></span>
-  <div class="tip">Unity 2022.1.0</div>
+  <span class="btn next ico-chevron-right rel"><a href="/unity/whats-new/2021.3.12"></a></span>
+  <div class="tip">Unity 2021.3.12</div>
 </div>
       </div>
     </div>
