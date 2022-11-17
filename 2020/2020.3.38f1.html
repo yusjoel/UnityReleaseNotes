@@ -173,8 +173,6 @@
 <li><p>Editor: SpeedTree: Fix SpeedTreeImporterModelEditor throwing exception on DoMaterialsHaveDifferentShader&#40;&#41; call when invalid SpeedTree asset is imported
 (UUM-6486)</p></li>
 <li><p>Editor: &#91;SpeedTree&#93; Fixed an exception when the user backs off form the 'Search and Remap' dialog in the SpeedTree Material Editor</p></li>
-<li><p>Game Core: Fixed web requests getting stuck when aborting them
-(UUM-874)</p></li>
 <li><p>GI: Fix a crash: GetManagerFromContext: pointer to object of manager 'LightmapSettings' is NULL &#40;table index 22&#41;" error when creating a new scene
 (<a href="https://issuetracker.unity3d.com/issues/getmanagerfromcontext-pointer-to-object-of-manager-lightmapsettings-is-null-table-index-22-error-when-creating-a-new-scene">UUM-9213</a>)</p></li>
 <li><p>GI: Fixed issues with overlapping lights using shadowmask and wide spot angles.
@@ -236,20 +234,14 @@
 (<a href="https://issuetracker.unity3d.com/issues/memory-profiler-results-reports-wrong-mesh-size-when-generating-it-with-jobs">1377773</a>)</p></li>
 <li><p>Profiler: Fixed profiler not opening the correct version of the documentation.
 (<a href="https://issuetracker.unity3d.com/issues/profiler-help-button-redirects-to-wrong-stream-documentation-page-1">UUM-4963</a>)</p></li>
-<li><p>PS5: Fixed crash when editing the PS5 SDK override option
-(UUM-1900)</p></li>
 <li><p>Scene/Game View: Adding check before recursion that the gizmo is not already active.
 (UUM-9157)</p></li>
-<li><p>Scripting: Fix an issue where API Compatibility level was ignored when building for Nintendo Switch
-(UUM-7223)</p></li>
 <li><p>Scripting: Fix case when double-clicking message wouldn't open the correct file and line.
 (<a href="https://issuetracker.unity3d.com/issues/backport-script-not-opening-when-double-clicking-error">UUM-897</a>)</p></li>
 <li><p>Scripting: Fixed issues with operation on invalid gc handles. As part of this 2 new asserts are introduced that are triggered when invalid gc handle operations are detected. The operations are skipped when detected to avoid scripting domain / memory corruption.
 (UUM-906)</p></li>
 <li><p>Shaders: Fixed ddx_fine and ddx_coarse on Vulkan and capable GLCore targets.
 (<a href="https://issuetracker.unity3d.com/issues/backport-fwidth-behavior-is-inconsistent-between-dx11-slash-dx12-and-opengl-slash-vulkan">UUM-2198</a>)</p></li>
-<li><p>Stadia: Add -Wno-missing-declarations flag.
-(UUM-1120)</p></li>
 <li><p>uGUI: Expose RaycastManager.GetRaycasters public for use by users making their own EventSystem
 (UUM-4409)</p></li>
 <li><p>Universal Windows Platform: Fixed a crash when entering a composition string longer than 64 characters into the IME.
