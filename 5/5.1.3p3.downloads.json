@@ -1,0 +1,58 @@
+{
+  "version": "5.1.3p3",
+  "revision": "f0a33a6ef422",
+  "unityHubDeepLink": "unityhub://5.1.3p3/f0a33a6ef422",
+  "releaseDate": "2015-09-11T00:00:00.000Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/Windows64EditorInstaller/UnitySetup64-5.1.3p3.exe",
+      "installerSize": 1371202560,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/WindowsDevelopmentWebPlayerInstaller/UnityWebPlayerDevelopment.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/MacEditorInstaller/Unity-5.1.3p3.pkg",
+      "installerSize": 1935052511,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/MacWebPlayerInstaller/WebPlayer.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f0a33a6ef422/MacExampleProjectInstaller/Examples.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

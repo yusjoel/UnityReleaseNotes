@@ -1,0 +1,63 @@
+{
+  "version": "5.2.3f1",
+  "revision": "f3d16a1fa2dd",
+  "unityHubDeepLink": "unityhub://5.2.3f1/f3d16a1fa2dd",
+  "releaseDate": "2015-11-19T10:38:36.694Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/Windows64EditorInstaller/UnitySetup64-5.2.3f1.exe",
+      "installerSize": 2000455680,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/WindowsDevelopmentWebPlayerInstaller/UnityWebPlayerDevelopment.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        },
+        {
+          "name": "Microsoft Visual Studio Community 2015",
+          "category": "DEV_TOOL",
+          "url": "http://go.microsoft.com/fwlink/?LinkId=532606"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/MacEditorInstaller/Unity-5.2.3f1.pkg",
+      "installerSize": 2766427362,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/MacWebPlayerInstaller/WebPlayer.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/f3d16a1fa2dd/MacExampleProjectInstaller/Examples.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

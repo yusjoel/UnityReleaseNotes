@@ -1,0 +1,257 @@
+{
+  "version": "2020.3.3f1",
+  "revision": "76626098c1c4",
+  "unityHubDeepLink": "unityhub://2020.3.3f1/76626098c1c4",
+  "releaseDate": "2021-04-07T16:37:40.613Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/76626098c1c4/Windows64EditorInstaller/UnitySetup64-2020.3.3f1.exe",
+      "installerSize": 2877949952,
+      "modules": [
+        {
+          "name": "Microsoft Visual Studio Community 2019",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2086755"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/16/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/16/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "Universal Windows Platform Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "Windows Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "Lumin OS (Magic Leap) Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/TargetSupportInstaller/UnitySetup-Lumin-Support-for-Editor-2020.3.3f1.exe"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2020.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorInstaller/Unity-2020.3.3f1.pkg",
+      "installerSize": 3604822024,
+      "modules": [
+        {
+          "name": "Visual Studio for Mac",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2086937"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "Lumin OS (Magic Leap) Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Lumin-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2020.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "LINUX",
+      "architecture": "X86_64",
+      "type": "TAR_XZ",
+      "url": "https://download.unity3d.com/download_unity/76626098c1c4/LinuxEditorInstaller/Unity-2020.3.3f1.tar.xz",
+      "installerSize": 2971114368,
+      "modules": [
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/LinuxEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2020.3.3f1.tar.xz"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/LinuxEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2020.3.3f1.tar.xz"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/LinuxEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2020.3.3f1.tar.xz"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/76626098c1c4/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2020.3.3f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2020.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2020.3/UnityDocumentation.zip"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

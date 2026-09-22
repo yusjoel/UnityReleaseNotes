@@ -1,0 +1,58 @@
+{
+  "version": "5.0.1p3",
+  "revision": "831bf8db21f1",
+  "unityHubDeepLink": "unityhub://5.0.1p3/831bf8db21f1",
+  "releaseDate": "2015-04-29T00:00:00.000Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/831bf8db21f1/Windows64EditorInstaller/UnitySetup64-5.0.1p3.exe",
+      "installerSize": 1249604608,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/831bf8db21f1/WindowsDevelopmentWebPlayerInstaller/UnityWebPlayerDevelopment.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/831bf8db21f1/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/831bf8db21f1/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/831bf8db21f1/MacEditorInstaller/Unity-5.0.1p3.pkg",
+      "installerSize": 1755435718,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/831bf8db21f1/MacWebPlayerInstaller/WebPlayer.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/831bf8db21f1/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/831bf8db21f1/MacExampleProjectInstaller/Examples.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

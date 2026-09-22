@@ -1,0 +1,173 @@
+{
+  "version": "5.6.0b10",
+  "revision": "230d5f2aa01e",
+  "unityHubDeepLink": "unityhub://5.6.0b10/230d5f2aa01e",
+  "releaseDate": "2017-03-02T17:57:00.642Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/Windows64EditorInstaller/UnitySetup64-5.6.0b10.exe",
+      "installerSize": 507039744,
+      "modules": [
+        {
+          "name": "Documentation",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        },
+        {
+          "name": "Microsoft Visual Studio Community 2017",
+          "category": "DEV_TOOL",
+          "url": "https://aka.ms/vs/15/release/vs_Community.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2017",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/15/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2017",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/15/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "Mac Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Mac-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "Windows Store .NET Scripting Backend",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "Windows Store IL2CPP Scripting Backend",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "SamsungTV Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Samsung-TV-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "Tizen Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Tizen-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-5.6.0b10.exe"
+        },
+        {
+          "name": "Facebook Games Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-5.6.0b10.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorInstaller/Unity-5.6.0b10.pkg",
+      "installerSize": 668841944,
+      "modules": [
+        {
+          "name": "Documentation",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacDocumentationInstaller/Documentation.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacExampleProjectInstaller/Examples.pkg"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "SamsungTV Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-Samsung-TV-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "Tizen Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-Tizen-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "Windows Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-5.6.0b10.pkg"
+        },
+        {
+          "name": "Facebook Games Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/230d5f2aa01e/MacEditorTargetInstaller/UnitySetup-Facebook-Games-Support-for-Editor-5.6.0b10.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

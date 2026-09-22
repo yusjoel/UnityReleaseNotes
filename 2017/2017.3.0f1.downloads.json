@@ -1,0 +1,173 @@
+{
+  "version": "2017.3.0f1",
+  "revision": "b84f5794ed91",
+  "unityHubDeepLink": "unityhub://2017.3.0f1/b84f5794ed91",
+  "releaseDate": "2017-12-01T18:31:55.923Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/b84f5794ed91/Windows64EditorInstaller/UnitySetup64-2017.3.0f1.exe",
+      "installerSize": 553504768,
+      "modules": [
+        {
+          "name": "MonoDevelop / Unity Debugger",
+          "category": "DEV_TOOL",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/WindowsMonoDevelopInstaller/UnityMonoDevelopSetup.exe"
+        },
+        {
+          "name": "Documentation",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        },
+        {
+          "name": "Microsoft Visual Studio Community 2017",
+          "category": "DEV_TOOL",
+          "url": "https://aka.ms/vs/15/release/vs_Community.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2017",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/15/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2017",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/15/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "Mac Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-Mac-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "Windows Store .NET Scripting Backend",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "Windows Store IL2CPP Scripting Backend",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "Vuforia Augmented Reality Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-Vuforia-AR-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2017.3.0f1.exe"
+        },
+        {
+          "name": "Facebook Gameroom Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2017.3.0f1.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorInstaller/Unity-2017.3.0f1.pkg",
+      "installerSize": 781924388,
+      "modules": [
+        {
+          "name": "MonoDevelop / Unity Debugger",
+          "category": "DEV_TOOL",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacMonoDevelopInstaller/UnityMonoDevelop.pkg"
+        },
+        {
+          "name": "Documentation",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacDocumentationInstaller/Documentation.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacExampleProjectInstaller/Examples.pkg"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "Vuforia Augmented Reality Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-Vuforia-AR-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "Windows Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-2017.3.0f1.pkg"
+        },
+        {
+          "name": "Facebook Gameroom Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b84f5794ed91/MacEditorTargetInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2017.3.0f1.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

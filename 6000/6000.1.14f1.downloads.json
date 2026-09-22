@@ -1,0 +1,641 @@
+{
+  "version": "6000.1.14f1",
+  "revision": "db7aa045cc2c",
+  "unityHubDeepLink": "unityhub://6000.1.14f1/db7aa045cc2c",
+  "releaseDate": "2025-07-30T08:28:59.495Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/Windows64EditorInstaller/UnitySetup64-6000.1.14f1.exe",
+      "installerSize": 4028516352,
+      "modules": [
+        {
+          "name": "Microsoft Visual Studio Community 2022",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2189815"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2022",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/17/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/17/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-VisionOS-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Linux-Server-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Mac-Server-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Universal Windows Platform Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Web Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Windows Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Windows-Server-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.1/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "WINDOWS",
+      "architecture": "ARM64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/WindowsArm64EditorInstaller/UnitySetupArm64-6000.1.14f1.exe",
+      "installerSize": 3987605504,
+      "modules": [
+        {
+          "name": "Microsoft Visual Studio Community 2022",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2189815"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2022",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/17/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/17/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-VisionOS-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Linux-Server-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Mac-Server-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Universal Windows Platform Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Web Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Windows Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/TargetSupportInstaller/UnitySetup-Windows-Server-Support-for-Editor-6000.1.14f1.exe"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.1/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorInstaller/Unity-6000.1.14f1.pkg",
+      "installerSize": 4911937097,
+      "modules": [
+        {
+          "name": "Visual Studio Code",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2261605"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-VisionOS-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Web Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.1/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "ARM64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorInstallerArm64/Unity-6000.1.14f1.pkg",
+      "installerSize": 4898079518,
+      "modules": [
+        {
+          "name": "Visual Studio Code",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2261605"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-VisionOS-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Web Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.1/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "LINUX",
+      "architecture": "X86_64",
+      "type": "TAR_XZ",
+      "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/LinuxEditorInstaller/Unity-6000.1.14f1.tar.xz",
+      "installerSize": 4398142968,
+      "modules": [
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/LinuxEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-6000.1.14f1.tar.xz"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/LinuxEditorTargetInstaller/UnitySetup-VisionOS-Support-for-Editor-6000.1.14f1.tar.xz"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/LinuxEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-6000.1.14f1.tar.xz"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/LinuxEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-6000.1.14f1.tar.xz"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Mac-Mono-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Web Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/LinuxEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-6000.1.14f1.tar.xz"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/db7aa045cc2c/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-6000.1.14f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/6000.1/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.1/UnityDocumentation.zip"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": [
+    {
+      "name": "Build-Support-Android-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Android_IL_2_CPP_6000_1_14f1_a6037a3ba0/Build_Support_Android_IL_2_CPP_6000_1_14f1_a6037a3ba0.pdf"
+    },
+    {
+      "name": "Build-Support-EmbeddedLinux-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Embedded_Linux_IL_2_CPP_6000_1_14f1_46ef2bb1df/Build_Support_Embedded_Linux_IL_2_CPP_6000_1_14f1_46ef2bb1df.pdf"
+    },
+    {
+      "name": "Build-Support-Linux-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Linux_IL_2_CPP_6000_1_14f1_0881be5ffd/Build_Support_Linux_IL_2_CPP_6000_1_14f1_0881be5ffd.pdf"
+    },
+    {
+      "name": "Build-Support-Linux-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Linux_Mono_6000_1_14f1_86762c24f3/Build_Support_Linux_Mono_6000_1_14f1_86762c24f3.pdf"
+    },
+    {
+      "name": "Build-Support-VisionOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Vision_OS_IL_2_CPP_6000_1_14f1_da8dbfa460/Build_Support_Vision_OS_IL_2_CPP_6000_1_14f1_da8dbfa460.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_IL_2_CPP_6000_1_14f1_dcbce7395a/Build_Support_Windows_IL_2_CPP_6000_1_14f1_dcbce7395a.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_Mono_6000_1_14f1_1d443d4d70/Build_Support_Windows_Mono_6000_1_14f1_1d443d4d70.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-UWP-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_UWP_Mono_6000_1_14f1_75c81f6ea1/Build_Support_Windows_UWP_Mono_6000_1_14f1_75c81f6ea1.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-WebGL-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_Web_GL_IL_2_CPP_6000_1_14f1_124225e69c/Build_Support_Windows_Web_GL_IL_2_CPP_6000_1_14f1_124225e69c.pdf"
+    },
+    {
+      "name": "Build-Support-iOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_i_OS_IL_2_CPP_6000_1_14f1_b486dc7a27/Build_Support_i_OS_IL_2_CPP_6000_1_14f1_b486dc7a27.pdf"
+    },
+    {
+      "name": "Build-Support-macOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_mac_OS_IL_2_CPP_6000_1_14f1_dda53131d1/Build_Support_mac_OS_IL_2_CPP_6000_1_14f1_dda53131d1.pdf"
+    },
+    {
+      "name": "Build-Support-macOS-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_mac_OS_Mono_6000_1_14f1_e99d78403c/Build_Support_mac_OS_Mono_6000_1_14f1_e99d78403c.pdf"
+    },
+    {
+      "name": "Build-Support-tvOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_tv_OS_IL_2_CPP_6000_1_14f1_bad753f1e1/Build_Support_tv_OS_IL_2_CPP_6000_1_14f1_bad753f1e1.pdf"
+    },
+    {
+      "name": "Editor-Linux-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_Linux_Mono_6000_1_14f1_87fac5694f/Editor_Linux_Mono_6000_1_14f1_87fac5694f.pdf"
+    },
+    {
+      "name": "Editor-Windows-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_Windows_Mono_6000_1_14f1_91e34ad79e/Editor_Windows_Mono_6000_1_14f1_91e34ad79e.pdf"
+    },
+    {
+      "name": "Editor-macOS-Arm64-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_Arm64_Mono_6000_1_14f1_c745ef43a6/Editor_mac_OS_Arm64_Mono_6000_1_14f1_c745ef43a6.pdf"
+    },
+    {
+      "name": "Editor-macOS-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_Mono_6000_1_14f1_5634437543/Editor_mac_OS_Mono_6000_1_14f1_5634437543.pdf"
+    },
+    {
+      "name": "Player-Android-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Android_IL_2_CPP_6000_1_14f1_48bf6afaf5/Player_Android_IL_2_CPP_6000_1_14f1_48bf6afaf5.pdf"
+    },
+    {
+      "name": "Player-EmbeddedLinux-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Embedded_Linux_IL_2_CPP_6000_1_14f1_16c672789c/Player_Embedded_Linux_IL_2_CPP_6000_1_14f1_16c672789c.pdf"
+    },
+    {
+      "name": "Player-Linux-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_IL_2_CPP_6000_1_14f1_e8737d922c/Player_Linux_IL_2_CPP_6000_1_14f1_e8737d922c.pdf"
+    },
+    {
+      "name": "Player-Linux-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_Mono_6000_1_14f1_9edc3b6f02/Player_Linux_Mono_6000_1_14f1_9edc3b6f02.pdf"
+    },
+    {
+      "name": "Player-VisionOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Vision_OS_IL_2_CPP_6000_1_14f1_4160d31bd3/Player_Vision_OS_IL_2_CPP_6000_1_14f1_4160d31bd3.pdf"
+    },
+    {
+      "name": "Player-Windows-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_IL_2_CPP_6000_1_14f1_6679453e8b/Player_Windows_IL_2_CPP_6000_1_14f1_6679453e8b.pdf"
+    },
+    {
+      "name": "Player-Windows-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Mono_6000_1_14f1_93727f3831/Player_Windows_Mono_6000_1_14f1_93727f3831.pdf"
+    },
+    {
+      "name": "Player-Windows-UWP-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_UWP_Mono_6000_1_14f1_8c300e5136/Player_Windows_UWP_Mono_6000_1_14f1_8c300e5136.pdf"
+    },
+    {
+      "name": "Player-Windows-WebGL-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Web_GL_IL_2_CPP_6000_1_14f1_7952671e68/Player_Windows_Web_GL_IL_2_CPP_6000_1_14f1_7952671e68.pdf"
+    },
+    {
+      "name": "Player-iOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_i_OS_IL_2_CPP_6000_1_14f1_c420f23329/Player_i_OS_IL_2_CPP_6000_1_14f1_c420f23329.pdf"
+    },
+    {
+      "name": "Player-macOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_IL_2_CPP_6000_1_14f1_48350b34f3/Player_mac_OS_IL_2_CPP_6000_1_14f1_48350b34f3.pdf"
+    },
+    {
+      "name": "Player-macOS-Mono-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_Mono_6000_1_14f1_23570535b5/Player_mac_OS_Mono_6000_1_14f1_23570535b5.pdf"
+    },
+    {
+      "name": "Player-tvOS-IL2CPP-6000.1.14f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_tv_OS_IL_2_CPP_6000_1_14f1_8043af2918/Player_tv_OS_IL_2_CPP_6000_1_14f1_8043af2918.pdf"
+    }
+  ]
+}

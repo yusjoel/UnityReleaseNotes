@@ -1,0 +1,58 @@
+{
+  "version": "5.1.1p1",
+  "revision": "17d6a7a3ab46",
+  "unityHubDeepLink": "unityhub://5.1.1p1/17d6a7a3ab46",
+  "releaseDate": "2015-06-23T15:05:55.566Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/Windows64EditorInstaller/UnitySetup64-5.1.1p1.exe",
+      "installerSize": 1356438528,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/WindowsDevelopmentWebPlayerInstaller/UnityWebPlayerDevelopment.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/MacEditorInstaller/Unity-5.1.1p1.pkg",
+      "installerSize": 1923404669,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/MacWebPlayerInstaller/WebPlayer.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/17d6a7a3ab46/MacExampleProjectInstaller/Examples.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

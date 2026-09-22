@@ -1,0 +1,58 @@
+{
+  "version": "5.0.0p2",
+  "revision": "b8242d3df8b0",
+  "unityHubDeepLink": "unityhub://5.0.0p2/b8242d3df8b0",
+  "releaseDate": "2015-03-20T16:38:49.515Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/Windows64EditorInstaller/UnitySetup64-5.0.0p2.exe",
+      "installerSize": 1248797696,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/WindowsDevelopmentWebPlayerInstaller/UnityWebPlayerDevelopment.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/MacEditorInstaller/Unity-5.0.0p2.pkg",
+      "installerSize": 1767984893,
+      "modules": [
+        {
+          "name": "Web Player",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/MacWebPlayerInstaller/WebPlayer.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/b8242d3df8b0/MacExampleProjectInstaller/Examples.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

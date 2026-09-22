@@ -1,0 +1,247 @@
+{
+  "version": "2018.3.0b2",
+  "revision": "21e0e8a5466d",
+  "unityHubDeepLink": "unityhub://2018.3.0b2/21e0e8a5466d",
+  "releaseDate": "2018-09-20T09:44:45.621Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/Windows64EditorInstaller/UnitySetup64-2018.3.0b2.exe",
+      "installerSize": 576726016,
+      "modules": [
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2018.3/UnityDocumentation.zip"
+        },
+        {
+          "name": "Microsoft Visual Studio Community 2017",
+          "category": "DEV_TOOL",
+          "url": "https://aka.ms/vs/15/release/vs_Community.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2017",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/15/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2017",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/15/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "UWP Build Support (.NET)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-UWP-.NET-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "UWP Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "Vuforia Augmented Reality Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-Vuforia-AR-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "Windows Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "Facebook Gameroom Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2018.3.0b2.exe"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/ko"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/zh-cn"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorInstaller/Unity-2018.3.0b2.pkg",
+      "installerSize": 1046636553,
+      "modules": [
+        {
+          "name": "Visual Studio for Mac",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=873167"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2018.3/UnityDocumentation.zip"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "Vuforia Augmented Reality Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Vuforia-AR-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "Facebook Gameroom Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/ko"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/zh-cn"
+        }
+      ]
+    },
+    {
+      "platform": "LINUX",
+      "architecture": "X86_64",
+      "type": "TAR_XZ",
+      "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/LinuxEditorInstaller/Unity-2018.3.0b2.tar.xz",
+      "installerSize": 859542508,
+      "modules": [
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2018.3/UnityDocumentation.zip"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/LinuxEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2018.3.0b2.tar.xz"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/LinuxEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2018.3.0b2.tar.xz"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "Facebook Gameroom Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/21e0e8a5466d/MacEditorTargetInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2018.3.0b2.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/ko"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2018.3/zh-cn"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}

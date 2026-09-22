@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>下载 - Unity发布日志</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6;
+         max-width: 60rem; margin: 0 auto; padding: 1.5rem; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 1.75rem 0 .5rem; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
+  h3 { font-size: .95rem; margin: 1rem 0 .35rem; color: #444; }
+  a { color: #0b5cad; }
+  .meta { color: #666; font-size: .9rem; margin-bottom: 1rem; }
+  .meta code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; }
+  ul { margin: .25rem 0; padding-left: 1.25rem; }
+  li { margin: .15rem 0; }
+  .size { color: #888; font-size: .85rem; }
+  .err { color: #b00020; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16181d; color: #e6e6e6; }
+    h2 { border-color: #3a3f47; } h3 { color: #b8b8b8; }
+    a { color: #6cb6ff; } .meta { color: #999; }
+    .meta code { background: #2a2e35; } .size { color: #888; }
+  }
+</style>
+</head>
+<body>
+<div id="content">加载中…</div>
+<script>
+(function () {
+  var out = document.getElementById('content');
+  var file = new URLSearchParams(location.search).get('f');
+
+  // 只允许站内相对路径：字母数字、点、下划线、连字符和斜杠，且不含 ..
+  if (!file || !/^[A-Za-z0-9._\/-]+$/.test(file) || file.indexOf('..') !== -1) {
+    out.innerHTML = '<p class="err">参数 f 无效。</p>';
+    return;
+  }
+
+  function el(tag, text, cls) {
+    var e = document.createElement(tag);
+    if (text !== undefined && text !== null) e.textContent = text;   // 一律用 textContent，避免注入
+    if (cls) e.className = cls;
+    return e;
+  }
+
+  function humanSize(bytes) {
+    if (!bytes) return '';
+    var units = ['B', 'KB', 'MB', 'GB', 'TB'], i = 0, n = bytes;
+    while (n >= 1024 && i < units.length - 1) { n /= 1024; i++; }
+    return n.toFixed(i === 0 ? 0 : 1) + ' ' + units[i];
+  }
+
+  fetch(file).then(function (r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then(function (data) {
+    out.textContent = '';
+
+    out.appendChild(el('h1', 'Unity ' + (data.version || '')));
+
+    var meta = el('div', null, 'meta');
+    if (data.revision) {
+      meta.appendChild(el('span', 'Revision: '));
+      meta.appendChild(el('code', data.revision));
+      meta.appendChild(el('span', '　'));
+    }
+    if (data.releaseDate) meta.appendChild(el('span', '发布：' + data.releaseDate.slice(0, 10)));
+    out.appendChild(meta);
+
+    if (data.unityHubDeepLink) {
+      var p = el('p');
+      p.appendChild(el('span', '通过 Unity Hub 安装：'));
+      var a = el('a', data.unityHubDeepLink);
+      a.href = data.unityHubDeepLink;
+      p.appendChild(a);
+      out.appendChild(p);
+    }
+
+    var downloads = data.downloads || [];
+    if (!downloads.length) {
+      out.appendChild(el('p', '这一版官方没有提供直接下载（只有上面的 Hub 链接）。'));
+    }
+
+    downloads.forEach(function (d) {
+      out.appendChild(el('h2', [d.platform, d.architecture].filter(Boolean).join(' / ')));
+
+      var top = el('p');
+      var link = el('a', d.url ? d.url.split('/').pop() : '编辑器安装包');
+      link.href = d.url;
+      top.appendChild(link);
+      if (d.installerSize) top.appendChild(el('span', '  ' + humanSize(d.installerSize), 'size'));
+      out.appendChild(top);
+
+      var modules = d.modules || [];
+      if (modules.length) {
+        out.appendChild(el('h3', '模块 / 组件'));
+        var ul = el('ul');
+        modules.forEach(function (m) {
+          var li = el('li');
+          var a = el('a', m.name || m.url);
+          a.href = m.url;
+          li.appendChild(a);
+          if (m.category) li.appendChild(el('span', '  ' + m.category, 'size'));
+          ul.appendChild(li);
+        });
+        out.appendChild(ul);
+      }
+    });
+
+    var notices = data.thirdPartyNotices || [];
+    if (notices.length) {
+      out.appendChild(el('h2', '第三方声明'));
+      var ul2 = el('ul');
+      notices.forEach(function (n) {
+        var li = el('li');
+        var a = el('a', n.name || n.url);
+        a.href = n.url;
+        li.appendChild(a);
+        ul2.appendChild(li);
+      });
+      out.appendChild(ul2);
+    }
+  }).catch(function (e) {
+    out.textContent = '';
+    var p = el('p', '读取下载清单失败：' + e.message, 'err');
+    out.appendChild(p);
+  });
+})();
+</script>
+</body>
+</html>

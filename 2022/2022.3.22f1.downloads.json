@@ -1,0 +1,555 @@
+{
+  "version": "2022.3.22f1",
+  "revision": "887be4894c44",
+  "unityHubDeepLink": "unityhub://2022.3.22f1/887be4894c44",
+  "releaseDate": "2024-03-19T11:06:29.329Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/887be4894c44/Windows64EditorInstaller/UnitySetup64-2022.3.22f1.exe",
+      "installerSize": 2812392448,
+      "modules": [
+        {
+          "name": "Microsoft Visual Studio Community 2022",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2189815"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2022",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/17/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/17/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-VisionOS-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Linux-Server-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Mac-Server-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Universal Windows Platform Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Windows Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/TargetSupportInstaller/UnitySetup-Windows-Server-Support-for-Editor-2022.3.22f1.exe"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2022.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorInstaller/Unity-2022.3.22f1.pkg",
+      "installerSize": 3634062333,
+      "modules": [
+        {
+          "name": "Visual Studio for Mac",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2086937"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-VisionOS-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2022.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "ARM64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorInstallerArm64/Unity-2022.3.22f1.pkg",
+      "installerSize": 3632871537,
+      "modules": [
+        {
+          "name": "Visual Studio for Mac",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2086937"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-VisionOS-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2022.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "LINUX",
+      "architecture": "X86_64",
+      "type": "TAR_XZ",
+      "url": "https://download.unity3d.com/download_unity/887be4894c44/LinuxEditorInstaller/Unity-2022.3.22f1.tar.xz",
+      "installerSize": 3262969724,
+      "modules": [
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/LinuxEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2022.3.22f1.tar.xz"
+        },
+        {
+          "name": "visionOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/LinuxEditorTargetInstaller/UnitySetup-VisionOS-Support-for-Editor-2022.3.22f1.tar.xz"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/LinuxEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2022.3.22f1.tar.xz"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/LinuxEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-2022.3.22f1.tar.xz"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/LinuxEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2022.3.22f1.tar.xz"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/887be4894c44/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-2022.3.22f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2022.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2022.3/UnityDocumentation.zip"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": [
+    {
+      "name": "Editor-macOS-ARM64-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_ARM_64_Mono_2022_3_22f1_028411c959/Editor_mac_OS_ARM_64_Mono_2022_3_22f1_028411c959.pdf"
+    },
+    {
+      "name": "Build-Support-Android-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Android_IL_2_CPP_2022_3_22f1_1611fae17c/Build_Support_Android_IL_2_CPP_2022_3_22f1_1611fae17c.pdf"
+    },
+    {
+      "name": "Build-Support-EmbeddedLinux-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Embedded_Linux_IL_2_CPP_2022_3_22f1_3bf985da24/Build_Support_Embedded_Linux_IL_2_CPP_2022_3_22f1_3bf985da24.pdf"
+    },
+    {
+      "name": "Build-Support-Linux-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Linux_IL_2_CPP_2022_3_22f1_e61d87d6af/Build_Support_Linux_IL_2_CPP_2022_3_22f1_e61d87d6af.pdf"
+    },
+    {
+      "name": "Build-Support-Linux-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Linux_Mono_2022_3_22f1_9b149d54b0/Build_Support_Linux_Mono_2022_3_22f1_9b149d54b0.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_IL_2_CPP_2022_3_22f1_81abdd1aca/Build_Support_Windows_IL_2_CPP_2022_3_22f1_81abdd1aca.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_Mono_2022_3_22f1_95885aed22/Build_Support_Windows_Mono_2022_3_22f1_95885aed22.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-UWP-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_UWP_Mono_2022_3_22f1_5a591d9372/Build_Support_Windows_UWP_Mono_2022_3_22f1_5a591d9372.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-WebGL-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_Web_GL_IL_2_CPP_2022_3_22f1_445ca21aa9/Build_Support_Windows_Web_GL_IL_2_CPP_2022_3_22f1_445ca21aa9.pdf"
+    },
+    {
+      "name": "Build-Support-iOS-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_i_OS_IL_2_CPP_2022_3_22f1_73c02dbb9e/Build_Support_i_OS_IL_2_CPP_2022_3_22f1_73c02dbb9e.pdf"
+    },
+    {
+      "name": "Build-Support-macOS-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_mac_OS_IL_2_CPP_2022_3_22f1_a011384225/Build_Support_mac_OS_IL_2_CPP_2022_3_22f1_a011384225.pdf"
+    },
+    {
+      "name": "Build-Support-macOS-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_mac_OS_Mono_2022_3_22f1_746eea58b1/Build_Support_mac_OS_Mono_2022_3_22f1_746eea58b1.pdf"
+    },
+    {
+      "name": "Editor-Linux-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_Linux_Mono_2022_3_22f1_5ab06871bd/Editor_Linux_Mono_2022_3_22f1_5ab06871bd.pdf"
+    },
+    {
+      "name": "Editor-Windows-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_Windows_Mono_2022_3_22f1_cd9d132777/Editor_Windows_Mono_2022_3_22f1_cd9d132777.pdf"
+    },
+    {
+      "name": "Editor-macOS-Arm64-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_Arm64_Mono_2022_3_22f1_677d8ba6c1/Editor_mac_OS_Arm64_Mono_2022_3_22f1_677d8ba6c1.pdf"
+    },
+    {
+      "name": "Editor-macOS-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_Mono_2022_3_22f1_3e45d22e29/Editor_mac_OS_Mono_2022_3_22f1_3e45d22e29.pdf"
+    },
+    {
+      "name": "Player-Android-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Android_IL_2_CPP_2022_3_22f1_6e8bcc8009/Player_Android_IL_2_CPP_2022_3_22f1_6e8bcc8009.pdf"
+    },
+    {
+      "name": "Player-Linux-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_IL_2_CPP_2022_3_22f1_a4ab18182b/Player_Linux_IL_2_CPP_2022_3_22f1_a4ab18182b.pdf"
+    },
+    {
+      "name": "Player-Linux-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_Mono_2022_3_22f1_1500ad96a8/Player_Linux_Mono_2022_3_22f1_1500ad96a8.pdf"
+    },
+    {
+      "name": "Player-Windows-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_IL_2_CPP_2022_3_22f1_b017abc7b2/Player_Windows_IL_2_CPP_2022_3_22f1_b017abc7b2.pdf"
+    },
+    {
+      "name": "Player-Windows-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Mono_2022_3_22f1_97d2e04a06/Player_Windows_Mono_2022_3_22f1_97d2e04a06.pdf"
+    },
+    {
+      "name": "Player-Windows-UWP-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_UWP_Mono_2022_3_22f1_75e345a695/Player_Windows_UWP_Mono_2022_3_22f1_75e345a695.pdf"
+    },
+    {
+      "name": "Player-Windows-WebGL-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Web_GL_IL_2_CPP_2022_3_22f1_987b487528/Player_Windows_Web_GL_IL_2_CPP_2022_3_22f1_987b487528.pdf"
+    },
+    {
+      "name": "Player-iOS-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_i_OS_IL_2_CPP_2022_3_22f1_de1a34dee8/Player_i_OS_IL_2_CPP_2022_3_22f1_de1a34dee8.pdf"
+    },
+    {
+      "name": "Player-macOS-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_IL_2_CPP_2022_3_22f1_1966b9cd8c/Player_mac_OS_IL_2_CPP_2022_3_22f1_1966b9cd8c.pdf"
+    },
+    {
+      "name": "Player-macOS-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_Mono_2022_3_22f1_f926d6dd34/Player_mac_OS_Mono_2022_3_22f1_f926d6dd34.pdf"
+    },
+    {
+      "name": "Player-Android-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Android_IL_2_CPP_2022_3_22f1_c57591e547/Player_Android_IL_2_CPP_2022_3_22f1_c57591e547.pdf"
+    },
+    {
+      "name": "Player-EmbeddedLinux-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Embedded_Linux_IL_2_CPP_2022_3_22f1_83555cf9e1/Player_Embedded_Linux_IL_2_CPP_2022_3_22f1_83555cf9e1.pdf"
+    },
+    {
+      "name": "Player-Linux-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_IL_2_CPP_2022_3_22f1_f063c7af43/Player_Linux_IL_2_CPP_2022_3_22f1_f063c7af43.pdf"
+    },
+    {
+      "name": "Player-Linux-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_Mono_2022_3_22f1_a6ea708215/Player_Linux_Mono_2022_3_22f1_a6ea708215.pdf"
+    },
+    {
+      "name": "Player-Windows-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_IL_2_CPP_2022_3_22f1_89f01c1b15/Player_Windows_IL_2_CPP_2022_3_22f1_89f01c1b15.pdf"
+    },
+    {
+      "name": "Player-Windows-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Mono_2022_3_22f1_8ed4e92f0b/Player_Windows_Mono_2022_3_22f1_8ed4e92f0b.pdf"
+    },
+    {
+      "name": "Player-Windows-UWP-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_UWP_Mono_2022_3_22f1_2ae70258bb/Player_Windows_UWP_Mono_2022_3_22f1_2ae70258bb.pdf"
+    },
+    {
+      "name": "Player-Windows-WebGL-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Web_GL_IL_2_CPP_2022_3_22f1_7a98ae3741/Player_Windows_Web_GL_IL_2_CPP_2022_3_22f1_7a98ae3741.pdf"
+    },
+    {
+      "name": "Player-iOS-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_i_OS_IL_2_CPP_2022_3_22f1_9cacd2c5fc/Player_i_OS_IL_2_CPP_2022_3_22f1_9cacd2c5fc.pdf"
+    },
+    {
+      "name": "Player-macOS-IL2CPP-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_IL_2_CPP_2022_3_22f1_0323de305e/Player_mac_OS_IL_2_CPP_2022_3_22f1_0323de305e.pdf"
+    },
+    {
+      "name": "Player-macOS-Mono-2022.3.22f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_Mono_2022_3_22f1_f029ec60bc/Player_mac_OS_Mono_2022_3_22f1_f029ec60bc.pdf"
+    }
+  ]
+}

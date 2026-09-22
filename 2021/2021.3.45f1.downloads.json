@@ -1,0 +1,499 @@
+{
+  "version": "2021.3.45f1",
+  "revision": "0da89fac8e79",
+  "unityHubDeepLink": "unityhub://2021.3.45f1/0da89fac8e79",
+  "releaseDate": "2024-10-16T08:39:15.977Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/0da89fac8e79/Windows64EditorInstaller/UnitySetup64-2021.3.45f1.exe",
+      "installerSize": 3201019904,
+      "modules": [
+        {
+          "name": "Microsoft Visual Studio Community 2019",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2086755"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Professional 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/16/release/vs_Professional.exe"
+        },
+        {
+          "name": "Unity Game Development for Microsoft Visual Studio Enterprise 2019",
+          "category": "PLUGIN",
+          "url": "https://aka.ms/vs/16/release/vs_Enterprise.exe"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Linux-Server-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Mac-Server-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Universal Windows Platform Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Windows Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/TargetSupportInstaller/UnitySetup-Windows-Server-Support-for-Editor-2021.3.45f1.exe"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2021.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorInstaller/Unity-2021.3.45f1.pkg",
+      "installerSize": 3759540231,
+      "modules": [
+        {
+          "name": "Visual Studio Code",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2261605"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2021.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "ARM64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorInstallerArm64/Unity-2021.3.45f1.pkg",
+      "installerSize": 3758667787,
+      "modules": [
+        {
+          "name": "Visual Studio Code",
+          "category": "DEV_TOOL",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2261605"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Linux Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Mac Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Mac-IL2CPP-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2021.3/UnityDocumentation.zip"
+        }
+      ]
+    },
+    {
+      "platform": "LINUX",
+      "architecture": "X86_64",
+      "type": "TAR_XZ",
+      "url": "https://download.unity3d.com/download_unity/0da89fac8e79/LinuxEditorInstaller/Unity-2021.3.45f1.tar.xz",
+      "installerSize": 3264709500,
+      "modules": [
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/LinuxEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.45f1.tar.xz"
+        },
+        {
+          "name": "Linux Build Support (IL2CPP)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/LinuxEditorTargetInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-2021.3.45f1.tar.xz"
+        },
+        {
+          "name": "Linux Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/LinuxEditorTargetInstaller/UnitySetup-Linux-Server-Support-for-Editor-2021.3.45f1.tar.xz"
+        },
+        {
+          "name": "Mac Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Mac Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Mac-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/LinuxEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-2021.3.45f1.tar.xz"
+        },
+        {
+          "name": "Windows Build Support (Mono)",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "Windows Dedicated Server Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/0da89fac8e79/MacEditorTargetInstaller/UnitySetup-Windows-Server-Support-for-Editor-2021.3.45f1.pkg"
+        },
+        {
+          "name": "\u65E5\u672C\u8A9E",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ja"
+        },
+        {
+          "name": "\uD55C\uAD6D\uC5B4",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/ko"
+        },
+        {
+          "name": "\u7E41\u9AD4\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hant"
+        },
+        {
+          "name": "\u7B80\u4F53\u4E2D\u6587",
+          "category": "LANGUAGE_PACK",
+          "url": "https://new-translate.unity3d.jp/v1/live/54/2021.3/zh-hans"
+        },
+        {
+          "name": "Documentation",
+          "category": "DOCUMENTATION",
+          "url": "https://cloudmedia-docs.unity3d.com/docscloudstorage/2021.3/UnityDocumentation.zip"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": [
+    {
+      "name": "Build-Support-Android-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Android_IL_2_CPP_2021_3_45f1_dc7af765bb/Build_Support_Android_IL_2_CPP_2021_3_45f1_dc7af765bb.pdf"
+    },
+    {
+      "name": "Build-Support-EmbeddedLinux-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Embedded_Linux_IL_2_CPP_2021_3_45f1_a8ffe05fd9/Build_Support_Embedded_Linux_IL_2_CPP_2021_3_45f1_a8ffe05fd9.pdf"
+    },
+    {
+      "name": "Build-Support-Linux-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Linux_IL_2_CPP_2021_3_45f1_54bf48bafd/Build_Support_Linux_IL_2_CPP_2021_3_45f1_54bf48bafd.pdf"
+    },
+    {
+      "name": "Build-Support-Linux-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Linux_Mono_2021_3_45f1_34b5695541/Build_Support_Linux_Mono_2021_3_45f1_34b5695541.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_IL_2_CPP_2021_3_45f1_70182bea41/Build_Support_Windows_IL_2_CPP_2021_3_45f1_70182bea41.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_Mono_2021_3_45f1_d52dedf842/Build_Support_Windows_Mono_2021_3_45f1_d52dedf842.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-UWP-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_UWP_Mono_2021_3_45f1_ec76bbdf9d/Build_Support_Windows_UWP_Mono_2021_3_45f1_ec76bbdf9d.pdf"
+    },
+    {
+      "name": "Build-Support-Windows-WebGL-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_Windows_Web_GL_IL_2_CPP_2021_3_45f1_8fed2b1843/Build_Support_Windows_Web_GL_IL_2_CPP_2021_3_45f1_8fed2b1843.pdf"
+    },
+    {
+      "name": "Build-Support-iOS-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_i_OS_IL_2_CPP_2021_3_45f1_9fda607e40/Build_Support_i_OS_IL_2_CPP_2021_3_45f1_9fda607e40.pdf"
+    },
+    {
+      "name": "Build-Support-macOS-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_mac_OS_IL_2_CPP_2021_3_45f1_b1b0cd2dc7/Build_Support_mac_OS_IL_2_CPP_2021_3_45f1_b1b0cd2dc7.pdf"
+    },
+    {
+      "name": "Build-Support-macOS-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_mac_OS_Mono_2021_3_45f1_10b0b424b5/Build_Support_mac_OS_Mono_2021_3_45f1_10b0b424b5.pdf"
+    },
+    {
+      "name": "Build-Support-tvOS-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Build_Support_tv_OS_IL_2_CPP_2021_3_45f1_11f208b63f/Build_Support_tv_OS_IL_2_CPP_2021_3_45f1_11f208b63f.pdf"
+    },
+    {
+      "name": "Editor-Linux-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_Linux_Mono_2021_3_45f1_30777a8933/Editor_Linux_Mono_2021_3_45f1_30777a8933.pdf"
+    },
+    {
+      "name": "Editor-Windows-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_Windows_Mono_2021_3_45f1_15ff6bd62d/Editor_Windows_Mono_2021_3_45f1_15ff6bd62d.pdf"
+    },
+    {
+      "name": "Editor-macOS-Arm64-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_Arm64_Mono_2021_3_45f1_149e186ffe/Editor_mac_OS_Arm64_Mono_2021_3_45f1_149e186ffe.pdf"
+    },
+    {
+      "name": "Editor-macOS-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Editor_mac_OS_Mono_2021_3_45f1_792e2137dd/Editor_mac_OS_Mono_2021_3_45f1_792e2137dd.pdf"
+    },
+    {
+      "name": "Player-Android-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Android_IL_2_CPP_2021_3_45f1_fe52c7bf31/Player_Android_IL_2_CPP_2021_3_45f1_fe52c7bf31.pdf"
+    },
+    {
+      "name": "Player-EmbeddedLinux-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Embedded_Linux_IL_2_CPP_2021_3_45f1_cb2e69d69f/Player_Embedded_Linux_IL_2_CPP_2021_3_45f1_cb2e69d69f.pdf"
+    },
+    {
+      "name": "Player-Linux-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_IL_2_CPP_2021_3_45f1_32b4a8deae/Player_Linux_IL_2_CPP_2021_3_45f1_32b4a8deae.pdf"
+    },
+    {
+      "name": "Player-Linux-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Linux_Mono_2021_3_45f1_71f8a48e39/Player_Linux_Mono_2021_3_45f1_71f8a48e39.pdf"
+    },
+    {
+      "name": "Player-Windows-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_IL_2_CPP_2021_3_45f1_7b82e43575/Player_Windows_IL_2_CPP_2021_3_45f1_7b82e43575.pdf"
+    },
+    {
+      "name": "Player-Windows-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Mono_2021_3_45f1_639793958e/Player_Windows_Mono_2021_3_45f1_639793958e.pdf"
+    },
+    {
+      "name": "Player-Windows-UWP-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_UWP_Mono_2021_3_45f1_56168af104/Player_Windows_UWP_Mono_2021_3_45f1_56168af104.pdf"
+    },
+    {
+      "name": "Player-Windows-WebGL-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_Windows_Web_GL_IL_2_CPP_2021_3_45f1_b8a7f827d5/Player_Windows_Web_GL_IL_2_CPP_2021_3_45f1_b8a7f827d5.pdf"
+    },
+    {
+      "name": "Player-iOS-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_i_OS_IL_2_CPP_2021_3_45f1_d463b58afd/Player_i_OS_IL_2_CPP_2021_3_45f1_d463b58afd.pdf"
+    },
+    {
+      "name": "Player-macOS-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_IL_2_CPP_2021_3_45f1_3772219ec3/Player_mac_OS_IL_2_CPP_2021_3_45f1_3772219ec3.pdf"
+    },
+    {
+      "name": "Player-macOS-Mono-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_mac_OS_Mono_2021_3_45f1_70ad5b9327/Player_mac_OS_Mono_2021_3_45f1_70ad5b9327.pdf"
+    },
+    {
+      "name": "Player-tvOS-IL2CPP-2021.3.45f1.pdf",
+      "url": "https://storage.googleapis.com/live-platform-resources-prd/templates/assets/Player_tv_OS_IL_2_CPP_2021_3_45f1_bf48aa2fac/Player_tv_OS_IL_2_CPP_2021_3_45f1_bf48aa2fac.pdf"
+    }
+  ]
+}

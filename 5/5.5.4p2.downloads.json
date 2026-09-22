@@ -1,0 +1,153 @@
+{
+  "version": "5.5.4p2",
+  "revision": "9810290216f5",
+  "unityHubDeepLink": "unityhub://5.5.4p2/9810290216f5",
+  "releaseDate": "2017-07-26T11:06:59.785Z",
+  "source": "hub-api",
+  "downloads": [
+    {
+      "platform": "WINDOWS",
+      "architecture": "X86_64",
+      "type": "EXE",
+      "url": "https://download.unity3d.com/download_unity/9810290216f5/Windows64EditorInstaller/UnitySetup64-5.5.4p2.exe",
+      "installerSize": 524021760,
+      "modules": [
+        {
+          "name": "Documentation",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup.exe"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/WindowsExampleProjectInstaller/UnityExampleProjectSetup.exe"
+        },
+        {
+          "name": "Microsoft Visual Studio Community 2015",
+          "category": "DEV_TOOL",
+          "url": "http://go.microsoft.com/fwlink/?LinkId=532606"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "Mac Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-Mac-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "Windows Store .NET Scripting Backend",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "Windows Store IL2CPP Scripting Backend",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "SamsungTV Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-Samsung-TV-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "Tizen Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-Tizen-Support-for-Editor-5.5.4p2.exe"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-5.5.4p2.exe"
+        }
+      ]
+    },
+    {
+      "platform": "MAC_OS",
+      "architecture": "X86_64",
+      "type": "PKG",
+      "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorInstaller/Unity-5.5.4p2.pkg",
+      "installerSize": 714725345,
+      "modules": [
+        {
+          "name": "Documentation",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacDocumentationInstaller/Documentation.pkg"
+        },
+        {
+          "name": "Standard Assets",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacStandardAssetsInstaller/StandardAssets.pkg"
+        },
+        {
+          "name": "Example Project",
+          "category": "COMPONENT",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacExampleProjectInstaller/Examples.pkg"
+        },
+        {
+          "name": "Android Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "iOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "tvOS Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-AppleTV-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "Linux Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "SamsungTV Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-Samsung-TV-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "Tizen Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-Tizen-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "WebGL Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-WebGL-Support-for-Editor-5.5.4p2.pkg"
+        },
+        {
+          "name": "Windows Build Support",
+          "category": "PLATFORM",
+          "url": "https://download.unity3d.com/download_unity/9810290216f5/MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-5.5.4p2.pkg"
+        }
+      ]
+    }
+  ],
+  "thirdPartyNotices": []
+}
